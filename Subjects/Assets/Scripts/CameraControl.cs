@@ -9,53 +9,60 @@ public class CameraControl : MonoBehaviour
     private float RotationSpeed;
 
     [SerializeField]
-    private GameObject _humanModel;
+    private float _moveSpeed = 15f;
 
 
+    public GameObject _humanModel;
 
-    private Vector3 _origin;
-    private Vector3 _diffrence;
-    private Vector3 _resetCamera;
-
-
-    private bool drag = false;
-
-    private Transform dragging;
-    private Vector3 offset;
-
-    private bool canRotate;
+    public GameObject _transformModel;
 
 
+    public Vector3 vec;
 
-    private Vector3 dragOrigin;
+    private Quaternion _moveRotation;
 
-    void Start()
-    {
-        _resetCamera = Camera.main.transform.position;
-    }
 
+    float _inputPosX;
+    float _inputPosY;
+
+    float _inputRotateX;
+    float _inputRotateY;
+
+    public float repeatSpeed = 1f; // Speed of repeated movement
+    private Vector3 lastMousePosition; // Last recorded mouse position
+
+    bool firstIgnor = false;
 
     void LateUpdate()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse0))
+        if (Input.GetMouseButton(0))
         {
-            canRotate = true;
+            _inputRotateX += Input.GetAxis("Mouse X") * RotationSpeed;
+            _inputRotateY += Input.GetAxis("Mouse Y") * RotationSpeed;
+
+            _humanModel.transform.localRotation = Quaternion.Euler(-_inputRotateY, _inputRotateX, 0);
         }
 
-        if (Input.GetKeyUp(KeyCode.Mouse0))
+        if (Input.GetMouseButtonUp(0))
         {
-            canRotate = false;
-            dragging = null;
+            _moveRotation = _humanModel.transform.rotation;
         }
 
-        if (canRotate)
+
+
+
+        if (Input.GetMouseButtonDown(1))
         {
-            _humanModel.transform.Rotate(Input.GetAxis("Mouse Y") * RotationSpeed * Time.deltaTime, -(Input.GetAxis("Mouse X") * RotationSpeed * Time.deltaTime), 0);
+            lastMousePosition = Input.mousePosition;
         }
 
-        if (dragging != null)
+        else if (Input.GetMouseButton(1))
         {
-            dragging.position = Camera.main.ScreenToWorldPoint(Input.mousePosition - offset);
+            Vector3 movement = (Input.mousePosition - lastMousePosition) * repeatSpeed * Time.deltaTime;
+
+
+            transform.Translate(-movement);
+            lastMousePosition = Input.mousePosition;
         }
     }
 }
