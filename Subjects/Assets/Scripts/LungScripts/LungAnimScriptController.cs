@@ -9,13 +9,13 @@ public class LungAnimScriptController : MonoBehaviour
     [SerializeField]
     private Animator LungAnimator;
 
-    public void LungAnimExit()
+    private void LungAnimExit()
     {
         LungAnimator.SetInteger("Lung", 1);
         Count++;
     }
 
-    public void LungAnimEnter()
+    private void LungAnimEnter()
     {
         LungAnimator.SetInteger("Lung", 2);
         Count++;

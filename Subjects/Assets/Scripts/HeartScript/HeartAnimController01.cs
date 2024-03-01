@@ -12,7 +12,7 @@ public class HeartAnimController01 : MonoBehaviour
     public GameObject Hearts4;
 
 
-    public void HeartAnimEnter()
+    private void HeartAnimEnter()
     {
         HeartAnim.SetInteger("Heart", 1);
         Count++;
@@ -21,14 +21,14 @@ public class HeartAnimController01 : MonoBehaviour
         Hearts3.SetActive(false);
 
     }
-    public void HeartAnimExit()
+    private void HeartAnimExit()
     {
         HeartAnim.SetInteger("Heart", 2);
         Count++;
-        StartCoroutine(kutish());
+        StartCoroutine(Kutish());
     }
 
-    IEnumerator kutish()
+    IEnumerator Kutish()
     {
         yield return new  WaitForSeconds(1.55f);
         Hearts4.SetActive(false);
@@ -39,7 +39,6 @@ public class HeartAnimController01 : MonoBehaviour
     }
     public void OnClickEnter()
     {
-
         if (Count % 2 == 0)
         {
             HeartAnimEnter();
