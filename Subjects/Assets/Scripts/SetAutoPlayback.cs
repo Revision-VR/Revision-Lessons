@@ -1,27 +1,31 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class SetAutoPlayback : MonoBehaviour
 {
-    public Material targetMaterial; // Assign the material with the shader to this in the Inspector
-    public string autoPlaybackPropertyName = "Auto Playback"; // Name of the shader property controlling auto playback
+    public Material material;
+    //public Shader shader;
+    private string boolPropertyName = "Auto Playback";
 
-    void Update()
+    void Start()
     {
-        // Check if a specific button is pressed (you can change Input.GetKeyDown(KeyCode.X) to your desired button)
-        if (Input.GetKeyDown(KeyCode.X))
+        if (material != null && !string.IsNullOrEmpty(boolPropertyName))
         {
-            // Ensure the material has the property we want to modify
-            if (targetMaterial != null && targetMaterial.HasProperty(autoPlaybackPropertyName))
+            float currentValue = material.GetFloat(boolPropertyName);
+
+            if (currentValue == 0f)
             {
-                // Set auto playback to true (1)
-                targetMaterial.SetFloat(autoPlaybackPropertyName, 1f);
+                material.SetFloat(boolPropertyName, 1f);
+                Debug.Log("Changed boolean property to true.");
             }
-            else
+            else if (currentValue == 1f) 
             {
-                Debug.LogWarning("Material or shader property not found.");
+                Debug.Log("Boolean property is already true.");
             }
         }
+        else
+        {
+            Debug.LogWarning("Material or boolean property name not provided.");
+        }
     }
+   
 }
