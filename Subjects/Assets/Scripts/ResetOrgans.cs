@@ -11,26 +11,41 @@ public class ResetOrgans : MonoBehaviour
     [SerializeField]
     private GameObject _pos2;
 
-    [SerializeField]
-    private Material _materialR;
 
     private bool inSide = false;
     private bool isDragging = false;
 
 
+    private bool firstTriggerEnter = true;
+    private bool firstTriggerStay = true;
+
     private void OnTriggerEnter(Collider other)
     {
-        _pos.SetActive(true);
-        _pos2.SetActive(false);
-        inSide = true;
+        if (other.CompareTag("test"))
+        {
+            if (!firstTriggerEnter)
+            {
+                _pos.SetActive(true);
+                _pos2.SetActive(false);
+            }
+            else
+            {
+                firstTriggerEnter = false;
+            }
+            inSide = true;
+        }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        _pos.SetActive(false);
-        inSide = false;
-        _pos2.SetActive(isDragging);
+        if (other.CompareTag("test"))
+        {
+            _pos.SetActive(false);
+            inSide = false;
+            _pos2.SetActive(isDragging);
+        }
     }
+
 
     private void OnMouseDown()
     {
