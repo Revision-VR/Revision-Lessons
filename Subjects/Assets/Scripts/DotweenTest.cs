@@ -22,9 +22,9 @@ public class DotweenTest : MonoBehaviour
         Transform cameraTransform1 = mainCamera.transform;
 
 
-        cameraTransform1.DOLocalMove(new Vector3(-1f, 0.03f, -2.22f), 1.0f);
+        cameraTransform1.DOLocalMove(new Vector3(-0.7650259f, 0.9576438f, -2.330027f), 1.0f);
 
-        cameraTransform.DORotate(new Vector3(0.316f, 39.951f, 0.265f), 1.0f);
+        cameraTransform.DORotate(new Vector3(17.5f, 46.25f, 0f), 1.0f);
     }
 
     public void ResetCameraPositionAndRotation()
