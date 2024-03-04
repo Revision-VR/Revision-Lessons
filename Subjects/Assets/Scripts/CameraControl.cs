@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CameraControl : MonoBehaviour
 {
-
+    
     [SerializeField]
     private float RotationSpeed;
 
