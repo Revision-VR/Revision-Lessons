@@ -35,7 +35,6 @@ public class ChangeScroll : MonoBehaviour
     void Update()
     {
         int currentItem = Mathf.RoundToInt((0 - contentPanel.localPosition.x / (sampleListItem.rect.width + HLG.spacing)));
-        print(currentItem);
 
         if (scrollRect.velocity.magnitude < 200 && !isSnapped)
         {
@@ -44,7 +43,7 @@ public class ChangeScroll : MonoBehaviour
             snapSpeed += snapForce * Time.deltaTime;
             contentPanel.localPosition = new Vector3(
                 Mathf.MoveTowards(contentPanel.localPosition.x, 0 - (currentItem * (sampleListItem.rect.width + HLG.spacing)), snapSpeed),
-                contentPanel.localPosition.y, 
+                contentPanel.localPosition.y,
                 contentPanel.localPosition.z);
 
             if (contentPanel.localPosition.x == 0 - (currentItem * (sampleListItem.rect.width + HLG.spacing)))
