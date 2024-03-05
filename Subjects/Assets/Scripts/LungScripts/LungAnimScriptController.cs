@@ -6,6 +6,7 @@ public class LungAnimScriptController : MonoBehaviour
 
     [SerializeField]
     private Animator LungAnimator;
+    Material material;
 
     private void LungAnimExit()
     {
@@ -30,4 +31,6 @@ public class LungAnimScriptController : MonoBehaviour
             LungAnimExit();
         }
     }
+
+
 }
