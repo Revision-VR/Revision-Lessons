@@ -739,6 +739,21 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 1e9fd19c30987914b970f36e0ef08f36,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1e9fd19c30987914b970f36e0ef08f36,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1e9fd19c30987914b970f36e0ef08f36,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1e9fd19c30987914b970f36e0ef08f36,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -787,6 +802,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1e9fd19c30987914b970f36e0ef08f36,
+        type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 1e9fd19c30987914b970f36e0ef08f36,
         type: 3}
       propertyPath: m_Name
@@ -795,56 +815,52 @@ PrefabInstance:
     - target: {fileID: 5021228346462164004, guid: 1e9fd19c30987914b970f36e0ef08f36,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -84.25268
+      value: -45.000004
       objectReference: {fileID: 0}
     - target: {fileID: 5021228346462164004, guid: 1e9fd19c30987914b970f36e0ef08f36,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -50.677246
+      value: -90.00001
       objectReference: {fileID: 0}
     - target: {fileID: 5021228346462164004, guid: 1e9fd19c30987914b970f36e0ef08f36,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -140.67725
+      value: -179.99998
       objectReference: {fileID: 0}
     - target: {fileID: 7534246568528090362, guid: 1e9fd19c30987914b970f36e0ef08f36,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -52.343998
+      value: -44.999992
       objectReference: {fileID: 0}
     - target: {fileID: 7534246568528090362, guid: 1e9fd19c30987914b970f36e0ef08f36,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -89.99999
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 7534246568528090362, guid: 1e9fd19c30987914b970f36e0ef08f36,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 89.99999
+      value: 90.00001
       objectReference: {fileID: 0}
     - target: {fileID: 9179017853419834167, guid: 1e9fd19c30987914b970f36e0ef08f36,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -52.343987
+      value: -44.999992
       objectReference: {fileID: 0}
     - target: {fileID: 9179017853419834167, guid: 1e9fd19c30987914b970f36e0ef08f36,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -89.99998
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 9179017853419834167, guid: 1e9fd19c30987914b970f36e0ef08f36,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 89.999985
+      value: 90.00001
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 1e9fd19c30987914b970f36e0ef08f36,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2025530899}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 1e9fd19c30987914b970f36e0ef08f36,
         type: 3}
       insertIndex: -1
@@ -873,6 +889,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 2025530904}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 1e9fd19c30987914b970f36e0ef08f36,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2025530907}
   m_SourcePrefab: {fileID: 100100000, guid: 1e9fd19c30987914b970f36e0ef08f36, type: 3}
 --- !u!1 &1820048497
 GameObject:
@@ -1084,27 +1104,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f77ac31a18315a40a053843194e6f1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!95 &2025530899
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2025530896}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 5418b43f365f14b4d9ab9218832bde46, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 1
-  m_ApplyRootMotion: 1
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!135 &2025530901
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1180,7 +1179,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cda9b87cdc198444a2e5c8c276c99b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LungAnimator: {fileID: 2025530899}
+  LungAnimator: {fileID: 2025530907}
 --- !u!114 &2025530905
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1196,6 +1195,27 @@ MonoBehaviour:
   boxCollider1: {fileID: 2025530901}
   boxCollider2: {fileID: 2025530902}
   boxCollider3: {fileID: 2025530903}
+--- !u!95 &2025530907
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2025530896}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 81280781385d8724c9c42efaa80ced08, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
