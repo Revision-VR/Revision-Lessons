@@ -41,7 +41,7 @@ public class DrawWithMouse : MonoBehaviour
         currentLine = lineObject.AddComponent<LineRenderer>();
         currentLine.material = lineMaterial;
         currentLine.startWidth = currentLine.endWidth = thicknessSlider.value; 
-        currentLine.positionCount = 1;
+        currentLine.positionCount = 10;
         currentLine.SetPosition(0, GetMouseWorldPosition());
         currentLine.startColor = currentLine.endColor = currentColor; 
         drawing = true;
@@ -63,7 +63,7 @@ public class DrawWithMouse : MonoBehaviour
     Vector3 GetMouseWorldPosition()
     {
         mousePosition = Input.mousePosition;
-        mousePosition.z = 10; 
+        mousePosition.z = 8; 
         return Camera.main.ScreenToWorldPoint(mousePosition);
     }
 
