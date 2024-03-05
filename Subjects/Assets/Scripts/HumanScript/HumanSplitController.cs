@@ -3,6 +3,8 @@ using UnityEngine;
 public class HumanSplitController : DotweenTest
 {
     public Animator humanAnim;
+    public GameObject draw;
+    public GameObject animButton;
 
     private int count = 2;
 
@@ -10,13 +12,18 @@ public class HumanSplitController : DotweenTest
     {
         humanAnim.SetInteger("Check", 1);
         ChangeCameraPositionAndRotation();
-        count++;
+        IncrementCount();
     }
 
     private void ExitAnim()
     {
         humanAnim.SetInteger("Check", 2);
         ResetCameraPositionAndRotation();
+        IncrementCount();
+    }
+
+    private void IncrementCount()
+    {
         count++;
     }
 
@@ -26,9 +33,36 @@ public class HumanSplitController : DotweenTest
         {
             StartAnim();
         }
-        else if (count % 2 != 0)
+        else
         {
             ExitAnim();
+        }
+
+        ToggleCameraControl(true);
+    }
+
+    public void OnClickDraw()
+    {
+        draw.SetActive(true);
+        ToggleCameraControl(false);
+    }
+
+    private void ToggleCameraControl(bool enable)
+    {
+        if (animButton == null)
+        {
+            Debug.LogError("animButton not assigned!");
+            return;
+        }
+
+        CameraControl cameraControl = animButton.GetComponent<CameraControl>();
+        if (cameraControl != null)
+        {
+            cameraControl.enabled = enable;
+        }
+        else
+        {
+            Debug.LogError("CameraControl component not found on animButton!");
         }
     }
 }
