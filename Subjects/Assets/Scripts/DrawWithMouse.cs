@@ -33,22 +33,21 @@ public class DrawWithMouse : MonoBehaviour
             UpdateDrawing();
         }
     }
-    
 
- void StartDrawing()
-{
-    GameObject lineObject = new GameObject("Line");
-    currentLine = lineObject.AddComponent<LineRenderer>();
-    currentLine.material = lineMaterial;
-    currentLine.startWidth = currentLine.endWidth = thicknessSlider.value; 
-    currentLine.positionCount = 2; // Set position count to 2 for drawing a dot
-    Vector3 mouseWorldPos = GetMouseWorldPosition();
-    currentLine.SetPosition(0, mouseWorldPos);
-    currentLine.SetPosition(1, mouseWorldPos); // Set both positions to the same point
-    currentLine.startColor = currentLine.endColor = currentColor; 
-    drawing = true;
-}
 
+    void StartDrawing()
+    {
+        GameObject lineObject = new GameObject("Line");
+        currentLine = lineObject.AddComponent<LineRenderer>();
+        currentLine.material = lineMaterial;
+        currentLine.startWidth = currentLine.endWidth = thicknessSlider.value * 0.05f; // Adjust the thickness by multiplying with a factor
+        currentLine.positionCount = 2; // Set position count to 2 for drawing a dot
+        Vector3 mouseWorldPos = GetMouseWorldPosition();
+        currentLine.SetPosition(0, mouseWorldPos);
+        currentLine.SetPosition(1, mouseWorldPos); // Set both positions to the same point
+        currentLine.startColor = currentLine.endColor = currentColor;
+        drawing = true;
+    }
 
     void StopDrawing()
     {
@@ -66,7 +65,7 @@ public class DrawWithMouse : MonoBehaviour
     Vector3 GetMouseWorldPosition()
     {
         mousePosition = Input.mousePosition;
-        mousePosition.z = 8; 
+        mousePosition.z = Camera.main.transform.position.z +1.5f; // Adjust the z-coordinate to be above the camera
         return Camera.main.ScreenToWorldPoint(mousePosition);
     }
 
@@ -89,7 +88,7 @@ public class DrawWithMouse : MonoBehaviour
     {
         if (currentLine != null)
         {
-            currentLine.startWidth = currentLine.endWidth = thicknessSlider.value;
+            currentLine.startWidth = currentLine.endWidth = thicknessSlider.value * 0.05f; // Adjust the thickness by multiplying with a factor
         }
     }
 
