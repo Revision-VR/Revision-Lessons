@@ -33,19 +33,22 @@ public class DrawWithMouse : MonoBehaviour
             UpdateDrawing();
         }
     }
-    
+
 
     void StartDrawing()
     {
         GameObject lineObject = new GameObject("Line");
         currentLine = lineObject.AddComponent<LineRenderer>();
         currentLine.material = lineMaterial;
-        currentLine.startWidth = currentLine.endWidth = thicknessSlider.value; 
-        currentLine.positionCount = 10;
-        currentLine.SetPosition(0, GetMouseWorldPosition());
-        currentLine.startColor = currentLine.endColor = currentColor; 
+        currentLine.startWidth = currentLine.endWidth = thicknessSlider.value;
+        currentLine.positionCount = 2; // Set position count to 2 for drawing a dot
+        Vector3 mouseWorldPos = GetMouseWorldPosition();
+        currentLine.SetPosition(0, mouseWorldPos);
+        currentLine.SetPosition(1, mouseWorldPos); // Set both positions to the same point
+        currentLine.startColor = currentLine.endColor = currentColor;
         drawing = true;
     }
+
 
     void StopDrawing()
     {
