@@ -4,26 +4,12 @@ using UnityEngine;
 
 public class CameraControl : MonoBehaviour
 {
-    
+
     [SerializeField]
     private float RotationSpeed;
 
-    [SerializeField]
-    private float _moveSpeed = 15f;
-
-
     public GameObject _humanModel;
 
-    public GameObject _transformModel;
-
-
-    public Vector3 vec;
-
-    private Quaternion _moveRotation;
-
-
-    float _inputPosX;
-    float _inputPosY;
 
     float _inputRotateX;
     float _inputRotateY;
@@ -31,7 +17,6 @@ public class CameraControl : MonoBehaviour
     public float repeatSpeed = 1f; // Speed of repeated movement
     private Vector3 lastMousePosition; // Last recorded mouse position
 
-    bool firstIgnor = false;
 
     void LateUpdate()
     {
@@ -42,12 +27,6 @@ public class CameraControl : MonoBehaviour
 
             _humanModel.transform.localRotation = Quaternion.Euler(-_inputRotateY, _inputRotateX, 0);
         }
-
-        if (Input.GetMouseButtonUp(0))
-        {
-            _moveRotation = _humanModel.transform.rotation;
-        }
-
 
 
 
