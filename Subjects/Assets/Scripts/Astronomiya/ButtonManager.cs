@@ -1,9 +1,9 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Events;
 
-public class ButtonCustom : MonoBehaviour
+public class ButtonManager : MonoBehaviour
 {
-
     [SerializeField]
     private string _info;
 
@@ -12,7 +12,7 @@ public class ButtonCustom : MonoBehaviour
         ForButton();
     }
 
-    public void ForButton() 
+    public void ForButton()
     {
         TextManager.Instance.ChangableInfo.text = _info;
     }

@@ -27,5 +27,4 @@ public class TextManager : MonoBehaviour
 
     public TMP_Text ChangableInfo;
 
-
 }
