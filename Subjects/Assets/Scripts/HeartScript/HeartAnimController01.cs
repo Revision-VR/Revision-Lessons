@@ -10,11 +10,7 @@ public class HeartAnimController01 : MonoBehaviour
     public GameObject Hearts2;
     public GameObject Hearts3;
     public GameObject Hearts4;
-    private void Start()
-    {
-        HeartAnim.SetInteger("Heart", 3);
 
-    }
 
     private void HeartAnimEnter()
     {
@@ -27,7 +23,7 @@ public class HeartAnimController01 : MonoBehaviour
     }
     private void HeartAnimExit()
     {
-        //HeartAnim
+        HeartAnim.SetInteger("Heart", 2);
         Count++;
         StartCoroutine(Kutish());
     }
