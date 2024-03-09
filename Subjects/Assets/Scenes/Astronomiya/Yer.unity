@@ -1334,6 +1334,14 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 433053237}
+    - targetCorrespondingSourceObject: {fileID: -2932998491564163895, guid: c21f9b6711c54234da3152e0f6ff3244,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 385479815}
+    - targetCorrespondingSourceObject: {fileID: -2932998491564163895, guid: c21f9b6711c54234da3152e0f6ff3244,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 385479814}
     - targetCorrespondingSourceObject: {fileID: -8116613859084990610, guid: c21f9b6711c54234da3152e0f6ff3244,
         type: 3}
       insertIndex: -1
@@ -1359,6 +1367,48 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1263243994}
   m_SourcePrefab: {fileID: 100100000, guid: c21f9b6711c54234da3152e0f6ff3244, type: 3}
+--- !u!1 &385479813 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -2932998491564163895, guid: c21f9b6711c54234da3152e0f6ff3244,
+    type: 3}
+  m_PrefabInstance: {fileID: 385479812}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &385479814
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 385479813}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -1928204645961537321, guid: c21f9b6711c54234da3152e0f6ff3244, type: 3}
+--- !u!114 &385479815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 385479813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f480cf694bf0a44eaf7c46484587166, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _info: 
+  newLayerName: Outlined
 --- !u!1 &418738390
 GameObject:
   m_ObjectHideFlags: 0
@@ -1665,6 +1715,7 @@ MonoBehaviour:
     ko\u2018plab ma'lum minerallar, temir, kremniy, magniy va oksidli birikmalar
     to\u2018g\u2018ri keladi. Mantiyad erigan bazal't qatlami va qattiq tog\u2018
     jinslari va metal rudalaridan iborat."
+  newLayerName: Outlined
 --- !u!64 &569983782
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2644,6 +2695,7 @@ MonoBehaviour:
     tektonik plitalarga ajralgan bo\u2018lib, fanga ma'lum kimyoviy elementlardan
     93tasi tabiiy ravishda yerning tosh qatlamida uchraydi va tog\u2018 jinslari,
     silikatlar va metalli birikmalardan iborat."
+  newLayerName: Outlined
 --- !u!1 &1045997406
 GameObject:
   m_ObjectHideFlags: 0
@@ -3319,6 +3371,7 @@ MonoBehaviour:
     eng kuchlisi ekanligi hisobga olinsa, yerning suyuq yadrosi faol bo\u2018lib,
     uning ichki aylanma harakat davri 60-70 yilni tashqil qiladi. Harorati Selsiy
     shkalasi bo\u2018yicha 5400 darajaga, radiusi 3500 kilometrga teng."
+  newLayerName: Outlined
 --- !u!1 &1278995489
 GameObject:
   m_ObjectHideFlags: 0

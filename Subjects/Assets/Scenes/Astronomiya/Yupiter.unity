@@ -3548,6 +3548,48 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1558760001}
   m_CullTransparentMesh: 1
+--- !u!1 &1599303338 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8679558718761855538, guid: df343ca70457b624fae3e91ab5af4a90,
+    type: 3}
+  m_PrefabInstance: {fileID: 1643004111}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1599303340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1599303338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f480cf694bf0a44eaf7c46484587166, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _info: 
+  newLayerName: Outlined
+--- !u!64 &1599303341
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1599303338}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6552503254863439366, guid: df343ca70457b624fae3e91ab5af4a90, type: 3}
 --- !u!1001 &1643004111
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3675,6 +3717,14 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1643004119}
+    - targetCorrespondingSourceObject: {fileID: 8679558718761855538, guid: df343ca70457b624fae3e91ab5af4a90,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1599303341}
+    - targetCorrespondingSourceObject: {fileID: 8679558718761855538, guid: df343ca70457b624fae3e91ab5af4a90,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1599303340}
   m_SourcePrefab: {fileID: 100100000, guid: df343ca70457b624fae3e91ab5af4a90, type: 3}
 --- !u!1 &1643004112 stripped
 GameObject:
@@ -3756,6 +3806,7 @@ MonoBehaviour:
     markazi 20 ming kilometr radiusli tosh yadrodan iborat deb tahmin qilinadi. Yupiterdagi
     qattiq jinslar shu qismning o\u2018zidan iborat. Tosh yadro usti muzlagan suv,
     suyuq suv parlaridan iborat."
+  newLayerName: Outlined
 --- !u!64 &1643004120
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3815,6 +3866,7 @@ MonoBehaviour:
   _info: "Keyin 30-50 ming kilometrli vodoroddan tashkil topgan qatlam keladi. Bu
     vodorodning turli kristal va gazli birikmalarlf yuqori bosim va harorat ta'siridagi
     holati bo\u2018lib, shartli ravishda sayyora mantiyasini tashkil qiladi."
+  newLayerName: Outlined
 --- !u!64 &1643004123
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3856,6 +3908,7 @@ MonoBehaviour:
     va yo\u2018nalishi ham bir-biridan farq qiladi. Ularning gorizontal va vertikal
     po\u2018rtana harakatlari Yupiter atmosferasidagi qatlamlar qalinldigini doimiy
     o\u2018zgarib turishiga sabab bo\u2018ladi."
+  newLayerName: Outlined
 --- !u!1 &1645419426
 GameObject:
   m_ObjectHideFlags: 0
@@ -4739,6 +4792,7 @@ MonoBehaviour:
   _info: "Uning ustki qismi ammiak muzlaridan iborat. Yupiterning sirtqi tosh qatmlami
     yo\u2018q. Shu sababli mantiya va atmosferaga o\u2018tish chegarasi aniq o\u2018lchamlarga
     emas."
+  newLayerName: Outlined
 --- !u!64 &1890891461
 MeshCollider:
   m_ObjectHideFlags: 0
