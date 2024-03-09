@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -263,7 +263,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 1.Planeta
+  m_text: 1.Kimyoviy ko'rinish
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -389,7 +389,7 @@ GameObject:
   - component: {fileID: 222136223}
   - component: {fileID: 222136222}
   m_Layer: 5
-  m_Name: Button (2)
+  m_Name: ElektronKo'rinish
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -522,7 +522,7 @@ GameObject:
   - component: {fileID: 293165178}
   - component: {fileID: 293165177}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: Structura
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -699,7 +699,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Malumotlar2
+  m_text: Malumotlar
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -869,7 +869,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 3.Planeta
+  m_text: 3.Elektron ko'irinish
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1180,7 +1180,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1592180561}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.5948361
+  m_Size: 0.13611534
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1256,7 +1256,7 @@ GameObject:
   - component: {fileID: 515068927}
   - component: {fileID: 515068926}
   m_Layer: 5
-  m_Name: Scroll View (1)
+  m_Name: Listview
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1349,7 +1349,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -477, y: 272.0354}
+  m_AnchoredPosition: {x: -712, y: -63}
   m_SizeDelta: {x: 370.2293, y: 179.0872}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &525013334
@@ -1471,7 +1471,7 @@ GameObject:
   - component: {fileID: 584851714}
   - component: {fileID: 584851713}
   m_Layer: 5
-  m_Name: Malumotlar2
+  m_Name: Malumotlar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1486,7 +1486,7 @@ RectTransform:
   m_GameObject: {fileID: 584851711}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.73127, y: 0.73127, z: 0.73127}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 339219186}
@@ -1494,7 +1494,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -760.99036, y: 154}
+  m_AnchoredPosition: {x: -760.99036, y: -236}
   m_SizeDelta: {x: 280.02, y: 94.41}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &584851713
@@ -1780,7 +1780,7 @@ PrefabInstance:
     - target: {fileID: 164263795279997607, guid: cb5b6c1eb9060cd449651c883d00261e,
         type: 3}
       propertyPath: m_Name
-      value: Button
+      value: DrawButton
       objectReference: {fileID: 0}
     - target: {fileID: 4181625167846550416, guid: cb5b6c1eb9060cd449651c883d00261e,
         type: 3}
@@ -1825,17 +1825,17 @@ PrefabInstance:
     - target: {fileID: 4181625167846550416, guid: cb5b6c1eb9060cd449651c883d00261e,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 0.73128
       objectReference: {fileID: 0}
     - target: {fileID: 4181625167846550416, guid: cb5b6c1eb9060cd449651c883d00261e,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 0.73128
       objectReference: {fileID: 0}
     - target: {fileID: 4181625167846550416, guid: cb5b6c1eb9060cd449651c883d00261e,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 0.73128
       objectReference: {fileID: 0}
     - target: {fileID: 4181625167846550416, guid: cb5b6c1eb9060cd449651c883d00261e,
         type: 3}
@@ -1880,7 +1880,7 @@ PrefabInstance:
     - target: {fileID: 4181625167846550416, guid: cb5b6c1eb9060cd449651c883d00261e,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -317
+      value: -430
       objectReference: {fileID: 0}
     - target: {fileID: 4181625167846550416, guid: cb5b6c1eb9060cd449651c883d00261e,
         type: 3}
@@ -1896,6 +1896,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8669211083844940802, guid: cb5b6c1eb9060cd449651c883d00261e,
+        type: 3}
+      propertyPath: m_text
+      value: Draw
       objectReference: {fileID: 0}
     - target: {fileID: 9055116163599700872, guid: cb5b6c1eb9060cd449651c883d00261e,
         type: 3}
@@ -2184,7 +2189,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Malumotlar
+  m_text: List
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2318,7 +2323,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 2.Planeta
+  m_text: 2.Structura
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2905,7 +2910,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 383, y: 643.8748}
+  m_SizeDelta: {x: 383, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1572147050
 MonoBehaviour:
@@ -2927,12 +2932,24 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Yurak \u2013 qon aylanish tizimining muskul toqimalaridan iborat markaziy
-    a\u02BCzosi. Yurak ma\u2019lum ritmda qisqarib va bo\u2019shashib turishi orqali
-    qon tomirlar bo\u2018ylab turli a\u2019zolarga uzatilishini ta\u2018minlaydi.\r\nThe
-    heart is the central organ of the circulatory system consisting of muscle tissue.
-    By contracting and relaxing in a certain rhythm, the heart ensures that blood
-    is transferred to various organs through the vessels.\r"
+  m_text: "Galliy\_lotincha Gallium \u2013 Mendeleev davriy sistemasining III guruhiga
+    mansub kimyoviy element; tartib raqami 31; nisbiy  atom massasi 69,72 (69 butun
+    100 dan 72); Tabiatan 2ta barqaror izotoplari va Galliy - 72 sun'iy izotopi mavjud.
+    \r\nGalliyni 1875-yilda fransuz kimyogari Lekok de Buabodran kashf etgan va Fransiyaning
+    lotincha nomi bilan \"galliy\" deb atagan. Galliy kumush kabi oqish-kulrang metall.
+    Asosiy xossalaridan biri \u2013 29,7\xB0 C (29 butun 10 dan 7 gradus Sel'siy)
+    haroratda suyuq holga kelishi bo\u2018lib, simobdan farqli o\u2018laroq o\u2018zidan
+    toksik parlar chiqarmaydi.\r\nXona haroratida qattiq agregat holatda bo\u2018ladi
+    va zichligi 5,9 (5 butun 10 dan 9) gram/sm3 (gramm taksim santimetr kub) ga teng
+    bo\u2018ladi. Qo\u2018lga olganda tana haroratidan eriy boshlaydi, biroq qaynash
+    temperaturasi ancha yuqori - 2205\xB0C (gradus Sel'siy) ni tashkil qiladi.\r\nGalliy
+    kimyoviy xossalari jihatidan alyuminiyga juda o\u2018xshaydi, havoda keyingi
+    oksidlanishdan himoyalovchi oksid parda bilan qoplanadi. Bosim ostida qizdirilganda
+    Galliy suv bilan birikib gidroksid hosil qiladi. Galliy oddiy sharoitda mineral
+    kislotalar bilan ta'sirlanib tuzlar, ishqor eritmalari yoki ishqoriy metallar
+    karbonatlari bilan reaksiyaga kirishib gid-roksogallatlar beradi. Xona temperaturasida
+    xlor va ftor bilan; qizdirilganida brom bilan reaksiyaga kirishadi. Vodorod,
+    azot, uglerod, kremniy va bor bilan birikmalar hosil qilmaydi.\_"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3646,7 +3663,7 @@ GameObject:
   - component: {fileID: 1749120394}
   - component: {fileID: 1749120393}
   m_Layer: 5
-  m_Name: Button
+  m_Name: KimyovirKo'rinish
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3781,7 +3798,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1770406786
 Transform:
   m_ObjectHideFlags: 0
@@ -3812,7 +3829,7 @@ GameObject:
   - component: {fileID: 1831945211}
   - component: {fileID: 1831945210}
   m_Layer: 5
-  m_Name: Scroll View
+  m_Name: MalumotlarView
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3905,7 +3922,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -86, y: 361}
+  m_AnchoredPosition: {x: -699, y: 283}
   m_SizeDelta: {x: 400, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1921572908
@@ -4037,8 +4054,8 @@ RectTransform:
   - {fileID: 922639844}
   - {fileID: 1712945539}
   - {fileID: 515068929}
-  - {fileID: 1970875442}
   - {fileID: 1831945213}
+  - {fileID: 1970875442}
   - {fileID: 584851712}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4060,7 +4077,7 @@ GameObject:
   - component: {fileID: 1970875440}
   - component: {fileID: 1970875439}
   m_Layer: 5
-  m_Name: Malumotlar
+  m_Name: List
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4169,7 +4186,7 @@ RectTransform:
   m_GameObject: {fileID: 1970875438}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.73127, y: 0.73127, z: 0.73127}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1086663470}
@@ -4177,7 +4194,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -749, y: 55}
+  m_AnchoredPosition: {x: -749, y: -335}
   m_SizeDelta: {x: 276.3482, y: 86.886}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2002822126
@@ -4401,9 +4418,9 @@ MonoBehaviour:
   m_ChildAlignment: 0
   m_Spacing: 0
   m_ChildForceExpandWidth: 0
-  m_ChildForceExpandHeight: 1
+  m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 0
-  m_ChildControlHeight: 0
+  m_ChildControlHeight: 1
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
