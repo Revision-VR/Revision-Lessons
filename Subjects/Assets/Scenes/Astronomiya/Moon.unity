@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1024,6 +1024,48 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 582828696}
   m_CullTransparentMesh: 1
+--- !u!1 &658707030 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -9200985156710172034, guid: cd1f6279f6d193148ba63ffdfbb6fc15,
+    type: 3}
+  m_PrefabInstance: {fileID: 1709034453}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &658707034
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 658707030}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 5938368045754562167, guid: cd1f6279f6d193148ba63ffdfbb6fc15, type: 3}
+--- !u!114 &658707035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 658707030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f480cf694bf0a44eaf7c46484587166, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _info: 
+  newLayerName: Outlined
 --- !u!1 &685711107
 GameObject:
   m_ObjectHideFlags: 0
@@ -2321,6 +2363,7 @@ MonoBehaviour:
   _info: "Yadro atrofida 480-500 kilometr qalinlikda qisman erigan qatlam bo\u2018lib,
     uning usti silikatlardan iborat mantiya bilan qoplangan. Oy yadrosi o\u2018z
     hajmiga nisbatan kichik bo\u2018lib, mantiyaning qalinligi 650-700 kilometr atrofida."
+  newLayerName: Outlined
 --- !u!1 &1310418453
 GameObject:
   m_ObjectHideFlags: 0
@@ -2447,6 +2490,47 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1310418453}
   m_CullTransparentMesh: 1
+--- !u!1 &1327479203 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1652707896063940080, guid: cd1f6279f6d193148ba63ffdfbb6fc15,
+    type: 3}
+  m_PrefabInstance: {fileID: 1709034453}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1327479207
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1327479203}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.020000013, y: 0.010000124, z: 0.019999996}
+  m_Center: {x: 0.0000000023283069, y: -0.0049999417, z: -1.4210689e-16}
+--- !u!114 &1327479208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1327479203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f480cf694bf0a44eaf7c46484587166, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _info: 
+  newLayerName: Outlined
 --- !u!1 &1357396671
 GameObject:
   m_ObjectHideFlags: 0
@@ -2816,8 +2900,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2083757758}
   m_HandleRect: {fileID: 2083757756}
   m_Direction: 2
-  m_Value: 0.99999976
-  m_Size: 0.5948361
+  m_Value: 1
+  m_Size: 0.115690745
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -3649,6 +3733,7 @@ MonoBehaviour:
     bor. Oyning ichki 240 kilometrli radiusi suyuqlik emas, temir va boshqa metal
     birikmalaridan iborat qattiq jism bo\u2018lib, uning atrofida suyuq tashqi yadro
     bor."
+  newLayerName: Outlined
 --- !u!64 &1581768252
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3899,32 +3984,32 @@ PrefabInstance:
     - target: {fileID: -1433915531131661400, guid: cd1f6279f6d193148ba63ffdfbb6fc15,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -63.533825
+      value: -43.943966
       objectReference: {fileID: 0}
     - target: {fileID: -1433915531131661400, guid: cd1f6279f6d193148ba63ffdfbb6fc15,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -108.38529
+      value: -90.00001
       objectReference: {fileID: 0}
     - target: {fileID: -1433915531131661400, guid: cd1f6279f6d193148ba63ffdfbb6fc15,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 108.385315
+      value: 90.00001
       objectReference: {fileID: 0}
     - target: {fileID: -583438178909834576, guid: cd1f6279f6d193148ba63ffdfbb6fc15,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -63.466385
+      value: -43.943966
       objectReference: {fileID: 0}
     - target: {fileID: -583438178909834576, guid: cd1f6279f6d193148ba63ffdfbb6fc15,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -90.000015
+      value: -90.00001
       objectReference: {fileID: 0}
     - target: {fileID: -583438178909834576, guid: cd1f6279f6d193148ba63ffdfbb6fc15,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 90.000015
+      value: 90.00001
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: cd1f6279f6d193148ba63ffdfbb6fc15,
         type: 3}
@@ -3934,47 +4019,47 @@ PrefabInstance:
     - target: {fileID: 5739120113167429636, guid: cd1f6279f6d193148ba63ffdfbb6fc15,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -63.533825
+      value: -43.943966
       objectReference: {fileID: 0}
     - target: {fileID: 5739120113167429636, guid: cd1f6279f6d193148ba63ffdfbb6fc15,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -108.38529
+      value: -90.00001
       objectReference: {fileID: 0}
     - target: {fileID: 5739120113167429636, guid: cd1f6279f6d193148ba63ffdfbb6fc15,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 108.385315
+      value: 90.00001
       objectReference: {fileID: 0}
     - target: {fileID: 6562452207782183233, guid: cd1f6279f6d193148ba63ffdfbb6fc15,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -63.533825
+      value: -43.943966
       objectReference: {fileID: 0}
     - target: {fileID: 6562452207782183233, guid: cd1f6279f6d193148ba63ffdfbb6fc15,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -108.38529
+      value: -90.00001
       objectReference: {fileID: 0}
     - target: {fileID: 6562452207782183233, guid: cd1f6279f6d193148ba63ffdfbb6fc15,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 108.385315
+      value: 90.00001
       objectReference: {fileID: 0}
     - target: {fileID: 7690689644405999863, guid: cd1f6279f6d193148ba63ffdfbb6fc15,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -63.466385
+      value: -43.943966
       objectReference: {fileID: 0}
     - target: {fileID: 7690689644405999863, guid: cd1f6279f6d193148ba63ffdfbb6fc15,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -90.000015
+      value: -90.00001
       objectReference: {fileID: 0}
     - target: {fileID: 7690689644405999863, guid: cd1f6279f6d193148ba63ffdfbb6fc15,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 90.000015
+      value: 90.00001
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3988,6 +4073,14 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1709034456}
+    - targetCorrespondingSourceObject: {fileID: 1652707896063940080, guid: cd1f6279f6d193148ba63ffdfbb6fc15,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1327479208}
+    - targetCorrespondingSourceObject: {fileID: 1652707896063940080, guid: cd1f6279f6d193148ba63ffdfbb6fc15,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1327479207}
     - targetCorrespondingSourceObject: {fileID: -2513343288620829846, guid: cd1f6279f6d193148ba63ffdfbb6fc15,
         type: 3}
       insertIndex: -1
@@ -4004,6 +4097,14 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1067901830}
+    - targetCorrespondingSourceObject: {fileID: -9200985156710172034, guid: cd1f6279f6d193148ba63ffdfbb6fc15,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 658707034}
+    - targetCorrespondingSourceObject: {fileID: -9200985156710172034, guid: cd1f6279f6d193148ba63ffdfbb6fc15,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 658707035}
     - targetCorrespondingSourceObject: {fileID: -1232811478440378290, guid: cd1f6279f6d193148ba63ffdfbb6fc15,
         type: 3}
       insertIndex: -1
@@ -4075,6 +4176,7 @@ MonoBehaviour:
     chang va tog\u2018 jinslari strukturasiga o\u2018xshash regolit va kraterlari
     qisman magma bilan qoplangan. Oy tuprog\u2018i tarkibida karbonatli qotishmalar,
     oltingugurt va kal'sid birikmalar mavjud."
+  newLayerName: Outlined
 --- !u!64 &1834054780
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4265,7 +4367,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 383, y: 643.8748}
+  m_SizeDelta: {x: 383, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1993708761
 MonoBehaviour:
@@ -4764,9 +4866,9 @@ MonoBehaviour:
   m_ChildAlignment: 0
   m_Spacing: 0
   m_ChildForceExpandWidth: 0
-  m_ChildForceExpandHeight: 1
+  m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 0
-  m_ChildControlHeight: 0
+  m_ChildControlHeight: 1
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
