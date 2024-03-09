@@ -782,6 +782,7 @@ MonoBehaviour:
     bulutlaridan tashkil topgan. Bu qavat strukturasi standart atmosferalardan farq
     qiladi, sayyora umumiy hajmining 20 foizga yaqin qismini tashkil qiladi. Uran
     atmosferasi yuzaga yaqinlashgani sari siyraklashib, boradi.
+  newLayerName: Outlined
 --- !u!64 &341837638
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2900,6 +2901,14 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1094975406}
+    - targetCorrespondingSourceObject: {fileID: 5914173764048766335, guid: a3eb3ea435fab604c88ac58df636096e,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1827977206}
+    - targetCorrespondingSourceObject: {fileID: 5914173764048766335, guid: a3eb3ea435fab604c88ac58df636096e,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1827977205}
     - targetCorrespondingSourceObject: {fileID: -5998301319071483956, guid: a3eb3ea435fab604c88ac58df636096e,
         type: 3}
       insertIndex: -1
@@ -2949,6 +2958,7 @@ MonoBehaviour:
   _info: Uran sayyorasi standart modelida uning hajmi 20 foizi tosh yadrodan iborat
     deb qabul qilingan. Qattiq yadro temir va nikel' qotishmasidan iborat va yadroning
     ichki qismi suyuq holatda.
+  newLayerName: Outlined
 --- !u!1 &1094975405 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4424396828587804706, guid: a3eb3ea435fab604c88ac58df636096e,
@@ -2991,6 +3001,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _info: "Suv va ammiak muzlaridan iborat bo\u2018lib, sayyora hajmining tahminan
     60 foiziga teng."
+  newLayerName: Outlined
 --- !u!64 &1094975408
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4159,6 +4170,48 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1720299107}
   m_CullTransparentMesh: 1
+--- !u!1 &1827977204 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5914173764048766335, guid: a3eb3ea435fab604c88ac58df636096e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1094975400}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1827977205
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1827977204}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 3447038591770236762, guid: a3eb3ea435fab604c88ac58df636096e, type: 3}
+--- !u!114 &1827977206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1827977204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f480cf694bf0a44eaf7c46484587166, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _info: 
+  newLayerName: Outlined
 --- !u!1 &1865101804
 GameObject:
   m_ObjectHideFlags: 0
