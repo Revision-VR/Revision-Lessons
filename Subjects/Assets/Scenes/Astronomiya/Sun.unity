@@ -1324,6 +1324,7 @@ MonoBehaviour:
     energiyaning bu usulda berilishi konveksiya deyiladi. Konveksiya jarayoni juda
     katta tezlikda ro\u2018y berib, qizigan plazma gazlari tartibsiz, turbulent harakatda
     bo\u2018ladi. Bundan yuqorida quyosh atmosferasi boshlanadi."
+  newLayerName: Outlined
 --- !u!1 &1025749067
 GameObject:
   m_ObjectHideFlags: 0
@@ -1666,6 +1667,14 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1954502662}
+    - targetCorrespondingSourceObject: {fileID: 4424396828587804706, guid: e3ea1d7163003ac4db691381f151aba1,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1994097634}
+    - targetCorrespondingSourceObject: {fileID: 4424396828587804706, guid: e3ea1d7163003ac4db691381f151aba1,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1994097633}
     - targetCorrespondingSourceObject: {fileID: -3215555783603854218, guid: e3ea1d7163003ac4db691381f151aba1,
         type: 3}
       insertIndex: -1
@@ -1722,6 +1731,7 @@ MonoBehaviour:
     bo\u2018lib, bu zonada termoyadroviy reaksiyalar yuz beradi. Quyosh yadrosining
     zichligi 150\_000 gramm taqsim metr kub. Bu yerdagi eng zich metall \u2013 osmiydan
     6,6 baravar ko\u2018p degani. Yadro harorati tahminan 14 million Kelvin."
+  newLayerName: Outlined
 --- !u!64 &1121552728
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1766,6 +1776,7 @@ MonoBehaviour:
     u yerda issiqlik termoyadrovqy reaksiyadan hosil bo\u2018lgan fotonlar orqali
     yuza qismga harakatlanadi. Qalinligi \u2013 quyosh radiusining 0,5-0,7 % ulushiga
     teng."
+  newLayerName: Outlined
 --- !u!64 &1121552731
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2387,6 +2398,7 @@ MonoBehaviour:
   _info: "Qalingligi 100-400 kilometr oralig\u2018ida bo\u2018ladigan fotosferada
     quyoshdagi biz ko\u2018radigan nurlanish jarayoni ro\u20181 beradi. Fotosfera
     harorati o\u2018rtacha 5770 Kelvinni tashqil qiladi."
+  newLayerName: Outlined
 --- !u!64 &1450018269
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9213,6 +9225,48 @@ VideoPlayer:
   m_WaitForFirstFrame: 1
   m_FrameReadyEventEnabled: 0
   m_VideoShaders: []
+--- !u!1 &1994097629 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4424396828587804706, guid: e3ea1d7163003ac4db691381f151aba1,
+    type: 3}
+  m_PrefabInstance: {fileID: 1121552725}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1994097633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1994097629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f480cf694bf0a44eaf7c46484587166, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _info: 
+  newLayerName: Outlined
+--- !u!64 &1994097634
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1994097629}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 70948873267775455, guid: e3ea1d7163003ac4db691381f151aba1, type: 3}
 --- !u!1 &1997858373
 GameObject:
   m_ObjectHideFlags: 0
