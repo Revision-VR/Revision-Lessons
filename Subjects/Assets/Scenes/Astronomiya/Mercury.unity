@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4040,17 +4040,17 @@ PrefabInstance:
     - target: {fileID: 5021228346462164004, guid: f2c9664e38ddc16439b186798bd19bd0,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -70.5498
+      value: -76.347916
       objectReference: {fileID: 0}
     - target: {fileID: 5224694813830001383, guid: f2c9664e38ddc16439b186798bd19bd0,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -70.5498
+      value: -76.347916
       objectReference: {fileID: 0}
     - target: {fileID: 9179017853419834167, guid: f2c9664e38ddc16439b186798bd19bd0,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -70.5498
+      value: -76.347916
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4064,6 +4064,14 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1802969606}
+    - targetCorrespondingSourceObject: {fileID: -1018664272722485354, guid: f2c9664e38ddc16439b186798bd19bd0,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1746839693}
+    - targetCorrespondingSourceObject: {fileID: -1018664272722485354, guid: f2c9664e38ddc16439b186798bd19bd0,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1746839692}
     - targetCorrespondingSourceObject: {fileID: -3215555783603854218, guid: f2c9664e38ddc16439b186798bd19bd0,
         type: 3}
       insertIndex: -1
@@ -4376,6 +4384,48 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1705861870}
   m_CullTransparentMesh: 1
+--- !u!1 &1746839691 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -1018664272722485354, guid: f2c9664e38ddc16439b186798bd19bd0,
+    type: 3}
+  m_PrefabInstance: {fileID: 1666396488}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1746839692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1746839691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f480cf694bf0a44eaf7c46484587166, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _info: 
+  newLayerName: Outlined
+--- !u!64 &1746839693
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1746839691}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4711208715938537054, guid: f2c9664e38ddc16439b186798bd19bd0, type: 3}
 --- !u!1 &1766056502
 GameObject:
   m_ObjectHideFlags: 0
