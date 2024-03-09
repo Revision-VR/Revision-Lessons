@@ -1053,6 +1053,48 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &600478593 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -876829817502103008, guid: bfa14554106b63949bda4ff4fe33efbe,
+    type: 3}
+  m_PrefabInstance: {fileID: 1049807472}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &600478594
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 600478593}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 7068038526567240092, guid: bfa14554106b63949bda4ff4fe33efbe, type: 3}
+--- !u!114 &600478595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 600478593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f480cf694bf0a44eaf7c46484587166, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _info: 
+  newLayerName: Outlined
 --- !u!1 &612809791
 GameObject:
   m_ObjectHideFlags: 0
@@ -2059,6 +2101,14 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1102602528}
+    - targetCorrespondingSourceObject: {fileID: -876829817502103008, guid: bfa14554106b63949bda4ff4fe33efbe,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 600478595}
+    - targetCorrespondingSourceObject: {fileID: -876829817502103008, guid: bfa14554106b63949bda4ff4fe33efbe,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 600478594}
     - targetCorrespondingSourceObject: {fileID: 9012047600635317516, guid: bfa14554106b63949bda4ff4fe33efbe,
         type: 3}
       insertIndex: -1
@@ -2110,6 +2160,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _info: "Yadro ustida suv metan va ammiakdan iborat qatlam mavjud bo\u2018lib, qalinligi
     2700 kilometrgacha yetadi."
+  newLayerName: Outlined
 --- !u!64 &1049807476
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2168,6 +2219,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _info: "Saturn yadrosi suyuq metal va erigan silikatlaridan iborat. Tahminan 25
     ming kilometr. O\u2018lchovlar nisbiy va tahminiy olingan."
+  newLayerName: Outlined
 --- !u!1 &1076576860
 GameObject:
   m_ObjectHideFlags: 0
@@ -2750,6 +2802,7 @@ MonoBehaviour:
     Metallik vodoroddan ya'ni vodorodning qatta harorat va bosimdagi holatlaridan
     tashkil topgan bu mantiyaning ustida tahminan 20 ming kilometr qalinlikdagi yuqori
     mantiya joylashgan bo\u2018lib bu qism suyuq vodorod va geliydan iborat."
+  newLayerName: Outlined
 --- !u!64 &1272335948
 MeshCollider:
   m_ObjectHideFlags: 0
