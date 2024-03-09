@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -158,7 +158,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 383, y: 643.8748}
+  m_SizeDelta: {x: 383, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &102141796
 MonoBehaviour:
@@ -180,12 +180,21 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Yurak \u2013 qon aylanish tizimining muskul toqimalaridan iborat markaziy
-    a\u02BCzosi. Yurak ma\u2019lum ritmda qisqarib va bo\u2019shashib turishi orqali
-    qon tomirlar bo\u2018ylab turli a\u2019zolarga uzatilishini ta\u2018minlaydi.\r\nThe
-    heart is the central organ of the circulatory system consisting of muscle tissue.
-    By contracting and relaxing in a certain rhythm, the heart ensures that blood
-    is transferred to various organs through the vessels.\r"
+  m_text: "Xlor lotincha \u201Cklorum\u201D so\u2018zidan olingan bo\u2018lib, \u201Csariq-yashil
+    rangli\u201D ma'nosini beradi. Mendeleev jadvalida uchinchi davr 17 guruh \u2013
+    galogenlar turkumiga kiradigan, zaharli moddas. Atom tartib raqami \u2013 17.
+    Nisbiy Atom og\u2018irligi 35 ga teng. Xlorni ilk bor shved olimi Xlor Sheyeli
+    Xlor kislotasini marganes bilan oksidlab hosil qilgan.\r\nNormal sharoitda ikki
+    atomli gaz ko\u2018rinishida bo\u2018ladi. \r\nO\u2018tkir xidli, sariq-yashil
+    tusli, havodan 2,5 (2 butun 10 dan 5) baravar og\u2018ir, kuchli oksidlovchi
+    gaz. Sovuq va o\u2018rta haroratdagi suvda yaxshi eriydi. Birikmalarda -1, +1,
+    +2, +3, +4, +5 va +7 valentli ko\u2018rinishda bo\u2018ladi. Sanoat va laboratoryailarda
+    xlorid kislotadan keng foydalaniladi.\r\nXlorning yana bir birikmasi Natriy xlorid
+    \u2013 \u201Cosh tuzi\u201D deb nomlanib, inson organizmining 0,25 (0 butun 100
+    dan 25) foizini tashqil qiluvchi, hayot uchun muhim element hisoblanadi. Suvdagi
+    xlorid eritmadan xona va buyumlarni dezinfeksiya qilish uchun foydalaniladi.
+    Xlorning har qanaqa gaz va suyuq turlari bilan kontaktga kirishganda nafas olish
+    yo\u2018llari va teri himoyalangan bo\u2018lishi kerak."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5418,7 +5427,7 @@ GameObject:
   - component: {fileID: 329107496}
   - component: {fileID: 329107495}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: Stuructura
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5841,7 +5850,7 @@ GameObject:
   - component: {fileID: 435158162}
   - component: {fileID: 435158161}
   m_Layer: 5
-  m_Name: Scroll View
+  m_Name: MalumotlarView
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5934,7 +5943,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -83, y: 378}
+  m_AnchoredPosition: {x: -681, y: 322}
   m_SizeDelta: {x: 400, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &472592674
@@ -5994,7 +6003,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 1.Planeta
+  m_text: 1.Kimyoviy ko'rnish
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6084,7 +6093,7 @@ GameObject:
   - component: {fileID: 477560805}
   - component: {fileID: 477560804}
   m_Layer: 5
-  m_Name: Malumotlar
+  m_Name: List
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6099,7 +6108,7 @@ RectTransform:
   m_GameObject: {fileID: 477560802}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.68886, y: 0.68886, z: 0.68886}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1494312900}
@@ -6107,7 +6116,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -749, y: 55}
+  m_AnchoredPosition: {x: -749, y: -270}
   m_SizeDelta: {x: 276.3482, y: 86.886}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &477560804
@@ -6217,7 +6226,7 @@ GameObject:
   - component: {fileID: 498637341}
   - component: {fileID: 498637340}
   m_Layer: 5
-  m_Name: Scroll View (1)
+  m_Name: ListView
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6310,7 +6319,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -477, y: 272.0354}
+  m_AnchoredPosition: {x: -703, y: 22}
   m_SizeDelta: {x: 370.2293, y: 179.0872}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &508357987
@@ -6438,7 +6447,7 @@ GameObject:
   - component: {fileID: 589066682}
   - component: {fileID: 589066681}
   m_Layer: 5
-  m_Name: Malumotlar2
+  m_Name: Malumotlar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6453,7 +6462,7 @@ RectTransform:
   m_GameObject: {fileID: 589066679}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.68886, y: 0.68886, z: 0.68886}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1042234934}
@@ -6461,7 +6470,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -748.99036, y: 157}
+  m_AnchoredPosition: {x: -748.99036, y: -168}
   m_SizeDelta: {x: 280.02, y: 94.41}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &589066681
@@ -6823,7 +6832,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 2.Planeta
+  m_text: 2.Stuructura
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -11947,7 +11956,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Malumotlar2
+  m_text: Malumotlar
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -12196,8 +12205,8 @@ RectTransform:
   - {fileID: 2131166496}
   - {fileID: 1742257127}
   - {fileID: 498637343}
-  - {fileID: 477560803}
   - {fileID: 435158164}
+  - {fileID: 477560803}
   - {fileID: 589066680}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -12265,9 +12274,9 @@ MonoBehaviour:
   m_ChildAlignment: 0
   m_Spacing: 0
   m_ChildForceExpandWidth: 0
-  m_ChildForceExpandHeight: 1
+  m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 0
-  m_ChildControlHeight: 0
+  m_ChildControlHeight: 1
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
@@ -12544,7 +12553,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Malumotlar
+  m_text: List
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -12634,7 +12643,7 @@ GameObject:
   - component: {fileID: 1512251863}
   - component: {fileID: 1512251862}
   m_Layer: 5
-  m_Name: Button
+  m_Name: KimyoviyKo'rinish
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12925,7 +12934,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 563250699}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.5948361
+  m_Size: 0.17142294
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -13381,7 +13390,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 3.Planeta
+  m_text: 3.Elektron ko'rinish
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -13695,9 +13704,9 @@ RectTransform:
   m_Father: {fileID: 435158164}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: -17, y: -17}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1950745307
 MonoBehaviour:
@@ -13899,7 +13908,7 @@ GameObject:
   - component: {fileID: 2074590529}
   - component: {fileID: 2074590528}
   m_Layer: 5
-  m_Name: Button (2)
+  m_Name: ElektronKo'rinish
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14030,7 +14039,7 @@ PrefabInstance:
     - target: {fileID: 164263795279997607, guid: cb5b6c1eb9060cd449651c883d00261e,
         type: 3}
       propertyPath: m_Name
-      value: Button
+      value: DrawButton
       objectReference: {fileID: 0}
     - target: {fileID: 4181625167846550416, guid: cb5b6c1eb9060cd449651c883d00261e,
         type: 3}
@@ -14075,17 +14084,17 @@ PrefabInstance:
     - target: {fileID: 4181625167846550416, guid: cb5b6c1eb9060cd449651c883d00261e,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 0.74544
       objectReference: {fileID: 0}
     - target: {fileID: 4181625167846550416, guid: cb5b6c1eb9060cd449651c883d00261e,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 0.74544
       objectReference: {fileID: 0}
     - target: {fileID: 4181625167846550416, guid: cb5b6c1eb9060cd449651c883d00261e,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 0.74544
       objectReference: {fileID: 0}
     - target: {fileID: 4181625167846550416, guid: cb5b6c1eb9060cd449651c883d00261e,
         type: 3}
@@ -14130,7 +14139,7 @@ PrefabInstance:
     - target: {fileID: 4181625167846550416, guid: cb5b6c1eb9060cd449651c883d00261e,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -298
+      value: -410
       objectReference: {fileID: 0}
     - target: {fileID: 4181625167846550416, guid: cb5b6c1eb9060cd449651c883d00261e,
         type: 3}
@@ -14146,6 +14155,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8669211083844940802, guid: cb5b6c1eb9060cd449651c883d00261e,
+        type: 3}
+      propertyPath: m_text
+      value: Draw
       objectReference: {fileID: 0}
     - target: {fileID: 9055116163599700872, guid: cb5b6c1eb9060cd449651c883d00261e,
         type: 3}

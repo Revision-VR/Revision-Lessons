@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -280,7 +280,7 @@ GameObject:
   - component: {fileID: 77955504}
   - component: {fileID: 77955503}
   m_Layer: 5
-  m_Name: Malumotlar2
+  m_Name: List
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -295,7 +295,7 @@ RectTransform:
   m_GameObject: {fileID: 77955501}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.74546, y: 0.74546, z: 0.74546}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1639230237}
@@ -303,7 +303,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -746.99036, y: 157}
+  m_AnchoredPosition: {x: -746.99036, y: -177}
   m_SizeDelta: {x: 280.02, y: 94.41}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &77955503
@@ -426,7 +426,7 @@ GameObject:
   - component: {fileID: 181927205}
   - component: {fileID: 181927204}
   m_Layer: 5
-  m_Name: Scroll View
+  m_Name: MalumotView
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -519,7 +519,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -81, y: 371}
+  m_AnchoredPosition: {x: -676, y: 292}
   m_SizeDelta: {x: 400, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &191298642
@@ -677,9 +677,9 @@ MonoBehaviour:
   m_ChildAlignment: 0
   m_Spacing: 0
   m_ChildForceExpandWidth: 0
-  m_ChildForceExpandHeight: 1
+  m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 0
-  m_ChildControlHeight: 0
+  m_ChildControlHeight: 1
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
@@ -718,7 +718,7 @@ GameObject:
   - component: {fileID: 279210202}
   - component: {fileID: 279210201}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: Structura
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1145,7 +1145,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 2.Planeta
+  m_text: 2.Structura
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1350,7 +1350,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 880114975}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.5948361
+  m_Size: 0.18514492
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2058,7 +2058,7 @@ GameObject:
   - component: {fileID: 731158472}
   - component: {fileID: 731158471}
   m_Layer: 5
-  m_Name: Button
+  m_Name: KimyoviyKo'rinishi
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2423,6 +2423,7 @@ GameObject:
   - component: {fileID: 907479034}
   - component: {fileID: 907479036}
   - component: {fileID: 907479037}
+  - component: {fileID: 907479038}
   m_Layer: 0
   m_Name: ScriptManager
   m_TagString: Untagged
@@ -2488,6 +2489,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GameObject: {fileID: 1434776093}
+--- !u!114 &907479038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 907479033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86fa7cf9bf963d74098c16b2a7c4df30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ChangableInfo: {fileID: 1136594217}
 --- !u!1 &933190709
 GameObject:
   m_ObjectHideFlags: 0
@@ -2620,7 +2634,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 1.Planeta
+  m_text: 1.Kimyoviy ko'rinish
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2708,7 +2722,7 @@ PrefabInstance:
     - target: {fileID: 164263795279997607, guid: cb5b6c1eb9060cd449651c883d00261e,
         type: 3}
       propertyPath: m_Name
-      value: Button
+      value: DrawButton
       objectReference: {fileID: 0}
     - target: {fileID: 4181625167846550416, guid: cb5b6c1eb9060cd449651c883d00261e,
         type: 3}
@@ -2808,7 +2822,7 @@ PrefabInstance:
     - target: {fileID: 4181625167846550416, guid: cb5b6c1eb9060cd449651c883d00261e,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -348
+      value: -396
       objectReference: {fileID: 0}
     - target: {fileID: 4181625167846550416, guid: cb5b6c1eb9060cd449651c883d00261e,
         type: 3}
@@ -2824,6 +2838,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8669211083844940802, guid: cb5b6c1eb9060cd449651c883d00261e,
+        type: 3}
+      propertyPath: m_text
+      value: Draw
       objectReference: {fileID: 0}
     - target: {fileID: 9055116163599700872, guid: cb5b6c1eb9060cd449651c883d00261e,
         type: 3}
@@ -2881,7 +2900,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 383, y: 643.8748}
+  m_SizeDelta: {x: 383, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1136594217
 MonoBehaviour:
@@ -2903,12 +2922,20 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Yurak \u2013 qon aylanish tizimining muskul toqimalaridan iborat markaziy
-    a\u02BCzosi. Yurak ma\u2019lum ritmda qisqarib va bo\u2019shashib turishi orqali
-    qon tomirlar bo\u2018ylab turli a\u2019zolarga uzatilishini ta\u2018minlaydi.\r\nThe
-    heart is the central organ of the circulatory system consisting of muscle tissue.
-    By contracting and relaxing in a certain rhythm, the heart ensures that blood
-    is transferred to various organs through the vessels.\r"
+  m_text: "Bor\_(lotincha: Borum) Mendeleev davriy sistemasi\_III guruhiga mansub
+    kimyoviy element. Tartib raqami 5, nisbiy atom massasi 10,811 (10 butun 1000
+    dan 811). Kulrang-qo\u2018ng\u2018ir yoki qizil rangdagi yarim metal. Kristal
+    va amorf shaklda uchraydi.\r\nTabiiy Bor ikkita barqaror izotopdan iborat.\_Bor
+    Jozef Lui Lyussak va Jak Tenar tomonidan 1808-yilda Bor angidridini metall holdagi\_kaliy\_ishtirokida
+    qizdirish usuli bilan olingan. Bor tabiatda erkin holda uchramaydi. Bor birikmalari
+    artezian suvlarda, neft suyuqligida, dengiz, sho\u2018r ko\u2018llar, vulqon
+    lavalari va tuproqlarda uchraydi.\r\nBor qattiqligi jihatidan olmosdan keyin
+    ikkinchi o\u2018rinda turadi. Borning Moos shkalasi bo\u2018yicha qattiqligi
+    9,3 (9 butun 10 dan 3) ga teng. Suyuqlanish temperaturasi 2075 \xB0C (gradus
+    Sel'siy), qaynash temperaturasi 3658 \xB0C (gradus Sel'siy). Elektr tokini yomon
+    o\u2018tkazadi. Bor (unsur) ko\u2018pgina birikmalarda 3 valentlik bo\u2018lib,
+    kompleks tuzlar hosil qilishga moyil. Amorf holdagi Bor kristall holdagiga nisbatan
+    birmuncha faolroq hisoblanadi."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2998,7 +3025,7 @@ GameObject:
   - component: {fileID: 1434776096}
   - component: {fileID: 1434776095}
   m_Layer: 5
-  m_Name: Scroll View (1)
+  m_Name: 'ListView '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3023,7 +3050,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -477, y: 270.09387}
+  m_AnchoredPosition: {x: -662, y: -22}
   m_SizeDelta: {x: 370.2293, y: 182.9703}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1434776095
@@ -3107,7 +3134,7 @@ GameObject:
   - component: {fileID: 1482237033}
   - component: {fileID: 1482237032}
   m_Layer: 5
-  m_Name: Button (2)
+  m_Name: ElektronKo'rinish
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3320,7 +3347,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Malumotlar2
+  m_text: List
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3820,7 +3847,7 @@ RectTransform:
   m_GameObject: {fileID: 1931976427}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.74546, y: 0.74546, z: 0.74546}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 607154969}
@@ -3828,7 +3855,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -749, y: 55}
+  m_AnchoredPosition: {x: -749, y: -279}
   m_SizeDelta: {x: 276.3482, y: 86.886}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1931976429
@@ -4119,7 +4146,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 3.Planeta
+  m_text: 3.Elektron ko'rinish
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4419,8 +4446,8 @@ RectTransform:
   - {fileID: 987715589}
   - {fileID: 360505845}
   - {fileID: 1434776094}
-  - {fileID: 1931976428}
   - {fileID: 181927207}
+  - {fileID: 1931976428}
   - {fileID: 77955502}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
