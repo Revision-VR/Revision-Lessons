@@ -2866,21 +2866,6 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: -8116613859084990610, guid: 1e9fd19c30987914b970f36e0ef08f36,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -3215555783603854218, guid: 1e9fd19c30987914b970f36e0ef08f36,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -2932998491564163895, guid: 1e9fd19c30987914b970f36e0ef08f36,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 1e9fd19c30987914b970f36e0ef08f36,
         type: 3}
       propertyPath: m_Name
@@ -2905,11 +2890,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -179.99998
-      objectReference: {fileID: 0}
-    - target: {fileID: 5914173764048766335, guid: 1e9fd19c30987914b970f36e0ef08f36,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7534246568528090362, guid: 1e9fd19c30987914b970f36e0ef08f36,
         type: 3}
@@ -2957,14 +2937,6 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1192827574}
-    - targetCorrespondingSourceObject: {fileID: 4424396828587804706, guid: 1e9fd19c30987914b970f36e0ef08f36,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1397214738}
-    - targetCorrespondingSourceObject: {fileID: 4424396828587804706, guid: 1e9fd19c30987914b970f36e0ef08f36,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1397214737}
     - targetCorrespondingSourceObject: {fileID: -3215555783603854218, guid: 1e9fd19c30987914b970f36e0ef08f36,
         type: 3}
       insertIndex: -1
@@ -3068,7 +3040,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _info: Mars mantiyasining qalinligi 1560 kilometr. Targibida bazal't magma, qisman
     suyuq silikatlar va metallar mavjud.
-  newLayerName: Outlined
 --- !u!114 &1192827581
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3118,7 +3089,6 @@ MonoBehaviour:
   _info: "Marsning tosh qatlami 72 kilometr qalinlikda bo\u2018lib, yernikidan qalinroq.
     Mars sirtining katta qismi temir oksidi va kremniy dioksididan tashkil topgani
     uchun uning yuzasi qizg\u2018ish tusga ega."
-  newLayerName: Outlined
 --- !u!64 &1192827589
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3158,7 +3128,6 @@ MonoBehaviour:
     va oltingugurtdan iborat. Mars magnit maydoni kuchsiz, deyarli ta'sir kuchiga
     ega emasligi sabab, Mars yadrosining zichligi yernikidan past, aylanma harakati
     to\u2018rt baravargacha sekin ekanligi tahmin qilinadi."
-  newLayerName: Outlined
 --- !u!1 &1198381640
 GameObject:
   m_ObjectHideFlags: 0
@@ -3590,48 +3559,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1319784742}
   m_CullTransparentMesh: 1
---- !u!1 &1397214733 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4424396828587804706, guid: 1e9fd19c30987914b970f36e0ef08f36,
-    type: 3}
-  m_PrefabInstance: {fileID: 1192827571}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1397214737
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1397214733}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f480cf694bf0a44eaf7c46484587166, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _info: 
-  newLayerName: Outlined
---- !u!64 &1397214738
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1397214733}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 70948873267775455, guid: 1e9fd19c30987914b970f36e0ef08f36, type: 3}
 --- !u!1 &1425547134
 GameObject:
   m_ObjectHideFlags: 0
