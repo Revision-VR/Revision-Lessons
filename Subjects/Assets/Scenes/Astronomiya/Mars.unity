@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -159,6 +159,55 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -20, y: -20}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &85280595 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -3215555783603854218, guid: 1e9fd19c30987914b970f36e0ef08f36,
+    type: 3}
+  m_PrefabInstance: {fileID: 1606191415}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &88225693 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -8116613859084990610, guid: 1e9fd19c30987914b970f36e0ef08f36,
+    type: 3}
+  m_PrefabInstance: {fileID: 1606191415}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &88225699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 88225693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19bf61b046fd6934e98ee5eba6e69870, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _info: "Marsning tosh qatlami 72 kilometr qalinlikda bo\u2018lib, yernikidan qalinroq.
+    Mars sirtining katta qismi temir oksidi va kremniy dioksididan tashkil topgani
+    uchun uning yuzasi qizg\u2018ish tusga ega."
+--- !u!64 &88225700
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 88225693}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -606419294924500904, guid: 1e9fd19c30987914b970f36e0ef08f36, type: 3}
 --- !u!1 &161048215
 GameObject:
   m_ObjectHideFlags: 0
@@ -173,7 +222,7 @@ GameObject:
   - component: {fileID: 161048218}
   - component: {fileID: 161048217}
   m_Layer: 5
-  m_Name: Malumotlar2
+  m_Name: List
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -389,18 +438,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2025530905}
-        m_TargetAssemblyTypeName: AnimController, Assembly-CSharp
-        m_MethodName: BoxColliderContoller
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 2025530904}
         m_TargetAssemblyTypeName: LungAnimScriptController, Assembly-CSharp
         m_MethodName: onClick
@@ -526,6 +563,70 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 224842900}
   m_CullTransparentMesh: 1
+--- !u!1 &238616402 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5914173764048766335, guid: 1e9fd19c30987914b970f36e0ef08f36,
+    type: 3}
+  m_PrefabInstance: {fileID: 1606191415}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &238616408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 238616402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19bf61b046fd6934e98ee5eba6e69870, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _info: Mars mantiyasining qalinligi 1560 kilometr. Targibida bazal't magma, qisman
+    suyuq silikatlar va metallar mavjud.
+--- !u!64 &238616409
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 238616402}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 3447038591770236762, guid: 1e9fd19c30987914b970f36e0ef08f36, type: 3}
+--- !u!64 &238616410
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 238616402}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 3447038591770236762, guid: 1e9fd19c30987914b970f36e0ef08f36, type: 3}
 --- !u!1 &359324763
 GameObject:
   m_ObjectHideFlags: 0
@@ -583,7 +684,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 2.Planeta
+  m_text: 2.Mantiya
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -762,8 +863,9 @@ GameObject:
   - component: {fileID: 402559155}
   - component: {fileID: 402559154}
   - component: {fileID: 402559153}
+  - component: {fileID: 402559156}
   m_Layer: 5
-  m_Name: Button (2)
+  m_Name: Tosh Qatlami
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -832,7 +934,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 402559154}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 88225699}
+        m_TargetAssemblyTypeName: ButtonCustom, Assembly-CSharp
+        m_MethodName: ForButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &402559154
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -871,6 +985,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 402559151}
   m_CullTransparentMesh: 1
+--- !u!114 &402559156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 402559151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19bf61b046fd6934e98ee5eba6e69870, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _info: "Marsning tosh qatlami 72 kilometr qalinlikda bo\u2018lib, yernikidan qalinroq.
+    Mars sirtining katta qismi temir oksidi va kremniy dioksididan tashkil topgani
+    uchun uning yuzasi qizg\u2018ish tusga ega."
 --- !u!1 &454423961
 GameObject:
   m_ObjectHideFlags: 0
@@ -1041,7 +1170,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.000025118965}
+  m_AnchoredPosition: {x: 0, y: 0.000015258789}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &463211963
@@ -1064,6 +1193,122 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "Mirrix, ya'ni Mars Quyoshdan uzoqligi bo\u2018yicha to\u2018rtinchi sayyoradir\r\nMarsning
+    ikkita tabiiy yo\u2018ldoshi bor \u2013 Fo\u0340bos va De\u0341ymos (\"qo\u2018rquv\"
+    va \"dahshat\"degan ma'noni anglatadi). Mars yo\u2018ldoshlari bizning oyga o\u2018xshagan
+    shar shaklida emas, balki katta xarsang toshlar, yoki asteroidlarni esalatadigan
+    nosimmetrik ko\u2018rinishda. \r\nMars siyrak atmosferaga ega. Olimlarning tahminicha
+    uzoq o\u2018tmishda Mars magnit maydoni zaiflashib, sayyora atmosferasining katta
+    qismidan ayrilgan.  \r\nMars landshafti zarba kraterlari, vulqonlar, vodiylar,
+    cho\u2018llar va qutb muzliklaridan iborat. \r\nNASA ma'lumotlariga ko\u2018ra,
+    sayyora yuzasidagi o\u2018rtacha harorat Selsiy shkalasi bo\u2018yicha minus
+    60 darajaga teng. Quyosh nuri ta'sirida Mars ekvatorida yuza harorati plyus 35
+    gradusgacha ko\u2018tarilishi mumkin. Biroq bu isish quyosh qiyaligi o\u2018zgarishi
+    bilan o\u2018z kuchini yo\u2018qotib, Mars uchun eng issiq bo\u2018lgan yoz kunlarida
+    ham kechqurunlari harorat minus 72ga tushib ketadi. \r\nSayyoradan Quyoshgacha
+    bo\u2018lgan o\u2018rtacha masofa 228 million kilometr \r\nMarsning orbitadagi
+    o\u2018rtacha tezligi soniyasiga 24 kilometrni tashkil qiladi.\r\nSayyora Quyosh
+    atrofida 800 Yer kunida bir marta aylanib, qizil sayyorada 1 sutka 24 soat 37
+    daqiqa 22 soniyani tashkil qiladi. \r\nMars atmosferasi asosan karbonat angidriddan
+    iborat bo\u2018lib, tarkibida azot, argon, kislorod, suv bug\u2018lari, uglerod
+    oksidi va boshqa komponentlar mavjud.\r\nMars diametri 6791 kilometrini tashkil
+    qilib, sayyora Yerdan deyarli ikki baravar kichkina.\r\n\r\nMars Yerdan keyin
+    Quyosh tizimida eng ko\u2018p o\u2018rganilgan sayyora bo\u2018lib,\r\nhozirgi
+    vaqtda Mars yuzasida NASAning Opport'yu\u0301niti va \xABK'yurio\u0301siti\xBB
+    roverlari, Insayt tadqiqot qo\u2018nuvchisi va orbitada turli kosmi\u0341k agentliklarning
+    bir nechta qurilmalari doimiy ishlamoqda.\r\nBugungi kunda insoniyat yaratgan
+    eng tezkor kosmik apparat Parker quyosh zondi bo\u2018lib, uning tezligi soatiga
+    700 ming kilometrgacha yetishi mumkin. Bunday tezlikda Mars va Yerning orasi
+    maksimal yaqinlikda bo\u2018lganida ushbu sayyora orbitasiga Yerdan uch yarim
+    kunda yetib olish mumkin bo\u2018ladi.\r\nMarsdagi Olimp tog\u2018i Quyosh tizimi
+    sayyoralarida ma'lum bo\u2018lgan eng katta tog\u2018 bo\u2018lib, tog\u2018
+    cho\u2018qqisi balandligi 26 kilometrni tashkil qiladi va bu Marsdagi Olimp Yerning
+    eng baland nuqtasi \u2013 8848 metrli Everestdan uch baravar katta degani.\n\n"
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &463211963
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 463211958}
+  m_CullTransparentMesh: 1
+--- !u!114 &463211964
   m_HorizontalFit: 0
   m_VerticalFit: 2
 --- !u!114 &463211965
@@ -1323,140 +1568,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalFit: 0
   m_VerticalFit: 0
---- !u!1 &546590787
+--- !u!1 &557325849 stripped
 GameObject:
+  m_CorrespondingSourceObject: {fileID: 4424396828587804706, guid: 1e9fd19c30987914b970f36e0ef08f36,
+    type: 3}
+  m_PrefabInstance: {fileID: 1606191415}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &557325855
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 546590788}
-  - component: {fileID: 546590790}
-  - component: {fileID: 546590789}
-  m_Layer: 5
-  m_Name: Text (TMP)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &546590788
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 546590787}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1703069563}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 4.613495, y: 0}
-  m_SizeDelta: {x: -9.227, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &546590789
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 546590787}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_GameObject: {fileID: 557325849}
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: 4.Planeta
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
+  m_IncludeLayers:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
+    m_Bits: 0
+  m_ExcludeLayers:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 35
-  m_fontSizeBase: 35
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 512
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &546590790
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 546590787}
-  m_CullTransparentMesh: 1
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 70948873267775455, guid: 1e9fd19c30987914b970f36e0ef08f36, type: 3}
 --- !u!1 &759201480
 GameObject:
   m_ObjectHideFlags: 0
@@ -1596,7 +1735,7 @@ GameObject:
   - component: {fileID: 816511323}
   - component: {fileID: 816511322}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Yadro
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1666,9 +1805,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1230977402}
-        m_TargetAssemblyTypeName: ObjectColorChanger, Assembly-CSharp
-        m_MethodName: ChangeBorderColor
+      - m_Target: {fileID: 1463640159}
+        m_TargetAssemblyTypeName: ButtonCustom, Assembly-CSharp
+        m_MethodName: ForButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1763,6 +1902,7 @@ GameObject:
   - component: {fileID: 1230977401}
   - component: {fileID: 1230977400}
   - component: {fileID: 1230977402}
+  - component: {fileID: 1230977403}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -1814,6 +1954,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectRenderer: {fileID: 1463640153}
   greenColor: {fileID: 2100000, guid: a3b61bae3c6bb154ebcee9ae5827b031, type: 2}
+--- !u!114 &1230977403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1230977399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86fa7cf9bf963d74098c16b2a7c4df30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ChangableInfo: {fileID: 463211962}
 --- !u!1 &1261218670
 GameObject:
   m_ObjectHideFlags: 0
@@ -1896,7 +2049,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1834493616}
   m_HandleRect: {fileID: 1834493615}
   m_Direction: 2
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -1997,7 +2150,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 3.Planeta
+  m_text: 3.Tosh qatlami
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2265,7 +2418,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 1.Planeta
+  m_text: 1.Yadro
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2545,7 +2698,7 @@ GameObject:
   - component: {fileID: 1448176331}
   - component: {fileID: 1448176330}
   m_Layer: 5
-  m_Name: Scroll View (1)
+  m_Name: ListView
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2570,8 +2723,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 141.20496, y: 236.42102}
-  m_SizeDelta: {x: 370.2293, y: 233.158}
+  m_AnchoredPosition: {x: 141.20496, y: 264.65063}
+  m_SizeDelta: {x: 370.2293, y: 176.6987}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1448176330
 MonoBehaviour:
@@ -2647,6 +2800,45 @@ MeshRenderer:
     type: 3}
   m_PrefabInstance: {fileID: 1606191415}
   m_PrefabAsset: {fileID: 0}
+--- !u!64 &1463640158
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 85280595}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 212370497460711607, guid: 1e9fd19c30987914b970f36e0ef08f36, type: 3}
+--- !u!114 &1463640159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 85280595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19bf61b046fd6934e98ee5eba6e69870, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _info: "Yadro \u2013 Sayyora hajmining yarmiga teng bo\u2018lib 1480 \u2013 1840
+    kilometr atrofida. Tahminlarga ko\u2018ra Mars yadrosi qisman suyuq, temir, nikel'
+    va oltingugurtdan iborat. Mars magnit maydoni kuchsiz, deyarli ta'sir kuchiga
+    ega emasligi sabab, Mars yadrosining zichligi yernikidan past, aylanma harakati
+    to\u2018rt baravargacha sekin ekanligi tahmin qilinadi."
 --- !u!1 &1509709560
 GameObject:
   m_ObjectHideFlags: 0
@@ -2937,6 +3129,11 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -3216998209466556742, guid: 1e9fd19c30987914b970f36e0ef08f36,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 1e9fd19c30987914b970f36e0ef08f36,
         type: 3}
       propertyPath: m_Name
@@ -2962,6 +3159,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -179.99998
       objectReference: {fileID: 0}
+    - target: {fileID: 6829333093618665122, guid: 1e9fd19c30987914b970f36e0ef08f36,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7534246568528090362, guid: 1e9fd19c30987914b970f36e0ef08f36,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2976,6 +3178,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90.00001
+      objectReference: {fileID: 0}
+    - target: {fileID: 8100320773420232829, guid: 1e9fd19c30987914b970f36e0ef08f36,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9179017853419834167, guid: 1e9fd19c30987914b970f36e0ef08f36,
         type: 3}
@@ -3003,31 +3210,43 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 1e9fd19c30987914b970f36e0ef08f36,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2025530897}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 1e9fd19c30987914b970f36e0ef08f36,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2025530903}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 1e9fd19c30987914b970f36e0ef08f36,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2025530902}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 1e9fd19c30987914b970f36e0ef08f36,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2025530901}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 1e9fd19c30987914b970f36e0ef08f36,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2025530905}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 1e9fd19c30987914b970f36e0ef08f36,
-        type: 3}
-      insertIndex: -1
       addedObject: {fileID: 2025530904}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 1e9fd19c30987914b970f36e0ef08f36,
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 2025530907}
+    - targetCorrespondingSourceObject: {fileID: 4424396828587804706, guid: 1e9fd19c30987914b970f36e0ef08f36,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 557325855}
+    - targetCorrespondingSourceObject: {fileID: -3215555783603854218, guid: 1e9fd19c30987914b970f36e0ef08f36,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1463640158}
+    - targetCorrespondingSourceObject: {fileID: -3215555783603854218, guid: 1e9fd19c30987914b970f36e0ef08f36,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1463640159}
+    - targetCorrespondingSourceObject: {fileID: 5914173764048766335, guid: 1e9fd19c30987914b970f36e0ef08f36,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 238616408}
+    - targetCorrespondingSourceObject: {fileID: 5914173764048766335, guid: 1e9fd19c30987914b970f36e0ef08f36,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 238616410}
+    - targetCorrespondingSourceObject: {fileID: 5914173764048766335, guid: 1e9fd19c30987914b970f36e0ef08f36,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 238616409}
+    - targetCorrespondingSourceObject: {fileID: -8116613859084990610, guid: 1e9fd19c30987914b970f36e0ef08f36,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 88225699}
+    - targetCorrespondingSourceObject: {fileID: -8116613859084990610, guid: 1e9fd19c30987914b970f36e0ef08f36,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 88225700}
   m_SourcePrefab: {fileID: 100100000, guid: 1e9fd19c30987914b970f36e0ef08f36, type: 3}
 --- !u!1001 &1686241388
 PrefabInstance:
@@ -3190,7 +3409,7 @@ GameObject:
   - component: {fileID: 1686696550}
   - component: {fileID: 1686696549}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: Draw
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3583,7 +3802,7 @@ GameObject:
   - component: {fileID: 1721790622}
   - component: {fileID: 1721790621}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: Mantiya
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3652,7 +3871,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1721790622}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 238616408}
+        m_TargetAssemblyTypeName: ButtonCustom, Assembly-CSharp
+        m_MethodName: ForButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1721790622
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3748,7 +3979,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Malumotlar2
+  m_text: List
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3945,6 +4176,7 @@ GameObject:
   - component: {fileID: 1828550711}
   - component: {fileID: 1828550710}
   - component: {fileID: 1828550709}
+  - component: {fileID: 1828550712}
   m_Layer: 5
   m_Name: Malumotlar
   m_TagString: Untagged
@@ -4016,7 +4248,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1828550712}
         m_TargetAssemblyTypeName: ScrollController, Assembly-CSharp
         m_MethodName: OnClick
         m_Mode: 1
@@ -4066,6 +4298,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1828550707}
   m_CullTransparentMesh: 1
+--- !u!114 &1828550712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1828550707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06bd549b88395cb4cb242a78ab716c76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GameObject: {fileID: 1448176328}
 --- !u!1 &1834493614
 GameObject:
   m_ObjectHideFlags: 0
@@ -4266,7 +4511,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: Draw
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4378,12 +4623,11 @@ RectTransform:
   - {fileID: 816511321}
   - {fileID: 1721790620}
   - {fileID: 402559152}
-  - {fileID: 1703069563}
   m_Father: {fileID: 371257678}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -0.000034332275}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1935766292
@@ -4632,27 +4876,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1606191415}
   m_PrefabAsset: {fileID: 0}
---- !u!135 &2025530897
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2025530896}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 1.0826652
-  m_Center: {x: -0.07734716, y: -0.025484324, z: 0.080560684}
 --- !u!114 &2025530898
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4665,69 +4888,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f77ac31a18315a40a053843194e6f1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!135 &2025530901
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2025530896}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.9049829
-  m_Center: {x: 1.6243591e-14, y: 0.03227818, z: 5.14304}
---- !u!135 &2025530902
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2025530896}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.74401504
-  m_Center: {x: 0.007408738, y: -0.044830322, z: 3.2630496}
---- !u!135 &2025530903
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2025530896}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.46492517
-  m_Center: {x: -6.5608157e-15, y: 0, z: 1.5383232}
 --- !u!114 &2025530904
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4741,21 +4901,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LungAnimator: {fileID: 2025530907}
---- !u!114 &2025530905
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2025530896}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e77641226cce9f847be9ceb1eee35a86, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  boxCollider1: {fileID: 2025530901}
-  boxCollider2: {fileID: 2025530902}
-  boxCollider3: {fileID: 2025530903}
 --- !u!95 &2025530907
 Animator:
   serializedVersion: 5
@@ -4860,6 +5005,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1540198939}
   m_Direction: 2
   m_Value: 1
+  m_Size: 0.077766344
   m_Size: 0.5948361
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -4916,7 +5062,7 @@ GameObject:
   - component: {fileID: 2087070086}
   - component: {fileID: 2087070085}
   m_Layer: 5
-  m_Name: Scroll View
+  m_Name: MalumotlarView
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
