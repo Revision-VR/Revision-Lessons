@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -281,7 +281,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   modda: {fileID: 919132148526889868}
-  draw: {fileID: 1045151323}
+  draw: {fileID: 1588926201}
   firstClick: 1
 --- !u!4 &33968655
 Transform:
@@ -383,7 +383,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 2.Planeta
+  m_text: 2.Strucutura
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -519,9 +519,9 @@ MonoBehaviour:
   m_ChildAlignment: 0
   m_Spacing: 0
   m_ChildForceExpandWidth: 0
-  m_ChildForceExpandHeight: 1
+  m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 0
-  m_ChildControlHeight: 0
+  m_ChildControlHeight: 1
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
@@ -1082,7 +1082,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 772923728}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.5948361
+  m_Size: 0.14240035
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1269,7 +1269,7 @@ GameObject:
   - component: {fileID: 620046790}
   - component: {fileID: 620046789}
   m_Layer: 5
-  m_Name: Button (2)
+  m_Name: ElektronKo'rinish
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1446,7 +1446,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 3.Planeta
+  m_text: 3.Elektron ko'rinish
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1536,7 +1536,7 @@ GameObject:
   - component: {fileID: 730884623}
   - component: {fileID: 730884622}
   m_Layer: 5
-  m_Name: Scroll View (1)
+  m_Name: ListView
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1561,7 +1561,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -477, y: 272.0354}
+  m_AnchoredPosition: {x: -724, y: -14}
   m_SizeDelta: {x: 370.2293, y: 179.0872}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &730884622
@@ -1838,7 +1838,7 @@ GameObject:
   - component: {fileID: 851103110}
   - component: {fileID: 851103109}
   m_Layer: 5
-  m_Name: Malumotlar
+  m_Name: List
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1853,7 +1853,7 @@ RectTransform:
   m_GameObject: {fileID: 851103107}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.78078, y: 0.78078, z: 0.78078}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1714809421}
@@ -1861,7 +1861,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -749, y: 55}
+  m_AnchoredPosition: {x: -767, y: -301}
   m_SizeDelta: {x: 276.3482, y: 86.886}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &851103109
@@ -1971,7 +1971,7 @@ GameObject:
   - component: {fileID: 893518831}
   - component: {fileID: 893518830}
   m_Layer: 5
-  m_Name: Button
+  m_Name: KimyoviyKo'rinish
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2238,7 +2238,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 1.Planeta
+  m_text: 1.Kinyoviy ko'rinish
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2326,7 +2326,7 @@ PrefabInstance:
     - target: {fileID: 164263795279997607, guid: cb5b6c1eb9060cd449651c883d00261e,
         type: 3}
       propertyPath: m_Name
-      value: Button
+      value: DrawButton
       objectReference: {fileID: 0}
     - target: {fileID: 4181625167846550416, guid: cb5b6c1eb9060cd449651c883d00261e,
         type: 3}
@@ -2371,17 +2371,17 @@ PrefabInstance:
     - target: {fileID: 4181625167846550416, guid: cb5b6c1eb9060cd449651c883d00261e,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 0.68888
       objectReference: {fileID: 0}
     - target: {fileID: 4181625167846550416, guid: cb5b6c1eb9060cd449651c883d00261e,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 0.68888
       objectReference: {fileID: 0}
     - target: {fileID: 4181625167846550416, guid: cb5b6c1eb9060cd449651c883d00261e,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 0.68888
       objectReference: {fileID: 0}
     - target: {fileID: 4181625167846550416, guid: cb5b6c1eb9060cd449651c883d00261e,
         type: 3}
@@ -2421,12 +2421,12 @@ PrefabInstance:
     - target: {fileID: 4181625167846550416, guid: cb5b6c1eb9060cd449651c883d00261e,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -695
+      value: -765
       objectReference: {fileID: 0}
     - target: {fileID: 4181625167846550416, guid: cb5b6c1eb9060cd449651c883d00261e,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -311
+      value: -400
       objectReference: {fileID: 0}
     - target: {fileID: 4181625167846550416, guid: cb5b6c1eb9060cd449651c883d00261e,
         type: 3}
@@ -2442,6 +2442,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8669211083844940802, guid: cb5b6c1eb9060cd449651c883d00261e,
+        type: 3}
+      propertyPath: m_text
+      value: Draw
       objectReference: {fileID: 0}
     - target: {fileID: 9055116163599700872, guid: cb5b6c1eb9060cd449651c883d00261e,
         type: 3}
@@ -2461,12 +2466,6 @@ PrefabInstance:
 --- !u!224 &1045151322 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4181625167846550416, guid: cb5b6c1eb9060cd449651c883d00261e,
-    type: 3}
-  m_PrefabInstance: {fileID: 1045151321}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1045151323 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 164263795279997607, guid: cb5b6c1eb9060cd449651c883d00261e,
     type: 3}
   m_PrefabInstance: {fileID: 1045151321}
   m_PrefabAsset: {fileID: 0}
@@ -2620,7 +2619,7 @@ GameObject:
   - component: {fileID: 1221525400}
   - component: {fileID: 1221525399}
   m_Layer: 5
-  m_Name: Malumotlar2
+  m_Name: Malumotlar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2635,7 +2634,7 @@ RectTransform:
   m_GameObject: {fileID: 1221525397}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.78078, y: 0.78078, z: 0.78078}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1443699162}
@@ -2643,7 +2642,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -745.99036, y: 156}
+  m_AnchoredPosition: {x: -763.99036, y: -200}
   m_SizeDelta: {x: 280.02, y: 94.41}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1221525399
@@ -2863,7 +2862,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 383, y: 643.8748}
+  m_SizeDelta: {x: 383, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1291939637
 MonoBehaviour:
@@ -2885,12 +2884,23 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Yurak \u2013 qon aylanish tizimining muskul toqimalaridan iborat markaziy
-    a\u02BCzosi. Yurak ma\u2019lum ritmda qisqarib va bo\u2019shashib turishi orqali
-    qon tomirlar bo\u2018ylab turli a\u2019zolarga uzatilishini ta\u2018minlaydi.\r\nThe
-    heart is the central organ of the circulatory system consisting of muscle tissue.
-    By contracting and relaxing in a certain rhythm, the heart ensures that blood
-    is transferred to various organs through the vessels.\r"
+  m_text: "Simob\_(lot. Hydragirium), Hg \u2014\_Mendeleev kimyoviy elementlar davriy
+    sistemasining II guruhiga mansub 6-davr elementi. \r\nTartib raqami 80, nisbiy
+    atom massasi 200,59 (200 butun 100 dan 59). Tabiiy Simob massa sonlari 196, 198
+    dan 202 gacha va 204 ga teng bo\u2018lgan 7 ta barqaror izotopdan iborat.\r\nSimob
+    \u2014 normal holatda yaltiroq, kumush rangga ega suyuq metal bo\u2018lib, zichligi
+    13,52 (13 butun 100 dan 52) g/sm\xB3 (gramm taksim santimetr kub). Suyuqlanish
+    temperaturasi \u2014 38,97\xB0C (38 butun 100 dan 97 gradus Sel'siy), qaynash
+    temperaturasi 357,25\xB0C (357 butun 100 dan 25 gradus Sel'siy). Simob o\u2018zida
+    boshqa metallar (natriy, kaliy,\_kumush,\_oltinni eritib, o\u2018sha metallarning
+    amalgamasini hosil qiladi. Birikmalarda 1 yoki 2\_valentli simob uchraydi. Kimyoviy
+    jihatdan turg\u2018un modda. Asl metallar singari quruq havoda oksidlanmaydi.\_
+    \r\nSimob juda qadimdan ma'lum. Yer po\u2018stida nisbatan kam uchrab, simob
+    ulushi har bir tonna gruntda o\u2018rtacha 83 milligramga teng. Tabiatda asosan
+    birikmalar holida uchraydi. \r\nSimobning asosiy minerali \u2014 Simob Sulfidi
+    bo\u2018lib, tabiatda yana 30 ga yaqin minerallar tarkibida turli ulushda uchraydi.\_Ispaniya,
+    Kavkaz,\_Ukraina, O\u2018rta Osiyo,\_Italiya\_va AQShda katta miqdorda Simob
+    zahiralarai mavjud."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3370,7 +3380,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Malumotlar2
+  m_text: Malumotlar
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3637,6 +3647,12 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 1588926199}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1588926201 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5613062188405781854, guid: 87dc58db2298a72439c844c2e2412e3a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1588926199}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1714809420
 GameObject:
   m_ObjectHideFlags: 0
@@ -3694,7 +3710,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Malumotlar
+  m_text: List
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3784,7 +3800,7 @@ GameObject:
   - component: {fileID: 1715733091}
   - component: {fileID: 1715733090}
   m_Layer: 5
-  m_Name: Scroll View
+  m_Name: MalumotlarView
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3877,7 +3893,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -69, y: 373}
+  m_AnchoredPosition: {x: -691.1, y: 315}
   m_SizeDelta: {x: 400, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1771882355
@@ -4024,9 +4040,9 @@ RectTransform:
   m_Father: {fileID: 1715733093}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -17, y: -17}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1950710492
 MonoBehaviour:
@@ -4190,8 +4206,8 @@ RectTransform:
   - {fileID: 1045151322}
   - {fileID: 1588926200}
   - {fileID: 730884621}
-  - {fileID: 851103108}
   - {fileID: 1715733093}
+  - {fileID: 851103108}
   - {fileID: 1221525398}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4309,7 +4325,7 @@ GameObject:
   - component: {fileID: 2101910732}
   - component: {fileID: 2101910731}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: Structura
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
