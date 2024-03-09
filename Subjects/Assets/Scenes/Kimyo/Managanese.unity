@@ -268,6 +268,7 @@ GameObject:
   - component: {fileID: 38048970}
   - component: {fileID: 38048973}
   - component: {fileID: 38048972}
+  - component: {fileID: 38048974}
   m_Layer: 0
   m_Name: ScriptManager
   m_TagString: Untagged
@@ -333,6 +334,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GameObject: {fileID: 681183094}
+--- !u!114 &38048974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 38048969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f77ac31a18315a40a053843194e6f1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &49226459
 GameObject:
   m_ObjectHideFlags: 0
@@ -1338,6 +1351,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 784549368}
+  - component: {fileID: 784549369}
   m_Layer: 0
   m_Name: manganese_01__1_
   m_TagString: Untagged
@@ -1362,6 +1376,27 @@ Transform:
   - {fileID: 1405019528}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &784549369
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 784549367}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 1.3351973
+  m_Center: {x: -1.0566279, y: 39.933342, z: -5.6592546}
 --- !u!1 &870482167
 GameObject:
   m_ObjectHideFlags: 0
@@ -2224,6 +2259,7 @@ GameObject:
   - component: {fileID: 1613139671}
   - component: {fileID: 1613139670}
   - component: {fileID: 1613139669}
+  - component: {fileID: 1613139672}
   m_Layer: 0
   m_Name: manganese
   m_TagString: Untagged
@@ -2296,6 +2332,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 180.516}
+--- !u!65 &1613139672
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1613139668}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01829607, y: 0.021178927, z: 0.020369047}
+  m_Center: {x: -0.22241163, y: -0.0044505345, z: 0.0006076445}
 --- !u!1 &1627657071
 GameObject:
   m_ObjectHideFlags: 0
