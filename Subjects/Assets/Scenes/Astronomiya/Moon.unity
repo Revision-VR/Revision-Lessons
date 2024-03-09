@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2496,8 +2496,22 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1709034453}
   m_PrefabAsset: {fileID: 0}
---- !u!65 &1327479207
-BoxCollider:
+--- !u!114 &1327479208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1327479203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f480cf694bf0a44eaf7c46484587166, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _info: 
+  newLayerName: Outlined
+--- !u!64 &1327479209
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -2514,23 +2528,10 @@ BoxCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.020000013, y: 0.010000124, z: 0.019999996}
-  m_Center: {x: 0.0000000023283069, y: -0.0049999417, z: -1.4210689e-16}
---- !u!114 &1327479208
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1327479203}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f480cf694bf0a44eaf7c46484587166, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _info: 
-  newLayerName: Outlined
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638523861631414334, guid: cd1f6279f6d193148ba63ffdfbb6fc15, type: 3}
 --- !u!1 &1357396671
 GameObject:
   m_ObjectHideFlags: 0
@@ -4080,7 +4081,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1652707896063940080, guid: cd1f6279f6d193148ba63ffdfbb6fc15,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1327479207}
+      addedObject: {fileID: 1327479209}
     - targetCorrespondingSourceObject: {fileID: -2513343288620829846, guid: cd1f6279f6d193148ba63ffdfbb6fc15,
         type: 3}
       insertIndex: -1
