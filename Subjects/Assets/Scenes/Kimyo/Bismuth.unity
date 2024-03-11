@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -245,6 +245,7 @@ GameObject:
   - component: {fileID: 299327480}
   - component: {fileID: 299327482}
   - component: {fileID: 299327481}
+  - component: {fileID: 299327483}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -291,23 +292,39 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Vismut\r\nVismut\_(lot. Bismutum), \u2014\_Mendeleev davriy sistemasining
-    V guruhiga mansub kimyoviy element bo\u2018lib, tartib raqami 83, nisbiy atom
-    massasi 208,98 (208 butun 100 dan 98) ga teng. Tabiiy ko\u2018rinishi och pushti
-    va kumushrang yarim metal bo\u2018lib, suyuqlanish temperaturasi 271,3\xB0C (271
-    butun 10 dan 3) gradus Sel'siy, qaynash temperaturasi 1564\xB0C (gradus Sel'siy)
-    ga teng. Zichligi 9,8 (9 butun 10 dan 8) g/sm3 (gram taksim santimetr kub). Moss
-    shkalasi bo\u2018yicha qattiqligi 2,5 (2 butun 10 dan 5) ga teng. \r\nVismut
-    barqaror izotopining massa soni 209. Bir necha radioaktiv izotopi ma'lum. Eng
-    ahamiyatlisi Vismut - 210 neytronlar bilan nurlantirish orqali olinadi. Vismut
-    alkimyo davrida ham ma'lum edi. 18-asrgacha Vismut surma, qalay va qo\u2018rg\u02BBoshinning
+  m_text: "\rVismut\_(lot. Bismutum), \u2014\_Mendeleev davriy sistemasining V guruhiga
+    mansub kimyoviy element bo\u2018lib, tartib raqami 83, nisbiy atom massasi 208,98
+    (208 butun 100 dan 98) ga teng. Tabiiy ko\u2018rinishi och pushti va kumushrang
+    yarim metal bo\u2018lib, suyuqlanish temperaturasi 271,3\xB0C (271 butun 10 dan
+    3) gradus Sel'siy, qaynash temperaturasi 1564\xB0C (gradus Sel'siy) ga teng.
+    Zichligi 9,8 (9 butun 10 dan 8) g/sm3 (gram taksim santimetr kub). Moss shkalasi
+    bo\u2018yicha qattiqligi 2,5 (2 butun 10 dan 5) ga teng. \r\nVismut barqaror
+    izotopining massa soni 209. Bir necha radioaktiv izotopi ma'lum. Eng ahamiyatlisi
+    Vismut - 210 neytronlar bilan nurlantirish orqali olinadi. Vismut alkimyo davrida
+    ham ma'lum edi. 18-asrgacha Vismut surma, qalay va qo\u2018rg\u02BBoshinning
     boshqa ko\u2018rinishi deb hisoblab kelingan. \r\nVismut tabiatda turli birikmalar
     holida uchraydi. Asosan vismutli oxra, kozalit, tetradimit, bismutin kabi minerallar
     tarkibida bo\u2018lib, rudalardan, pirometallurgik va gidrometallurgik usulda
     ajratib olinadi. O\u2018z birikmalarida -3, +1, +2, +3, +4, +5 valentliklarini
     namoyon qiladi. Bi +3 birikmalari ko\u2018proq uchraydi; Vismut quruq havoda
     barqaror, namlik ta'sirida yupqa oksid parda bilan qoplanadi.\r\nVismutdan tibbiyot
-    va farmakologiya sohalarida keng foydalaniladi."
+    va farmakologiya sohalarida keng foydalaniladi.Vismut\r\nVismut\_(lot. Bismutum),
+    \u2014\_Mendeleev davriy sistemasining V guruhiga mansub kimyoviy element bo\u2018lib,
+    tartib raqami 83, nisbiy atom massasi 208,98 (208 butun 100 dan 98) ga teng.
+    Tabiiy ko\u2018rinishi och pushti va kumushrang yarim metal bo\u2018lib, suyuqlanish
+    temperaturasi 271,3\xB0C (271 butun 10 dan 3) gradus Sel'siy, qaynash temperaturasi
+    1564\xB0C (gradus Sel'siy) ga teng. Zichligi 9,8 (9 butun 10 dan 8) g/sm3 (gram
+    taksim santimetr kub). Moss shkalasi bo\u2018yicha qattiqligi 2,5 (2 butun 10
+    dan 5) ga teng. \r\nVismut barqaror izotopining massa soni 209. Bir necha radioaktiv
+    izotopi ma'lum. Eng ahamiyatlisi Vismut - 210 neytronlar bilan nurlantirish orqali
+    olinadi. Vismut alkimyo davrida ham ma'lum edi. 18-asrgacha Vismut surma, qalay
+    va qo\u2018rg\u02BBoshinning boshqa ko\u2018rinishi deb hisoblab kelingan. \r\nVismut
+    tabiatda turli birikmalar holida uchraydi. Asosan vismutli oxra, kozalit, tetradimit,
+    bismutin kabi minerallar tarkibida bo\u2018lib, rudalardan, pirometallurgik va
+    gidrometallurgik usulda ajratib olinadi. O\u2018z birikmalarida -3, +1, +2, +3,
+    +4, +5 valentliklarini namoyon qiladi. Bi +3 birikmalari ko\u2018proq uchraydi;
+    Vismut quruq havoda barqaror, namlik ta'sirida yupqa oksid parda bilan qoplanadi.\r\nVismutdan
+    tibbiyot va farmakologiya sohalarida keng foydalaniladi."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -384,6 +401,46 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 299327479}
   m_CullTransparentMesh: 1
+--- !u!114 &299327483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 299327479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_StringReference:
+    m_TableReference:
+      m_TableCollectionName: GUID:30db32c052fdc084db242145aadc7537
+    m_TableEntryReference:
+      m_KeyId: 717625119866880
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  m_FormatArguments: []
+  m_UpdateString:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 299327481}
+        m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
+        m_MethodName: set_text
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  references:
+    version: 2
+    RefIds: []
 --- !u!1 &519900088
 GameObject:
   m_ObjectHideFlags: 0
@@ -420,8 +477,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.887207, y: -91.29999}
-  m_SizeDelta: {x: 371.4377, y: 60.1214}
+  m_AnchoredPosition: {x: 4.527603, y: -91.29999}
+  m_SizeDelta: {x: 404.7279, y: 60.1214}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &519900090
 MonoBehaviour:
@@ -895,6 +952,7 @@ GameObject:
   - component: {fileID: 711885135}
   - component: {fileID: 711885137}
   - component: {fileID: 711885136}
+  - component: {fileID: 711885138}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -1018,6 +1076,46 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 711885134}
   m_CullTransparentMesh: 1
+--- !u!114 &711885138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 711885134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_StringReference:
+    m_TableReference:
+      m_TableCollectionName: GUID:30db32c052fdc084db242145aadc7537
+    m_TableEntryReference:
+      m_KeyId: 714726830637056
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  m_FormatArguments: []
+  m_UpdateString:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 711885136}
+        m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
+        m_MethodName: set_text
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  references:
+    version: 2
+    RefIds: []
 --- !u!1 &739128416
 GameObject:
   m_ObjectHideFlags: 0
@@ -1544,6 +1642,7 @@ GameObject:
   - component: {fileID: 954654159}
   - component: {fileID: 954654161}
   - component: {fileID: 954654160}
+  - component: {fileID: 954654162}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -1667,6 +1766,46 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 954654158}
   m_CullTransparentMesh: 1
+--- !u!114 &954654162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 954654158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_StringReference:
+    m_TableReference:
+      m_TableCollectionName: GUID:30db32c052fdc084db242145aadc7537
+    m_TableEntryReference:
+      m_KeyId: 714388820066304
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  m_FormatArguments: []
+  m_UpdateString:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 954654160}
+        m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
+        m_MethodName: set_text
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  references:
+    version: 2
+    RefIds: []
 --- !u!1 &1007987837
 GameObject:
   m_ObjectHideFlags: 0
@@ -1730,7 +1869,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 224087868}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.14462654
+  m_Size: 0.0734451
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2460,8 +2599,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -719, y: -10}
-  m_SizeDelta: {x: 370.2293, y: 182.9703}
+  m_AnchoredPosition: {x: -721, y: -10}
+  m_SizeDelta: {x: 399.99, y: 182.9703}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1423893692
 MonoBehaviour:
@@ -3020,8 +3159,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.887207, y: -149.69998}
-  m_SizeDelta: {x: 371.4377, y: 60.1214}
+  m_AnchoredPosition: {x: 4.527603, y: -149.69998}
+  m_SizeDelta: {x: 404.7279, y: 60.1214}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1685446056
 MonoBehaviour:
@@ -3574,8 +3713,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.887207, y: -33}
-  m_SizeDelta: {x: 371.4377, y: 60.1214}
+  m_AnchoredPosition: {x: 4.527603, y: -33}
+  m_SizeDelta: {x: 404.7279, y: 60.1214}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1916059547
 MonoBehaviour:
@@ -4198,6 +4337,7 @@ GameObject:
   - component: {fileID: 2109432002}
   - component: {fileID: 2109432004}
   - component: {fileID: 2109432003}
+  - component: {fileID: 2109432005}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -4321,6 +4461,46 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2109432001}
   m_CullTransparentMesh: 1
+--- !u!114 &2109432005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2109432001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_StringReference:
+    m_TableReference:
+      m_TableCollectionName: GUID:30db32c052fdc084db242145aadc7537
+    m_TableEntryReference:
+      m_KeyId: 714997421965312
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  m_FormatArguments: []
+  m_UpdateString:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2109432003}
+        m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
+        m_MethodName: set_text
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  references:
+    version: 2
+    RefIds: []
 --- !u!1 &2136036381
 GameObject:
   m_ObjectHideFlags: 0
