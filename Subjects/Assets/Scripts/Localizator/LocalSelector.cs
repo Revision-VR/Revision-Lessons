@@ -11,19 +11,19 @@ public class LocalSelector : MonoBehaviour
             return;
         StartCoroutine(SetLocale(localeID));
 
-        //if (localeID == 0)
-        //{
-        //    PlayerPrefs.SetString("Language", "en");
-        //}
-        //else if (localeID == 1)
-        //{
-        //    PlayerPrefs.SetString("Language", "ru");
+        if (localeID == 0)
+        {
+            PlayerPrefs.SetString("Language", "en");
+        }
+        else if (localeID == 1)
+        {
+            PlayerPrefs.SetString("Language", "ru");
 
-        //}
-        //else if (localeID == 2)
-        //{
-        //    PlayerPrefs.SetString("Language", "uz");
-        //}
+        }
+        else if (localeID == 2)
+        {
+            PlayerPrefs.SetString("Language", "uz");
+        }
 
     }
 

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 39253850}
   - component: {fileID: 39253852}
   - component: {fileID: 39253851}
+  - component: {fileID: 39253853}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -275,6 +276,46 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 39253849}
   m_CullTransparentMesh: 1
+--- !u!114 &39253853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 39253849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_StringReference:
+    m_TableReference:
+      m_TableCollectionName: GUID:30db32c052fdc084db242145aadc7537
+    m_TableEntryReference:
+      m_KeyId: 730648391843840
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  m_FormatArguments: []
+  m_UpdateString:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 39253851}
+        m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
+        m_MethodName: set_text
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  references:
+    version: 2
+    RefIds: []
 --- !u!1 &144052855
 GameObject:
   m_ObjectHideFlags: 0
@@ -286,6 +327,7 @@ GameObject:
   - component: {fileID: 144052856}
   - component: {fileID: 144052858}
   - component: {fileID: 144052857}
+  - component: {fileID: 144052859}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -409,6 +451,46 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 144052855}
   m_CullTransparentMesh: 1
+--- !u!114 &144052859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 144052855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_StringReference:
+    m_TableReference:
+      m_TableCollectionName: GUID:30db32c052fdc084db242145aadc7537
+    m_TableEntryReference:
+      m_KeyId: 735440929423360
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  m_FormatArguments: []
+  m_UpdateString:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 144052857}
+        m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
+        m_MethodName: set_text
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  references:
+    version: 2
+    RefIds: []
 --- !u!1 &193535148
 GameObject:
   m_ObjectHideFlags: 0
@@ -681,6 +763,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _info: Olimlar Venera mantiyasini yadroga proporsional tarzda 3000 metr deb tahmin
     qilinib, mantiyaning tarkibi noma'lum
+  _infoRu: "\u041C\u0430\u043D\u0442\u0438\u044F. \u041F\u043E \u043E\u0446\u0435\u043D\u043A\u0430\u043C
+    \u0443\u0447\u0435\u043D\u044B\u0445, \u0434\u043B\u0438\u043D\u0430 \u043C\u0430\u043D\u0442\u0438\u0438
+    \u0412\u0435\u043D\u0435\u0440\u044B \u0441\u043E\u0441\u0442\u0430\u0432\u043B\u044F\u0435\u0442
+    3000 \u043C\u0435\u0442\u0440\u043E\u0432 \u043F\u043E \u043E\u0442\u043D\u043E\u0448\u0435\u043D\u0438\u044E
+    \u043A \u044F\u0434\u0440\u0443, \u0430 \u0441\u043E\u0441\u0442\u0430\u0432
+    \u043C\u0430\u043D\u0442\u0438\u0438 \u043D\u0435\u0438\u0437\u0432\u0435\u0441\u0442\u0435\u043D."
+  _infoEn: Mantle. Scientists estimate the mantle of Venus to be 3000 meters in proportion
+    to the core, and the composition of the mantle is unknown.
   newLayerName: Outlined
 --- !u!64 &350827177
 MeshCollider:
@@ -715,6 +805,7 @@ GameObject:
   - component: {fileID: 353531659}
   - component: {fileID: 353531661}
   - component: {fileID: 353531660}
+  - component: {fileID: 353531662}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -838,6 +929,46 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 353531658}
   m_CullTransparentMesh: 1
+--- !u!114 &353531662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 353531658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_StringReference:
+    m_TableReference:
+      m_TableCollectionName: GUID:30db32c052fdc084db242145aadc7537
+    m_TableEntryReference:
+      m_KeyId: 735867079098368
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  m_FormatArguments: []
+  m_UpdateString:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 353531660}
+        m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
+        m_MethodName: set_text
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  references:
+    version: 2
+    RefIds: []
 --- !u!1 &536916196
 GameObject:
   m_ObjectHideFlags: 0
@@ -1942,6 +2073,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _info: 
+  _infoRu: 
+  _infoEn: 
   newLayerName: Outlined
 --- !u!64 &1359476003
 MeshCollider:
@@ -1989,6 +2122,31 @@ MonoBehaviour:
     olimlar tomonidan bu qatlam yernikiga nisbatan sekinroq harakatlanishi tahmin
     qilinadi. Bu tahmin Venera sayyorasinig nisbatan kuchsiz magnit maydoniga asoslanib
     qilingan."
+  _infoRu: "\u042F\u0434\u0440\u043E \u0412\u0435\u043D\u0435\u0440\u044B \u0438\u043C\u0435\u0435\u0442
+    \u0440\u0430\u0434\u0438\u0443\u0441 3500 \u043A\u0438\u043B\u043E\u043C\u0435\u0442\u0440\u043E\u0432,
+    \u0430 \u0432\u043D\u0443\u0442\u0440\u0435\u043D\u043D\u0435\u0435 \u044F\u0434\u0440\u043E
+    \u200B\u200B\u043F\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u043B\u044F\u0435\u0442
+    \u0441\u043E\u0431\u043E\u0439 \u0442\u0432\u0435\u0440\u0434\u043E\u0435 \u0442\u0435\u043B\u043E,
+    \u0441\u043E\u0441\u0442\u043E\u044F\u0449\u0435\u0435 \u0438\u0437 \u0441\u043F\u043B\u0430\u0432\u0430
+    \u0436\u0435\u043B\u0435\u0437\u0430 \u0438 \u043D\u0438\u043A\u0435\u043B\u044F.
+    \u0420\u0430\u0434\u0438\u0443\u0441 \u043E\u043A\u043E\u043B\u043E 1000 \u043A\u0438\u043B\u043E\u043C\u0435\u0442\u0440\u043E\u0432.
+    \u0412\u043D\u0435\u0448\u043D\u0438\u0439 \u0440\u0430\u0434\u0438\u0443\u0441
+    \u0412\u0435\u043D\u0435\u0440\u044B \u0441\u043E\u0441\u0442\u043E\u0438\u0442
+    \u0438\u0437 \u0440\u0430\u0441\u043F\u043B\u0430\u0432\u043B\u0435\u043D\u043D\u043E\u0433\u043E
+    \u0436\u0435\u043B\u0435\u0437\u0430 \u0438 \u0436\u0438\u0434\u043A\u043E\u0433\u043E
+    \u043D\u0438\u043A\u0435\u043B\u044F, \u0438, \u043F\u043E \u043E\u0446\u0435\u043D\u043A\u0430\u043C
+    \u0443\u0447\u0435\u043D\u044B\u0445, \u044D\u0442\u043E\u0442 \u0441\u043B\u043E\u0439
+    \u0434\u0432\u0438\u0436\u0435\u0442\u0441\u044F \u043C\u0435\u0434\u043B\u0435\u043D\u043D\u0435\u0435,
+    \u0447\u0435\u043C \u0437\u0435\u043C\u043D\u043E\u0439. \u042D\u0442\u043E \u043F\u0440\u0435\u0434\u0441\u043A\u0430\u0437\u0430\u043D\u0438\u0435
+    \u043E\u0441\u043D\u043E\u0432\u0430\u043D\u043E \u043D\u0430 \u043E\u0442\u043D\u043E\u0441\u0438\u0442\u0435\u043B\u044C\u043D\u043E
+    \u0441\u043B\u0430\u0431\u043E\u043C \u043C\u0430\u0433\u043D\u0438\u0442\u043D\u043E\u043C
+    \u043F\u043E\u043B\u0435 \u043F\u043B\u0430\u043D\u0435\u0442\u044B \u0412\u0435\u043D\u0435\u0440\u0430. "
+  _infoEn: 'Core. The core of Venus has a radius of 3,500 kilometers, and the inner
+    core is a solid body consisting of an alloy of iron and nickel. The radius is
+    approximately 1000 kilometers. The outer radius of Venus consists of molten iron
+    and nickel liquid, and scientists estimate that this layer moves more slowly
+    than Earth''s. This prediction is based on the relatively weak magnetic field
+    of the planet Venus. '
   newLayerName: Outlined
 --- !u!64 &1439466677
 MeshCollider:
@@ -2032,6 +2190,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _info: "Venera sirtki tosh qatlami 50 kilometr qalinlikka ega bo\u2018lib, uning
     yuzasi bazal't lavalari va tog\u2018 jinslaridan iborat."
+  _infoRu: "\u041F\u043E\u0432\u0435\u0440\u0445\u043D\u043E\u0441\u0442\u043D\u044B\u0439
+    \u0441\u043B\u043E\u0439 \u043F\u043E\u0440\u043E\u0434 \u0412\u0435\u043D\u0435\u0440\u044B
+    \u0438\u043C\u0435\u0435\u0442 \u0442\u043E\u043B\u0449\u0438\u043D\u0443 50
+    \u043A\u0438\u043B\u043E\u043C\u0435\u0442\u0440\u043E\u0432, \u0430 \u0435\u0433\u043E
+    \u043F\u043E\u0432\u0435\u0440\u0445\u043D\u043E\u0441\u0442\u044C \u0441\u043E\u0441\u0442\u043E\u0438\u0442
+    \u0438\u0437 \u0431\u0430\u0437\u0430\u043B\u044C\u0442\u043E\u0432\u044B\u0445
+    \u043B\u0430\u0432 \u0438 \u0433\u043E\u0440\u043D\u044B\u0445 \u043F\u043E\u0440\u043E\u0434. "
+  _infoEn: 'The surface rock layer of Venus is 50 kilometers thick, and its surface
+    consists of basalt lavas and rocks. '
   newLayerName: Outlined
 --- !u!64 &1513954557
 MeshCollider:
@@ -2700,6 +2867,7 @@ GameObject:
   - component: {fileID: 2048731653}
   - component: {fileID: 2048731655}
   - component: {fileID: 2048731654}
+  - component: {fileID: 2048731656}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -2823,6 +2991,46 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2048731652}
   m_CullTransparentMesh: 1
+--- !u!114 &2048731656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2048731652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_StringReference:
+    m_TableReference:
+      m_TableCollectionName: GUID:30db32c052fdc084db242145aadc7537
+    m_TableEntryReference:
+      m_KeyId: 735716360978432
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  m_FormatArguments: []
+  m_UpdateString:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2048731654}
+        m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
+        m_MethodName: set_text
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  references:
+    version: 2
+    RefIds: []
 --- !u!1 &2125206542
 GameObject:
   m_ObjectHideFlags: 0
