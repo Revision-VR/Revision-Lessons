@@ -70,6 +70,8 @@ public class DrawWithMouse : MonoBehaviour
     }
 
 
+
+
     public void EraseLine()
     {
         LineRenderer[] lines = FindObjectsOfType<LineRenderer>();
