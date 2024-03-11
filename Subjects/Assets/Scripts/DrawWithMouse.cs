@@ -65,7 +65,7 @@ public class DrawWithMouse : MonoBehaviour
     Vector3 GetMouseWorldPosition()
     {
         mousePosition = Input.mousePosition;
-        mousePosition.z = Camera.main.transform.position.x + 1.5f; // Adjust the z-coordinate to be above the camera
+        mousePosition.z = Camera.main.transform.position.z + 1.5f; // Adjust the z-coordinate to be above the camera
         return Camera.main.ScreenToWorldPoint(mousePosition);
     }
 
