@@ -12,18 +12,6 @@ public class VideoController : MonoBehaviour, IPointerEnterHandler, IPointerExit
     private VideoPlayer _player;
 
 
-   /* void Start()
-    {
-        _player = GetComponent<VideoPlayer>();
-
-
-        //_player.renderMode = VideoRenderMode.RenderTexture;
-        //_player.frame = 1;
-
-        StartCoroutine(StartWait());
-
-    }*/
-
 
     void OnEnable()
     {

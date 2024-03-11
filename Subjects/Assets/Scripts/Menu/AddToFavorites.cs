@@ -15,11 +15,13 @@ public class AddToFavorites : MonoBehaviour
 
     bool isChosen = false;
 
+    private GameObject ParentGameObjec;
+
     private void Start()
     {
         _chosenButtons = GetComponent<Button>(); 
         _image = GetComponent<RawImage>();
-
+        ParentGameObjec = gameObject.transform.parent.gameObject;
 
         _chosenFalseTexture = _image.texture;
 
@@ -31,15 +33,15 @@ public class AddToFavorites : MonoBehaviour
     {
         isChosen = !isChosen;
 
-        if (isChosen)
+        if (isChosen && !ParentGameObjec.name.EndsWith(')'))
         {
-            _image.texture = ResourcesMenu.Instance._chosenTrueTexture;
+            _image.texture = FavoritesMenu.Instance._chosenTrueTexture;
+            FavoritesMenu.Instance.ShowSortedCards(ParentGameObjec);
         }
         else
         {
-            _image.texture = _chosenFalseTexture;
+            _image.texture = FavoritesMenu.Instance._chosenFalseTexture;
+            FavoritesMenu.Instance.HideSortedCards(ParentGameObjec);
         }
-
-
     }
 }
