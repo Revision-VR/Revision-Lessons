@@ -8,6 +8,8 @@ public class HumanSplitController : DotweenTest
 
     private int count = 2;
 
+    public bool firstClick = true;
+
     private void StartAnim()
     {
         humanAnim.SetInteger("Check", 1);
@@ -43,8 +45,16 @@ public class HumanSplitController : DotweenTest
 
     public void OnClickDraw()
     {
-        draw.SetActive(true);
-        ToggleCameraControl(false);
+        if (firstClick)
+        {
+            draw.SetActive(true);
+            ToggleCameraControl(false);
+        }
+        else
+        {
+            draw.SetActive(false);
+        }
+        firstClick = !firstClick;
     }
 
     private void ToggleCameraControl(bool enable)
