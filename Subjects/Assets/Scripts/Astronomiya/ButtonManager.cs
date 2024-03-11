@@ -14,11 +14,12 @@ public class ButtonManager : MonoBehaviour
     private void Start()
     {
         _language = PlayerPrefs.GetString("Language");
-        //if (string.IsNullOrEmpty(_language))
-        //{
-        //    PlayerPrefs.SetString("Language", "en");
-        //}
-            PlayerPrefs.SetString("Language", "en");
+
+        if (string.IsNullOrEmpty(_language))
+        {
+            _language = "en";
+            PlayerPrefs.SetString("Language", _language);
+        }
 
     }
 
@@ -31,30 +32,33 @@ public class ButtonManager : MonoBehaviour
 
         selectedObject = gameObject;
 
-        //switch (_language)
-        //{
-        //    case "uz":
-        //        TextManager.Instance.ChangableInfo.text = _info;
-        //        break;
-        //    case "ru":
-        //        TextManager.Instance.ChangableInfo.text = _infoRu;
-        //        break;
+        switch (_language)
+        {
+            case "uz":
+                TextManager.Instance.ChangableInfo.text = _info;
+                break;
 
-        //    case "en":
-        //        TextManager.Instance.ChangableInfo.text = _infoEn;
-        //        break;
-        //}
+            case "ru":
+                TextManager.Instance.ChangableInfo.text = _infoRu;
+                break;
 
-        TextManager.Instance.ChangableInfo.text = _info;
+            case "en":
+                TextManager.Instance.ChangableInfo.text = _infoEn;
+                break;
+        }
+
         int newLayer = LayerMask.NameToLayer(newLayerName);
         gameObject.layer = newLayer;
+
+        //TextManager.Instance.ChangableInfo.text = _info;
+        //int newLayer = LayerMask.NameToLayer(newLayerName);
+        //gameObject.layer = newLayer;
     }
 
     private void OnMouseDown()
     {
         ForButton();
     }
-
 
     private void ResetLayer(GameObject obj)
     {
