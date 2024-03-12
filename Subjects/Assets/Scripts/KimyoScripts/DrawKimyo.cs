@@ -6,9 +6,16 @@ public class DrawKimyo : MonoBehaviour
     public GameObject draw;
     public bool firstClick = true;
 
+    private CameraControl _cameraControlScript;
+
+    private void Start()
+    {
+        _cameraControlScript = Camera.main.gameObject.GetComponent<CameraControl>();
+    }
+
     public void OnClick()
     {
-       // EraseLine();
+
         if (firstClick)
         { 
             draw.SetActive(true);
@@ -19,6 +26,8 @@ public class DrawKimyo : MonoBehaviour
             draw.SetActive(false);
             ToggleMouseMoveObject(true);
         }
+        _cameraControlScript.enabled = !draw.activeSelf;
+
         firstClick = !firstClick;
     }
 
