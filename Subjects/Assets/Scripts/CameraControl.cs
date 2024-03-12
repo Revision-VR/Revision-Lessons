@@ -8,7 +8,7 @@ public class CameraControl : MonoBehaviour
     [SerializeField]
     private float RotationSpeed;
 
-    public GameObject _humanModel;
+    public GameObject _cameraParent;
 
 
     float _inputRotateX;
@@ -18,6 +18,14 @@ public class CameraControl : MonoBehaviour
     private Vector3 lastMousePosition; // Last recorded mouse position
 
 
+
+    private void Start()
+    {
+        _inputRotateX = _cameraParent.transform.localEulerAngles.y;
+        _inputRotateY = -(_cameraParent.transform.localEulerAngles.x);
+    }
+
+
     void LateUpdate()
     {
         if (Input.GetMouseButton(0))
@@ -25,23 +33,27 @@ public class CameraControl : MonoBehaviour
             _inputRotateX += Input.GetAxis("Mouse X") * RotationSpeed;
             _inputRotateY += Input.GetAxis("Mouse Y") * RotationSpeed;
 
-            _humanModel.transform.localRotation = Quaternion.Euler(-_inputRotateY, _inputRotateX, 0);
+            _cameraParent.transform.localRotation = Quaternion.Euler(-_inputRotateY, _inputRotateX, 0);
         }
 
 
 
-        if (Input.GetMouseButtonDown(1))
+
+
+
+        if (Input.GetMouseButtonDown(1) || Input.GetMouseButtonDown(2))
         {
             lastMousePosition = Input.mousePosition;
         }
 
-        else if (Input.GetMouseButton(1))
+        else if (Input.GetMouseButton(1) || Input.GetMouseButton(2))
         {
             Vector3 movement = (Input.mousePosition - lastMousePosition) * repeatSpeed * Time.deltaTime;
-
 
             transform.Translate(-movement);
             lastMousePosition = Input.mousePosition;
         }
+
+
     }
 }
