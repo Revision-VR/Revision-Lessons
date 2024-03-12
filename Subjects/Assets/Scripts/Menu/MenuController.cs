@@ -51,38 +51,6 @@ public class MenuController : MonoBehaviour
 
 
 
-    public void PressMainButtons(int index)
-    {
-        DisableLeftBarTexts();
-
-
-        if (index == 0)
-        {
-            MainDropDown();
-        }
-
-        else if (_mainDropDown)
-        {
-            MainDropDown();
-        }
-
-        if (index == 1)
-        {
-            ShowFavorites();
-        }
-
-        else if (index == 2)
-        {
-            ShowSettings();
-        }
-
-        else if (index == 2)
-        {
-
-
-        }
-    }
-
     private void Start()
     {
         _language = PlayerPrefs.GetString("Language");
@@ -94,6 +62,96 @@ public class MenuController : MonoBehaviour
         }
 
     }
+
+
+
+    public void PressMainButtons(int index)
+    {
+        DisableLeftBarTexts();
+
+
+        if (index == 0)
+        {
+            MainDropDown();
+            switch (_language)
+            {
+                case "uz":
+                    _upNamesText.text = "Darslar";
+                    break;
+
+                case "ru":
+                    _upNamesText.text = "Уроки";
+                    break;
+
+                case "en":
+                    _upNamesText.text = "Lessons";
+                    break;
+            }
+        }
+
+        else if (_mainDropDown)
+        {
+            MainDropDown();
+        }
+
+        if (index == 1)
+        {
+            ShowFavorites();
+            switch (_language)
+            {
+                case "uz":
+                    _upNamesText.text = "Tanlanganlar";
+                    break;
+
+                case "ru":
+                    _upNamesText.text = "Избранное";
+                    break;
+
+                case "en":
+                    _upNamesText.text = "Favorites";
+                    break;
+            }
+        }
+
+        else if (index == 2)
+        {
+            ShowSettings();
+            switch (_language)
+            {
+                case "uz":
+                    _upNamesText.text = "Sozlamalar";
+                    break;
+
+                case "ru":
+                    _upNamesText.text = "Настройки";
+                    break;
+
+                case "en":
+                    _upNamesText.text = "Settings";
+                    break;
+            }
+        }
+
+        else if (index == 2)
+        {
+
+            switch (_language)
+            {
+                case "uz":
+                    _upNamesText.text = "Taqdimotlar";
+                    break;
+
+                case "ru":
+                    _upNamesText.text = "Презентации";
+                    break;
+
+                case "en":
+                    _upNamesText.text = "Presentations";
+                    break;
+            }
+        }
+    }
+
 
 
     public void SelectLessons(int _index)
