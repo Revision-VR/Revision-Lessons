@@ -28,6 +28,12 @@ public class MenuController : MonoBehaviour
     private string[] _upNames;
 
     [SerializeField]
+    private string[] _upNamesRu; 
+
+    [SerializeField]
+    private string[] _upNamesEn;
+
+    [SerializeField]
     private VideoClip[] _rigtVideoClips;
 
     [SerializeField]
@@ -41,6 +47,7 @@ public class MenuController : MonoBehaviour
     private Toggle[] _languageToggle;
 
     private bool _mainDropDown = false;
+    private string _language;
 
 
 
@@ -76,15 +83,55 @@ public class MenuController : MonoBehaviour
         }
     }
 
+    private void Start()
+    {
+        _language = PlayerPrefs.GetString("Language");
+
+        if (string.IsNullOrEmpty(_language))
+        {
+            _language = "en";
+            PlayerPrefs.SetString("Language", _language);
+        }
+
+    }
 
 
     public void SelectLessons(int _index)
     {
-        DisableLessons();
-        DisableLessonsTexts();
-        _upNamesText.text = _upNames[_index];
-        _rightVideoPlayer.clip = _rigtVideoClips[_index];
-        _scrollViewsLessons[_index].SetActive(true);
+
+        switch (_language)
+        {
+            case "uz":
+                DisableLessons();
+                DisableLessonsTexts();
+                _upNamesText.text = _upNames[_index];
+                _rightVideoPlayer.clip = _rigtVideoClips[_index];
+                _scrollViewsLessons[_index].SetActive(true);
+                break;
+
+            case "ru":
+                DisableLessons();
+                DisableLessonsTexts();
+                _upNamesText.text = _upNamesRu[_index];
+                _rightVideoPlayer.clip = _rigtVideoClips[_index];
+                _scrollViewsLessons[_index].SetActive(true);
+                break;
+
+            case "en":
+                DisableLessons();
+                DisableLessonsTexts();
+                _upNamesText.text = _upNamesEn[_index];
+                _rightVideoPlayer.clip = _rigtVideoClips[_index];
+                _scrollViewsLessons[_index].SetActive(true);
+                break;
+        }
+
+
+        //DisableLessons();
+        //DisableLessonsTexts();
+        //_upNamesText.text = _upNames[_index];
+        //_rightVideoPlayer.clip = _rigtVideoClips[_index];
+        //_scrollViewsLessons[_index].SetActive(true);
     }
 
 
