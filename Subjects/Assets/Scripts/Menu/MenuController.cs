@@ -43,45 +43,11 @@ public class MenuController : MonoBehaviour
     private VideoPlayer _rightVideoPlayer;
 
 
-    [SerializeField]
-    private Toggle[] _languageToggle;
 
     private bool _mainDropDown = false;
     private string _language;
 
 
-
-    public void PressMainButtons(int index)
-    {
-        DisableLeftBarTexts();
-
-
-        if (index == 0)
-        {
-            MainDropDown();
-        }
-
-        else if (_mainDropDown)
-        {
-            MainDropDown();
-        }
-
-        if (index == 1)
-        {
-            ShowFavorites();
-        }
-
-        else if (index == 2)
-        {
-            ShowSettings();
-        }
-
-        else if (index == 2)
-        {
-
-
-        }
-    }
 
     private void Start()
     {
@@ -96,58 +62,137 @@ public class MenuController : MonoBehaviour
     }
 
 
+
+    public void PressMainButtons(int index)
+    {
+        DisableLeftBarTexts();
+
+
+        _rightVideoPlayer.gameObject.SetActive(false);
+
+        if (index == 0)
+        {
+            MainDropDown();
+            DisableLessons();
+            _scrollViewsLessons[5].SetActive(true);
+            switch (_language)
+            {
+                case "uz":
+                    _upNamesText.text = "Darslar";
+                    break;
+
+                case "ru":
+                    _upNamesText.text = "Уроки";
+                    break;
+
+                case "en":
+                    _upNamesText.text = "Lessons";
+                    break;
+            }
+        }
+
+
+        else if (_mainDropDown)
+        {
+            MainDropDown();
+        }
+
+
+        if (index == 1)
+        {
+            ShowFavorites();
+            switch (_language)
+            {
+                case "uz":
+                    _upNamesText.text = "Tanlanganlar";
+                    break;
+
+                case "ru":
+                    _upNamesText.text = "Избранное";
+                    break;
+
+                case "en":
+                    _upNamesText.text = "Favorites";
+                    break;
+            }
+        }
+
+
+        else if (index == 2)
+        {
+            ShowSettings();
+            switch (_language)
+            {
+                case "uz":
+                    _upNamesText.text = "Sozlamalar";
+                    break;
+
+                case "ru":
+                    _upNamesText.text = "Настройки";
+                    break;
+
+                case "en":
+                    _upNamesText.text = "Settings";
+                    break;
+            }
+        }
+
+
+        else if (index == 2)
+        {
+            // Taqdimotlar
+            switch (_language)
+            {
+                case "uz":
+                    _upNamesText.text = "Taqdimotlar";
+                    break;
+
+                case "ru":
+                    _upNamesText.text = "Презентации";
+                    break;
+
+                case "en":
+                    _upNamesText.text = "Presentations";
+                    break;
+            }
+        }
+    }
+
+
+
     public void SelectLessons(int _index)
     {
+        _rightVideoPlayer.gameObject.SetActive(true);
+
+
+        if (!_mainDropDown)
+        {
+            MainDropDown();
+        }
+
+        DisableLessons();
+        DisableLessonsTexts();
 
         switch (_language)
         {
             case "uz":
-                DisableLessons();
-                DisableLessonsTexts();
                 _upNamesText.text = _upNames[_index];
-                _rightVideoPlayer.clip = _rigtVideoClips[_index];
-                _scrollViewsLessons[_index].SetActive(true);
                 break;
 
             case "ru":
-                DisableLessons();
-                DisableLessonsTexts();
                 _upNamesText.text = _upNamesRu[_index];
-                _rightVideoPlayer.clip = _rigtVideoClips[_index];
-                _scrollViewsLessons[_index].SetActive(true);
                 break;
 
             case "en":
-                DisableLessons();
-                DisableLessonsTexts();
                 _upNamesText.text = _upNamesEn[_index];
-                _rightVideoPlayer.clip = _rigtVideoClips[_index];
-                _scrollViewsLessons[_index].SetActive(true);
                 break;
         }
 
+        _rightVideoPlayer.clip = _rigtVideoClips[_index];
+        _scrollViewsLessons[_index].SetActive(true);
 
-        //DisableLessons();
-        //DisableLessonsTexts();
-        //_upNamesText.text = _upNames[_index];
-        //_rightVideoPlayer.clip = _rigtVideoClips[_index];
-        //_scrollViewsLessons[_index].SetActive(true);
     }
 
-
-    public void SelectLanguage(int index)
-    {
-        DiableAllIsOns();
-        //_languageToggle[index].Describe();
-    }
-
-    public void DiableAllIsOns()
-    {
-        for (int i = 0; i < _languageToggle.Length; i++)
-        {
-            _languageToggle[i].Describe();
-        }
-    }
 
 
 
@@ -168,10 +213,11 @@ public class MenuController : MonoBehaviour
         _mainDropDown = !_mainDropDown;
 
         if (_mainDropDown)
-            _dropDownAnimator.SetInteger("MainDrop", 1); // ochilishi
-        
+           _dropDownAnimator.SetInteger("MainDrop", 1); // ochilishi
+
         else
             _dropDownAnimator.SetInteger("MainDrop", 0); // yopilishi
+        
     }
 
     private void DisableLeftBarTexts()
