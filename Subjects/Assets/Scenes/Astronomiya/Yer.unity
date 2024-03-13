@@ -457,6 +457,47 @@ MonoBehaviour:
   references:
     version: 2
     RefIds: []
+--- !u!21 &223261515
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: UI/RoundedCorners/IndependentRoundedCorners
+  m_Shader: {fileID: 4800000, guid: d3beb88e61f88ca4393acdefb005fa70, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _ColorMask: 15
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _UseUIAlphaClip: 0
+    m_Colors:
+    - _halfSize: {r: 200, g: 221.21014, b: 0, a: 0}
+    - _r: {r: 40, g: 40, b: 40, a: 40}
+    - _rect2props: {r: 0.000015258789, g: -0.000061035156, b: 269.5563, a: 269.5563}
+  m_BuildTextureStacks: []
 --- !u!1 &224697332
 GameObject:
   m_ObjectHideFlags: 0
@@ -676,22 +717,22 @@ PrefabInstance:
     - target: {fileID: 1395907985004231953, guid: c21f9b6711c54234da3152e0f6ff3244,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -59.074974
+      value: -45.00002
       objectReference: {fileID: 0}
     - target: {fileID: 5021228346462164004, guid: c21f9b6711c54234da3152e0f6ff3244,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -58.950867
+      value: -45.000008
       objectReference: {fileID: 0}
     - target: {fileID: 6767124550369656612, guid: c21f9b6711c54234da3152e0f6ff3244,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -58.94671
+      value: -45.000004
       objectReference: {fileID: 0}
     - target: {fileID: 7534246568528090362, guid: c21f9b6711c54234da3152e0f6ff3244,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -59.074974
+      value: -45.00002
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -778,9 +819,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f480cf694bf0a44eaf7c46484587166, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _info: 
-  _infoRu: 
-  _infoEn: 
+  _info: "Yerning yuza qatlami o\u2018rtacha 30-40 kilometrni tashqil qiladi. Okean
+    tubidagi botiqlarda 20 kilometrga kamayishi, Pomir, And va Ximolay tog\u2018larida
+    60-70 kilometrgacha qalinlashishi mumkin. Yerning yuza qtalami, yoki tosh qatlami
+    tektonik plitalarga ajralgan bo\u2018lib, fanga ma'lum kimyoviy elementlardan
+    93tasi tabiiy ravishda yerning tosh qatlamida uchraydi va tog\u2018 jinslari,
+    silikatlar va metalli birikmalardan iborat."
+  _infoRu: "\u041F\u043E\u0432\u0435\u0440\u0445\u043D\u043E\u0441\u0442\u043D\u044B\u0439
+    \u0441\u043B\u043E\u0439 \u0437\u0435\u043C\u043B\u0438 \u0432 \u0441\u0440\u0435\u0434\u043D\u0435\u043C
+    \u0441\u043E\u0441\u0442\u0430\u0432\u043B\u044F\u0435\u0442 30-40 \u043A\u0438\u043B\u043E\u043C\u0435\u0442\u0440\u043E\u0432.
+    \u041E\u043D\u0430 \u043C\u043E\u0436\u0435\u0442 \u0443\u043C\u0435\u043D\u044C\u0448\u0430\u0442\u044C\u0441\u044F
+    \u0434\u043E 20 \u043A\u0438\u043B\u043E\u043C\u0435\u0442\u0440\u043E\u0432
+    \u0432\u043E \u0432\u043F\u0430\u0434\u0438\u043D\u0430\u0445 \u043D\u0430 \u0434\u043D\u0435
+    \u043E\u043A\u0435\u0430\u043D\u0430 \u0438 \u0434\u043E 60-70 \u043A\u0438\u043B\u043E\u043C\u0435\u0442\u0440\u043E\u0432
+    \u043D\u0430 \u041F\u0430\u043C\u0438\u0440\u0435, \u0410\u043D\u0434\u0430\u0445
+    \u0438 \u0413\u0438\u043C\u0430\u043B\u0430\u044F\u0445. \u041F\u043E\u0432\u0435\u0440\u0445\u043D\u043E\u0441\u0442\u043D\u044B\u0439
+    \u0441\u043B\u043E\u0439 \u0417\u0435\u043C\u043B\u0438, \u0438\u043B\u0438 \u0441\u043B\u043E\u0439
+    \u0433\u043E\u0440\u043D\u044B\u0445 \u043F\u043E\u0440\u043E\u0434, \u0440\u0430\u0437\u0434\u0435\u043B\u0435\u043D
+    \u043D\u0430 \u0442\u0435\u043A\u0442\u043E\u043D\u0438\u0447\u0435\u0441\u043A\u0438\u0435
+    \u043F\u043B\u0438\u0442\u044B, \u0438 93 \u0438\u0437\u0432\u0435\u0441\u0442\u043D\u044B\u0445
+    \u043D\u0430\u0443\u043A\u0435 \u0445\u0438\u043C\u0438\u0447\u0435\u0441\u043A\u0438\u0445
+    \u044D\u043B\u0435\u043C\u0435\u043D\u0442\u0430 \u0432\u0441\u0442\u0440\u0435\u0447\u0430\u044E\u0442\u0441\u044F
+    \u0432 \u043F\u0440\u0438\u0440\u043E\u0434\u0435 \u0432 \u0441\u043B\u043E\u0435
+    \u0433\u043E\u0440\u043D\u044B\u0445 \u043F\u043E\u0440\u043E\u0434 \u0417\u0435\u043C\u043B\u0438
+    \u0438 \u0441\u043E\u0441\u0442\u043E\u044F\u0442 \u0438\u0437 \u0433\u043E\u0440\u043D\u044B\u0445
+    \u043F\u043E\u0440\u043E\u0434, \u0441\u0438\u043B\u0438\u043A\u0430\u0442\u043E\u0432
+    \u0438 \u043C\u0435\u0442\u0430\u043B\u043B\u0438\u0447\u0435\u0441\u043A\u0438\u0445
+    \u0441\u043E\u0435\u0434\u0438\u043D\u0435\u043D\u0438\u0439. "
+  _infoEn: The surface layer of the earth is 30-40 kilometers on average. It can
+    decrease to 20 kilometers in the depressions at the bottom of the ocean, and
+    up to 60-70 kilometers in the Pamir, Andes and Himalayas. The Earth's surface
+    layer, or rock layer, is divided into tectonic plates, and 93 of the chemical
+    elements known to science occur naturally in the Earth's rock layer and are composed
+    of rocks, silicates, and metallic compounds.
   newLayerName: Outlined
 --- !u!1001 &410946262
 PrefabInstance:
@@ -983,7 +1054,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 1159238987}
+  m_Material: {fileID: 223261515}
   m_Color: {r: 1, g: 1, b: 1, a: 0.392}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -1088,6 +1159,47 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 196288640622949635, guid: c21f9b6711c54234da3152e0f6ff3244, type: 3}
+--- !u!21 &763478852
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: UI/RoundedCorners/IndependentRoundedCorners
+  m_Shader: {fileID: 4800000, guid: d3beb88e61f88ca4393acdefb005fa70, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _ColorMask: 15
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _UseUIAlphaClip: 0
+    m_Colors:
+    - _halfSize: {r: 185.11465, g: 85.80825, b: 0, a: 0}
+    - _r: {r: 10, g: 10, b: 10, a: 10}
+    - _rect2props: {r: 0.000030517578, g: 0, b: 184.50037, a: 184.50037}
+  m_BuildTextureStacks: []
 --- !u!1 &791178199
 GameObject:
   m_ObjectHideFlags: 0
@@ -1263,47 +1375,6 @@ MonoBehaviour:
   references:
     version: 2
     RefIds: []
---- !u!21 &819577902
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: UI/RoundedCorners/IndependentRoundedCorners
-  m_Shader: {fileID: 4800000, guid: d3beb88e61f88ca4393acdefb005fa70, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _ColorMask: 15
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    - _UseUIAlphaClip: 0
-    m_Colors:
-    - _halfSize: {r: 185.11465, g: 85.80825, b: 0, a: 0}
-    - _r: {r: 10, g: 10, b: 10, a: 10}
-    - _rect2props: {r: 0.000030517578, g: 0, b: 184.50037, a: 184.50037}
-  m_BuildTextureStacks: []
 --- !u!1 &834337264
 GameObject:
   m_ObjectHideFlags: 0
@@ -1903,47 +1974,6 @@ MonoBehaviour:
     elements known to science occur naturally in the Earth's rock layer and are composed
     of rocks, silicates, and metallic compounds.
   newLayerName: Outlined
---- !u!21 &1159238987
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: UI/RoundedCorners/IndependentRoundedCorners
-  m_Shader: {fileID: 4800000, guid: d3beb88e61f88ca4393acdefb005fa70, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _ColorMask: 15
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    - _UseUIAlphaClip: 0
-    m_Colors:
-    - _halfSize: {r: 200, g: 221.21014, b: 0, a: 0}
-    - _r: {r: 40, g: 40, b: 40, a: 40}
-    - _rect2props: {r: 0.000015258789, g: -0.000061035156, b: 269.5563, a: 269.5563}
-  m_BuildTextureStacks: []
 --- !u!1 &1244905338
 GameObject:
   m_ObjectHideFlags: 0
@@ -2201,7 +2231,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 819577902}
+  m_Material: {fileID: 763478852}
   m_Color: {r: 1, g: 1, b: 1, a: 0.392}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -2325,8 +2355,9 @@ GameObject:
   - component: {fileID: 1278995491}
   - component: {fileID: 1278995490}
   - component: {fileID: 1278995492}
+  - component: {fileID: 1278995493}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: ScriptManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2375,6 +2406,103 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ChangableInfo: {fileID: 165317332}
+  _audioSource: {fileID: 1278995493}
+--- !u!82 &1278995493
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1278995489}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1350439150
 GameObject:
   m_ObjectHideFlags: 0
