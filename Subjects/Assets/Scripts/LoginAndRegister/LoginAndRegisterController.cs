@@ -161,6 +161,12 @@ public class LoginAndRegisterController : MonoBehaviour
     {
         SceneManager.LoadScene("Register");
     }
+
+    public void ChangeSeneLogin()
+    {
+        SceneManager.LoadScene("Login");
+    }
+
     private void GetUsername()
     {
         RestClient.Get<User>(databaseURL + "/" + localId + ".json?auth=" + idToken).Then(response =>
