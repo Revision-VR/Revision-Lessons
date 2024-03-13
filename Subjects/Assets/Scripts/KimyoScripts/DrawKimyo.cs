@@ -7,10 +7,12 @@ public class DrawKimyo : MonoBehaviour
     public bool firstClick = true;
 
     private CameraControl _cameraControlScript;
+    private MouseMoveObject mouseMove;
 
     private void Start()
     {
         _cameraControlScript = Camera.main.gameObject.GetComponent<CameraControl>();
+        mouseMove = modda.GetComponent<MouseMoveObject>();
     }
 
     public void OnClick()
@@ -19,35 +21,16 @@ public class DrawKimyo : MonoBehaviour
         if (firstClick)
         { 
             draw.SetActive(true);
-            ToggleMouseMoveObject(false);
         }
         else
         {
             draw.SetActive(false);
-            ToggleMouseMoveObject(true);
         }
+
         _cameraControlScript.enabled = !draw.activeSelf;
+        mouseMove.enabled = !draw.activeSelf;
 
         firstClick = !firstClick;
     }
 
-
-    private void ToggleMouseMoveObject(bool enable)
-    {
-        if (modda == null)
-        {
-            Debug.LogError("modda not assigned!");
-            return;
-        }
-
-        MouseMoveObject mouseMove = modda.GetComponent<MouseMoveObject>();
-        if (mouseMove != null)
-        {
-            mouseMove.enabled = enable;
-        }
-        else
-        {
-            Debug.LogError("Mouse Move Object component not found on animButton!");
-        }
-    }
 }
