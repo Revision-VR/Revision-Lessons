@@ -6,6 +6,11 @@ public class ButtonManager : MonoBehaviour
     [SerializeField] private string _infoRu;
     [SerializeField] private string _infoEn;
 
+
+    /*[SerializeField] private AudioClip _clipUz;
+    [SerializeField] private AudioClip _clipRu;
+    [SerializeField] private AudioClip _clipEn;*/
+
     public string newLayerName = "Outlined";
 
     private static GameObject selectedObject;
@@ -36,14 +41,17 @@ public class ButtonManager : MonoBehaviour
         {
             case "uz":
                 TextManager.Instance.ChangableInfo.text = _info;
+                //TextManager.Instance.PlayAudio(_clipUz);
                 break;
 
             case "ru":
                 TextManager.Instance.ChangableInfo.text = _infoRu;
+                //TextManager.Instance.PlayAudio(_clipRu);
                 break;
 
             case "en":
                 TextManager.Instance.ChangableInfo.text = _infoEn;
+                //TextManager.Instance.PlayAudio(_clipEn);
                 break;
         }
 

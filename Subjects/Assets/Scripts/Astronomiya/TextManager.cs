@@ -27,4 +27,13 @@ public class TextManager : MonoBehaviour
 
     public TMP_Text ChangableInfo;
 
+    [SerializeField]
+    private AudioSource _audioSource;
+
+    public void PlayAudio(AudioClip _clip)
+    {
+        _audioSource.clip = _clip;
+        _audioSource.Play();
+    }
+
 }
