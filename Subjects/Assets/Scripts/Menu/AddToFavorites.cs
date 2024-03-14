@@ -11,8 +11,6 @@ public class AddToFavorites : MonoBehaviour
     private Button _chosenButtons;
     private RawImage _image;
 
-    private Texture _chosenFalseTexture;
-
     bool isChosen = false;
 
     private GameObject ParentGameObjec;
@@ -22,8 +20,6 @@ public class AddToFavorites : MonoBehaviour
         _chosenButtons = GetComponent<Button>(); 
         _image = GetComponent<RawImage>();
         ParentGameObjec = gameObject.transform.parent.gameObject;
-
-        _chosenFalseTexture = _image.texture;
 
         _chosenButtons.onClick.AddListener(() => PressChosen());
     }
