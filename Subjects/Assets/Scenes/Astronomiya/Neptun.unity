@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1032,6 +1032,9 @@ MonoBehaviour:
   _infoEn: 'Core. Neptune has a solid core composed of iron, nickel and silicates.
     The inner part of the core, which makes up 20% of the total volume of the planet,
     is liquid and has a temperature of approximately 5400 Kelvin. '
+  _clipUz: {fileID: 0}
+  _clipRu: {fileID: 8300000, guid: 2a3a9a242b02a5942b2c6b055722f511, type: 3}
+  _clipEn: {fileID: 8300000, guid: 59039faeee6cce24ba47d675560ea134, type: 3}
   newLayerName: Outlined
 --- !u!1 &350519084 stripped
 GameObject:
@@ -1093,6 +1096,9 @@ MonoBehaviour:
     Kelvin, but ammonia and water in the mantle are in a solid - ice state due to
     high pressure, and scientists estimate that at such a high temperature and pressure,
     the structure of methane gas will crystallize and turn into diamond.
+  _clipUz: {fileID: 0}
+  _clipRu: {fileID: 8300000, guid: 4b26716599b82aa439a65f6a8a96c042, type: 3}
+  _clipEn: {fileID: 8300000, guid: d6b57374bc8c1534a904bfe5129a80e9, type: 3}
   newLayerName: Outlined
 --- !u!64 &350519091
 MeshCollider:
@@ -1716,6 +1722,47 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!21 &605416130
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: UI/RoundedCorners/IndependentRoundedCorners
+  m_Shader: {fileID: 4800000, guid: d3beb88e61f88ca4393acdefb005fa70, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _ColorMask: 15
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _UseUIAlphaClip: 0
+    m_Colors:
+    - _halfSize: {r: 200, g: 221.21014, b: 0, a: 0}
+    - _r: {r: 40, g: 40, b: 40, a: 40}
+    - _rect2props: {r: 0.000015258789, g: -0.000061035156, b: 269.5563, a: 269.5563}
+  m_BuildTextureStacks: []
 --- !u!1001 &632543006
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2044,6 +2091,9 @@ MonoBehaviour:
   _infoEn: Neptune's mantle makes up 60 percent of the planet's volume, and as it
     approaches the surface, the density decreases and the temperature drops to 2000
     Kelvin. In the upper layer of the mantle there are oceans of liquid carbon.
+  _clipUz: {fileID: 0}
+  _clipRu: {fileID: 8300000, guid: cc49440f331d130418ff86bb4180069f, type: 3}
+  _clipEn: {fileID: 8300000, guid: beacc6e5e0cee7a47ad3727f11aa6346, type: 3}
   newLayerName: Outlined
 --- !u!64 &664029679
 MeshCollider:
@@ -2149,8 +2199,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 1159934784}
-  m_Material: {fileID: 1568852366}
+  m_Material: {fileID: 1775733067}
   m_Color: {r: 1, g: 1, b: 1, a: 0.392}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -2191,47 +2240,6 @@ MonoBehaviour:
   r: {x: 10, y: 10, z: 10, w: 10}
   rect2props: {x: 0.000030517578, y: 0, z: 184.50037, w: 184.50037}
   image: {fileID: 740440506}
---- !u!21 &760037258
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: UI/RoundedCorners/IndependentRoundedCorners
-  m_Shader: {fileID: 4800000, guid: d3beb88e61f88ca4393acdefb005fa70, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _ColorMask: 15
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    - _UseUIAlphaClip: 0
-    m_Colors:
-    - _halfSize: {r: 200, g: 221.21014, b: 0, a: 0}
-    - _r: {r: 40, g: 40, b: 40, a: 40}
-    - _rect2props: {r: 0.000015258789, g: -0.000061035156, b: 269.5563, a: 269.5563}
-  m_BuildTextureStacks: []
 --- !u!1001 &761735257
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2407,22 +2415,159 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f480cf694bf0a44eaf7c46484587166, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _info: Neptun mantiyasi sayyora hajmining 60 foizini hosil qilib, yuzaga yaqinlashgani
-    zichlik kamayib, harorat 2000 Kelvingacha tushib boradi. Mantiyaning ustki qatlamida
-    suyuq uglerod okeanlari bor
-  _infoRu: "\u041C\u0430\u043D\u0442\u0438\u044F \u041D\u0435\u043F\u0442\u0443\u043D\u0430
-    \u0441\u043E\u0441\u0442\u0430\u0432\u043B\u044F\u0435\u0442 60 \u043F\u0440\u043E\u0446\u0435\u043D\u0442\u043E\u0432
-    \u043E\u0431\u044A\u0435\u043C\u0430 \u043F\u043B\u0430\u043D\u0435\u0442\u044B,
-    \u0438 \u043F\u043E \u043C\u0435\u0440\u0435 \u043F\u0440\u0438\u0431\u043B\u0438\u0436\u0435\u043D\u0438\u044F
-    \u043A \u043F\u043E\u0432\u0435\u0440\u0445\u043D\u043E\u0441\u0442\u0438 \u043F\u043B\u043E\u0442\u043D\u043E\u0441\u0442\u044C
-    \u0443\u043C\u0435\u043D\u044C\u0448\u0430\u0435\u0442\u0441\u044F, \u0430 \u0442\u0435\u043C\u043F\u0435\u0440\u0430\u0442\u0443\u0440\u0430
-    \u043F\u0430\u0434\u0430\u0435\u0442 \u0434\u043E 2000 \u041A\u0435\u043B\u044C\u0432\u0438\u043D\u043E\u0432.
-    \u0412 \u0432\u0435\u0440\u0445\u043D\u0435\u043C \u0441\u043B\u043E\u0435 \u043C\u0430\u043D\u0442\u0438\u0438
-    \u043D\u0430\u0445\u043E\u0434\u044F\u0442\u0441\u044F \u043E\u043A\u0435\u0430\u043D\u044B
-    \u0436\u0438\u0434\u043A\u043E\u0433\u043E \u0443\u0433\u043B\u0435\u0440\u043E\u0434\u0430."
-  _infoEn: Neptune's mantle makes up 60 percent of the planet's volume, and as it
-    approaches the surface, the density decreases and the temperature drops to 2000
-    Kelvin. In the upper layer of the mantle there are oceans of liquid carbon.
+  _info: "Neptun Quyoshdan eng uzoq bo\u2018lgan sakkizinchi va oxirgi sayyoradir.
+    Ushbu muz gigantining Quyoshdan uzoqligi 4 milliard 55 million kilometrga, yoki
+    30,3 astronomik birlikka teng. Neptun atrofida muz va kremniy tuzlaridan iborat
+    o\u2018ta siyrak halqalar tizimi mavjud bo\u2018lib, ularni faqat yuqori aniqlik
+    teleskoplarida ko\u2018rish mumkin.   Quyosh tizimidagi gaz gigantlari singari,
+    Neptun ham kuchli magnitosferaga ega. Sayyora atmosferasi vodorod, geliy va metandan
+    tashkil topgan bo\u2018lib, suv, ammiak va metan muzlaridan iborat mantiya; tosh
+    va muz yadrosiga ega.  Neptun 5 komponentdan iborat qizil rangli halqa tizimiga
+    ega. Neptunning orbitadagi o\u2018rtacha tezligi soniyasiga deyarli 5 yarim kilometrni
+    tashkil qilib, sayyora Quyosh atrofida taxminan 165 Yer yilida bir marta aylanadi.
+    Ulkan muz va gazdan iborat sayyora atmosferasining yuqori qatlamida harorat -220
+    darajaga teng. Neptun diametri 49\_244 kilometr bo\u2018lib, sayyora hajmi yernikidan
+    3,9 marta katta va Quyosh sistemasi sayyoralari orasida hajmi bo\u2018yicha to\u2018rtinchi
+    o\u2018rinda.  Neptunning o\u2018rtacha zichligi bir santimetr kub uchun 1,64
+    (1 butun, yuzdan 64) grammni tashkil qiladi. Massasi 1,02 x 1026 (1 butun yuzdan
+    2 ko\u2018paytirilgan 10ning 26 darajasi) kilogrammga teng. Neptun atmosferasi
+    vodorod, geliy  va metandan iborat. Neptun atmosferasida Quyosh tizimidagi sayyoralar
+    orasida eng kuchli shamollar esadi, ba'zi hisob-kitoblarga ko\u2018ra ularning
+    tezligi soatiga 2100 kilometrga yetishi mumkin.  Neptundagi ob-havo bo\u2018ronlar
+    tizimidan iborat bo\u2018lib, shamollar tovush tezligidan yuqori tezlikka chiqadi.
+    Neptun sayyorasini yerdan bevosita ko\u2018rishning imkoni yo\u2018q. Neptun
+    1846 yil Berlin observatoriyasi olimlari tomonidan matematik hisob-kitoblar orqali
+    kashf etilgan. Neptunga faqat bir marotaba 1989 yilning avgust oyida Voyadjer
+    2 kosmi\u0340k apparati yaqinlashgan. Radio to\u2018lqinlari diapazonidagi kuzatuvlar
+    orqali sayyora doimiy nurlanishga uchrashi va yuzasida doimiy portlashlar yuz
+    berishi isbotlangan. Neptunni yerdan faqat maxsus kuzatuv qurilmalari yordamida
+    ko\u2018rish mumkin."
+  _infoRu: "\u041D\u0435\u043F\u0442\u0443\u043D \u2014 \u0432\u043E\u0441\u044C\u043C\u0430\u044F
+    \u0438 \u043F\u043E\u0441\u043B\u0435\u0434\u043D\u044F\u044F \u043F\u043B\u0430\u043D\u0435\u0442\u0430
+    \u043E\u0442 \u0421\u043E\u043B\u043D\u0446\u0430. \u0420\u0430\u0441\u0441\u0442\u043E\u044F\u043D\u0438\u0435
+    \u044D\u0442\u043E\u0433\u043E \u043B\u0435\u0434\u044F\u043D\u043E\u0433\u043E
+    \u0433\u0438\u0433\u0430\u043D\u0442\u0430 \u043E\u0442 \u0421\u043E\u043B\u043D\u0446\u0430
+    \u0441\u043E\u0441\u0442\u0430\u0432\u043B\u044F\u0435\u0442 4 \u043C\u0438\u043B\u043B\u0438\u0430\u0440\u0434\u0430
+    55 \u043C\u0438\u043B\u043B\u0438\u043E\u043D\u043E\u0432 \u043A\u0438\u043B\u043E\u043C\u0435\u0442\u0440\u043E\u0432,
+    \u0438\u043B\u0438 30,3 \u0430\u0441\u0442\u0440\u043E\u043D\u043E\u043C\u0438\u0447\u0435\u0441\u043A\u0438\u0445
+    \u0435\u0434\u0438\u043D\u0438\u0446\u044B. \u0412\u043E\u043A\u0440\u0443\u0433
+    \u041D\u0435\u043F\u0442\u0443\u043D\u0430 \u0440\u0430\u0441\u043F\u043E\u043B\u043E\u0436\u0435\u043D\u0430
+    \u0441\u0438\u0441\u0442\u0435\u043C\u0430 \u0447\u0440\u0435\u0437\u0432\u044B\u0447\u0430\u0439\u043D\u043E
+    \u0442\u043E\u043D\u043A\u0438\u0445 \u043A\u043E\u043B\u0435\u0446 \u0438\u0437
+    \u043B\u044C\u0434\u0430 \u0438 \u0441\u043E\u043B\u0435\u0439 \u043A\u0440\u0435\u043C\u043D\u0438\u044F,
+    \u0443\u0432\u0438\u0434\u0435\u0442\u044C \u043A\u043E\u0442\u043E\u0440\u0443\u044E
+    \u043C\u043E\u0436\u043D\u043E \u0442\u043E\u043B\u044C\u043A\u043E \u0432 \u0442\u0435\u043B\u0435\u0441\u043A\u043E\u043F\u044B
+    \u0432\u044B\u0441\u043E\u043A\u043E\u0433\u043E \u0440\u0430\u0437\u0440\u0435\u0448\u0435\u043D\u0438\u044F.
+    \u041A\u0430\u043A \u0438 \u0433\u0430\u0437\u043E\u0432\u044B\u0435 \u0433\u0438\u0433\u0430\u043D\u0442\u044B
+    \u0421\u043E\u043B\u043D\u0435\u0447\u043D\u043E\u0439 \u0441\u0438\u0441\u0442\u0435\u043C\u044B,
+    \u041D\u0435\u043F\u0442\u0443\u043D \u0438\u043C\u0435\u0435\u0442 \u0441\u0438\u043B\u044C\u043D\u0443\u044E
+    \u043C\u0430\u0433\u043D\u0438\u0442\u043E\u0441\u0444\u0435\u0440\u0443. \u0410\u0442\u043C\u043E\u0441\u0444\u0435\u0440\u0430
+    \u043F\u043B\u0430\u043D\u0435\u0442\u044B \u0441\u043E\u0441\u0442\u043E\u0438\u0442
+    \u0438\u0437 \u0432\u043E\u0434\u043E\u0440\u043E\u0434\u0430, \u0433\u0435\u043B\u0438\u044F
+    \u0438 \u043C\u0435\u0442\u0430\u043D\u0430, \u0430 \u043C\u0430\u043D\u0442\u0438\u044F
+    \u0441\u043E\u0441\u0442\u043E\u0438\u0442 \u0438\u0437 \u0432\u043E\u0434\u044B,
+    \u0430\u043C\u043C\u0438\u0430\u043A\u0430 \u0438 \u043C\u0435\u0442\u0430\u043D\u043E\u0432\u043E\u0433\u043E
+    \u043B\u044C\u0434\u0430; \u0438\u043C\u0435\u0435\u0442 \u043A\u0430\u043C\u0435\u043D\u043D\u043E-\u043B\u0435\u0434\u044F\u043D\u043E\u0435
+    \u044F\u0434\u0440\u043E. \u041D\u0435\u043F\u0442\u0443\u043D \u0438\u043C\u0435\u0435\u0442
+    \u043A\u0440\u0430\u0441\u043D\u0443\u044E \u0441\u0438\u0441\u0442\u0435\u043C\u0443
+    \u043A\u043E\u043B\u0435\u0446, \u0441\u043E\u0441\u0442\u043E\u044F\u0449\u0443\u044E
+    \u0438\u0437 5 \u043A\u043E\u043C\u043F\u043E\u043D\u0435\u043D\u0442\u043E\u0432.
+    \u0421\u0440\u0435\u0434\u043D\u044F\u044F \u043E\u0440\u0431\u0438\u0442\u0430\u043B\u044C\u043D\u0430\u044F
+    \u0441\u043A\u043E\u0440\u043E\u0441\u0442\u044C \u041D\u0435\u043F\u0442\u0443\u043D\u0430
+    \u0441\u043E\u0441\u0442\u0430\u0432\u043B\u044F\u0435\u0442 \u043F\u043E\u0447\u0442\u0438
+    5,5 \u043A\u0438\u043B\u043E\u043C\u0435\u0442\u0440\u043E\u0432 \u0432 \u0441\u0435\u043A\u0443\u043D\u0434\u0443,
+    \u0430 \u043F\u043B\u0430\u043D\u0435\u0442\u0430 \u043E\u0431\u0440\u0430\u0449\u0430\u0435\u0442\u0441\u044F
+    \u0432\u043E\u043A\u0440\u0443\u0433 \u0421\u043E\u043B\u043D\u0446\u0430 \u043F\u0440\u0438\u043C\u0435\u0440\u043D\u043E
+    \u0440\u0430\u0437 \u0432 165 \u0437\u0435\u043C\u043D\u044B\u0445 \u043B\u0435\u0442.
+    \u0422\u0435\u043C\u043F\u0435\u0440\u0430\u0442\u0443\u0440\u0430 \u0432 \u0432\u0435\u0440\u0445\u043D\u0435\u043C
+    \u0441\u043B\u043E\u0435 \u0430\u0442\u043C\u043E\u0441\u0444\u0435\u0440\u044B
+    \u043F\u043B\u0430\u043D\u0435\u0442\u044B, \u0441\u043E\u0441\u0442\u043E\u044F\u0449\u0435\u043C
+    \u0438\u0437 \u043E\u0433\u0440\u043E\u043C\u043D\u043E\u0433\u043E \u043B\u044C\u0434\u0430
+    \u0438 \u0433\u0430\u0437\u0430, \u0441\u043E\u0441\u0442\u0430\u0432\u043B\u044F\u0435\u0442
+    -220 \u0433\u0440\u0430\u0434\u0443\u0441\u043E\u0432. \u041D\u0435\u043F\u0442\u0443\u043D
+    \u0438\u043C\u0435\u0435\u0442 \u0434\u0438\u0430\u043C\u0435\u0442\u0440 49
+    244 \u043A\u0438\u043B\u043E\u043C\u0435\u0442\u0440\u0430, \u0432 3,9 \u0440\u0430\u0437\u0430
+    \u0431\u043E\u043B\u044C\u0448\u0435 \u0417\u0435\u043C\u043B\u0438 \u0438 \u044F\u0432\u043B\u044F\u0435\u0442\u0441\u044F
+    \u0447\u0435\u0442\u0432\u0435\u0440\u0442\u043E\u0439 \u043F\u043E \u0432\u0435\u043B\u0438\u0447\u0438\u043D\u0435
+    \u043F\u043B\u0430\u043D\u0435\u0442\u043E\u0439 \u0421\u043E\u043B\u043D\u0435\u0447\u043D\u043E\u0439
+    \u0441\u0438\u0441\u0442\u0435\u043C\u044B. \u0421\u0440\u0435\u0434\u043D\u044F\u044F
+    \u043F\u043B\u043E\u0442\u043D\u043E\u0441\u0442\u044C \u041D\u0435\u043F\u0442\u0443\u043D\u0430
+    \u0441\u043E\u0441\u0442\u0430\u0432\u043B\u044F\u0435\u0442 1,64 (1 \u0446\u0435\u043B\u043E\u0435,
+    64 \u0441\u043E\u0442\u044B\u0445) \u0433\u0440\u0430\u043C\u043C\u0430 \u043D\u0430
+    \u043A\u0443\u0431\u0438\u0447\u0435\u0441\u043A\u0438\u0439 \u0441\u0430\u043D\u0442\u0438\u043C\u0435\u0442\u0440.
+    \u041C\u0430\u0441\u0441\u0430 \u0440\u0430\u0432\u043D\u0430 1,02 \u0445 1026
+    (1 \u0446\u0435\u043B\u0430\u044F \u0441\u043E\u0442\u043D\u044F, \u0443\u043C\u043D\u043E\u0436\u0435\u043D\u043D\u0430\u044F
+    \u043D\u0430 2 \u0440\u0430\u0437\u0430 \u043F\u043E 10 \u0432 26-\u0439 \u0441\u0442\u0435\u043F\u0435\u043D\u0438)
+    \u0432 \u043A\u0438\u043B\u043E\u0433\u0440\u0430\u043C\u043C\u0430\u0445. \u0410\u0442\u043C\u043E\u0441\u0444\u0435\u0440\u0430
+    \u041D\u0435\u043F\u0442\u0443\u043D\u0430 \u0441\u043E\u0441\u0442\u043E\u0438\u0442
+    \u0438\u0437 \u0432\u043E\u0434\u043E\u0440\u043E\u0434\u0430, \u0433\u0435\u043B\u0438\u044F
+    \u0438 \u043C\u0435\u0442\u0430\u043D\u0430. \u0412 \u0430\u0442\u043C\u043E\u0441\u0444\u0435\u0440\u0435
+    \u041D\u0435\u043F\u0442\u0443\u043D\u0430 \u0434\u0443\u044E\u0442 \u043E\u0434\u043D\u0438
+    \u0438\u0437 \u0441\u0430\u043C\u044B\u0445 \u0441\u0438\u043B\u044C\u043D\u044B\u0445
+    \u0432\u0435\u0442\u0440\u043E\u0432 \u0441\u0440\u0435\u0434\u0438 \u0432\u0441\u0435\u0445
+    \u043F\u043B\u0430\u043D\u0435\u0442 \u0421\u043E\u043B\u043D\u0435\u0447\u043D\u043E\u0439
+    \u0441\u0438\u0441\u0442\u0435\u043C\u044B, \u0441\u043A\u043E\u0440\u043E\u0441\u0442\u044C
+    \u043A\u043E\u0442\u043E\u0440\u044B\u0445, \u043F\u043E \u043E\u0446\u0435\u043D\u043A\u0430\u043C,
+    \u0434\u043E\u0441\u0442\u0438\u0433\u0430\u0435\u0442 2100 \u043A\u0438\u043B\u043E\u043C\u0435\u0442\u0440\u043E\u0432
+    \u0432 \u0447\u0430\u0441. \u041F\u043E\u0433\u043E\u0434\u0430 \u043D\u0430
+    \u041D\u0435\u043F\u0442\u0443\u043D\u0435 \u043F\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u043B\u044F\u0435\u0442
+    \u0441\u043E\u0431\u043E\u0439 \u0441\u0438\u0441\u0442\u0435\u043C\u0443 \u0448\u0442\u043E\u0440\u043C\u043E\u0432,
+    \u0441\u043A\u043E\u0440\u043E\u0441\u0442\u044C \u0432\u0435\u0442\u0440\u0430
+    \u043A\u043E\u0442\u043E\u0440\u044B\u0445 \u043F\u0440\u0435\u0432\u044B\u0448\u0430\u0435\u0442
+    \u0441\u043A\u043E\u0440\u043E\u0441\u0442\u044C \u0437\u0432\u0443\u043A\u0430.
+    \u041D\u0435\u043F\u043E\u0441\u0440\u0435\u0434\u0441\u0442\u0432\u0435\u043D\u043D\u043E
+    \u0443\u0432\u0438\u0434\u0435\u0442\u044C \u043F\u043B\u0430\u043D\u0435\u0442\u0443
+    \u041D\u0435\u043F\u0442\u0443\u043D \u0441 \u0417\u0435\u043C\u043B\u0438 \u043D\u0435\u0432\u043E\u0437\u043C\u043E\u0436\u043D\u043E.
+    \u041D\u0435\u043F\u0442\u0443\u043D \u0431\u044B\u043B \u043E\u0442\u043A\u0440\u044B\u0442
+    \u0443\u0447\u0435\u043D\u044B\u043C\u0438 \u0411\u0435\u0440\u043B\u0438\u043D\u0441\u043A\u043E\u0439
+    \u043E\u0431\u0441\u0435\u0440\u0432\u0430\u0442\u043E\u0440\u0438\u0438 \u0432
+    1846 \u0433\u043E\u0434\u0443 \u043F\u043E\u0441\u0440\u0435\u0434\u0441\u0442\u0432\u043E\u043C
+    \u043C\u0430\u0442\u0435\u043C\u0430\u0442\u0438\u0447\u0435\u0441\u043A\u0438\u0445
+    \u0440\u0430\u0441\u0447\u0435\u0442\u043E\u0432. \u041A \u041D\u0435\u043F\u0442\u0443\u043D\u0443
+    \u043F\u0440\u0438\u0431\u043B\u0438\u0436\u0430\u043B\u0441\u044F \u0442\u043E\u043B\u044C\u043A\u043E
+    \u043E\u0434\u0438\u043D \u0440\u0430\u0437 \u0432 \u0430\u0432\u0433\u0443\u0441\u0442\u0435
+    1989 \u0433\u043E\u0434\u0430 \u043A\u043E\u0441\u043C\u0438\u0447\u0435\u0441\u043A\u0438\u0439
+    \u043A\u043E\u0440\u0430\u0431\u043B\u044C \xAB\u0412\u043E\u044F\u0434\u0436\u0435\u0440-2\xBB.
+    \u041F\u0443\u0442\u0435\u043C \u043D\u0430\u0431\u043B\u044E\u0434\u0435\u043D\u0438\u0439
+    \u0432 \u0440\u0430\u0434\u0438\u043E\u0432\u043E\u043B\u043D\u043E\u0432\u043E\u043C
+    \u0434\u0438\u0430\u043F\u0430\u0437\u043E\u043D\u0435 \u0434\u043E\u043A\u0430\u0437\u0430\u043D\u043E,
+    \u0447\u0442\u043E \u043F\u043B\u0430\u043D\u0435\u0442\u0430 \u043F\u043E\u0434\u0432\u0435\u0440\u0433\u0430\u0435\u0442\u0441\u044F
+    \u043F\u043E\u0441\u0442\u043E\u044F\u043D\u043D\u043E\u043C\u0443 \u0438\u0437\u043B\u0443\u0447\u0435\u043D\u0438\u044E
+    \u0438 \u043D\u0430 \u0435\u0435 \u043F\u043E\u0432\u0435\u0440\u0445\u043D\u043E\u0441\u0442\u0438
+    \u043F\u0440\u043E\u0438\u0441\u0445\u043E\u0434\u044F\u0442 \u043F\u043E\u0441\u0442\u043E\u044F\u043D\u043D\u044B\u0435
+    \u0432\u0437\u0440\u044B\u0432\u044B. \u041D\u0435\u043F\u0442\u0443\u043D \u043C\u043E\u0436\u043D\u043E
+    \u0443\u0432\u0438\u0434\u0435\u0442\u044C \u0441 \u0417\u0435\u043C\u043B\u0438
+    \u0442\u043E\u043B\u044C\u043A\u043E \u0441 \u043F\u043E\u043C\u043E\u0449\u044C\u044E
+    \u0441\u043F\u0435\u0446\u0438\u0430\u043B\u044C\u043D\u044B\u0445 \u043F\u0440\u0438\u0431\u043E\u0440\u043E\u0432
+    \u043D\u0430\u0431\u043B\u044E\u0434\u0435\u043D\u0438\u044F. "
+  _infoEn: 'Neptune is the eighth and last planet from the Sun. The distance of this
+    ice giant from the Sun is 4 billion 55 million kilometers, or 30.3 astronomical
+    units. Around Neptune there is a system of extremely thin rings of ice and silicon
+    salts, which can only be seen with high-resolution telescopes. Like the gas giants
+    of the Solar System, Neptune has a strong magnetosphere. The planet''s atmosphere
+    is composed of hydrogen, helium, and methane, with a mantle composed of water,
+    ammonia, and methane ice; has a rock and ice core. Neptune has a red ring system
+    with 5 components. Neptune''s average orbital speed is nearly 5.5 kilometers
+    per second, and the planet orbits the Sun approximately once every 165 Earth
+    years. The temperature in the upper layer of the planet''s atmosphere, which
+    consists of huge ice and gas, is -220 degrees. Neptune is 49,244 kilometers in
+    diameter, 3.9 times the size of Earth, and the fourth largest planet in the Solar
+    System. The average density of Neptune is 1.64 (1 whole, 64 hundredths) grams
+    per cubic centimeter. The mass is 1.02 x 1026 (1 whole hundred times 2 times
+    10 to the 26th power) in kilograms. Neptune''s atmosphere consists of hydrogen,
+    helium and methane. Neptune''s atmosphere has some of the strongest winds of
+    any planet in the Solar System, with speeds estimated to reach 2,100 kilometers
+    per hour. The weather on Neptune consists of a system of storms, with winds reaching
+    speeds greater than the speed of sound. It is not possible to directly see the
+    planet Neptune from the earth. Neptune was discovered by scientists of the Berlin
+    Observatory in 1846 through mathematical calculations. Neptune was approached
+    only once in August 1989 by the Voyager 2 spacecraft. Through observations in
+    the radio wave range, it has been proven that the planet is exposed to constant
+    radiation and constant explosions occur on its surface. Neptune can only be seen
+    from Earth using special observation devices. '
+  _clipUz: {fileID: 0}
+  _clipRu: {fileID: 8300000, guid: b2e6eb6614c132c48b3185acd0a8f5ef, type: 3}
+  _clipEn: {fileID: 8300000, guid: 5f4ada8f0d5351b41a20fd0ddfdb828e, type: 3}
   newLayerName: Outlined
 --- !u!64 &832857464
 MeshCollider:
@@ -2591,51 +2736,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 865730988}
   m_CullTransparentMesh: 1
---- !u!21 &1159934784
---- !u!21 &1138368906
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: UI/RoundedCorners/IndependentRoundedCorners
-  m_Shader: {fileID: 4800000, guid: d3beb88e61f88ca4393acdefb005fa70, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _ColorMask: 15
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    - _UseUIAlphaClip: 0
-    m_Colors:
-    - _halfSize: {r: 185.11465, g: 85.80825, b: 0, a: 0}
-    - _r: {r: 10, g: 10, b: 10, a: 10}
-    - _rect2props: {r: 0.000030517578, g: 0, b: 184.50037, a: 184.50037}
-    - _halfSize: {r: 109.0761, g: 18.1581, b: 0, a: 0}
-    - _r: {r: 10, g: 10, b: 10, a: 10}
-    - _rect2props: {r: 0.000015258789, g: 0.0000076293945, b: 82.8971, a: 82.8971}
-  m_BuildTextureStacks: []
 --- !u!1 &1201845460
 GameObject:
   m_ObjectHideFlags: 0
@@ -2955,6 +3055,47 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
+--- !u!21 &1504950500
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: UI/RoundedCorners/IndependentRoundedCorners
+  m_Shader: {fileID: 4800000, guid: d3beb88e61f88ca4393acdefb005fa70, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _ColorMask: 15
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _UseUIAlphaClip: 0
+    m_Colors:
+    - _halfSize: {r: 109.0761, g: 18.1581, b: 0, a: 0}
+    - _r: {r: 10, g: 10, b: 10, a: 10}
+    - _rect2props: {r: 0.000015258789, g: 0.0000076293945, b: 82.8971, a: 82.8971}
+  m_BuildTextureStacks: []
 --- !u!1 &1508803801
 GameObject:
   m_ObjectHideFlags: 0
@@ -3060,88 +3201,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1508803801}
   m_CullTransparentMesh: 1
---- !u!21 &1568852366
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: UI/RoundedCorners/IndependentRoundedCorners
-  m_Shader: {fileID: 4800000, guid: d3beb88e61f88ca4393acdefb005fa70, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _ColorMask: 15
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    - _UseUIAlphaClip: 0
-    m_Colors:
-    - _halfSize: {r: 185.11465, g: 85.80825, b: 0, a: 0}
-    - _r: {r: 10, g: 10, b: 10, a: 10}
-    - _rect2props: {r: 0.000030517578, g: 0, b: 184.50037, a: 184.50037}
-  m_BuildTextureStacks: []
---- !u!21 &1601123172
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: UI/RoundedCorners/IndependentRoundedCorners
-  m_Shader: {fileID: 4800000, guid: d3beb88e61f88ca4393acdefb005fa70, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _ColorMask: 15
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    - _UseUIAlphaClip: 0
-    m_Colors:
-    - _halfSize: {r: 200, g: 221.21014, b: 0, a: 0}
-    - _r: {r: 40, g: 40, b: 40, a: 40}
-    - _rect2props: {r: 0.000015258789, g: -0.000061035156, b: 269.5563, a: 269.5563}
-  m_BuildTextureStacks: []
 --- !u!1 &1630290113
 GameObject:
   m_ObjectHideFlags: 0
@@ -3536,6 +3595,47 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1664835798}
   m_CullTransparentMesh: 1
+--- !u!21 &1775733067
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: UI/RoundedCorners/IndependentRoundedCorners
+  m_Shader: {fileID: 4800000, guid: d3beb88e61f88ca4393acdefb005fa70, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _ColorMask: 15
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _UseUIAlphaClip: 0
+    m_Colors:
+    - _halfSize: {r: 185.11465, g: 85.80825, b: 0, a: 0}
+    - _r: {r: 10, g: 10, b: 10, a: 10}
+    - _rect2props: {r: 0.000030517578, g: 0, b: 184.50037, a: 184.50037}
+  m_BuildTextureStacks: []
 --- !u!1 &1808562164
 GameObject:
   m_ObjectHideFlags: 0
@@ -3618,8 +3718,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 760037258}
-  m_Material: {fileID: 1601123172}
+  m_Material: {fileID: 605416130}
   m_Color: {r: 1, g: 1, b: 1, a: 0.392}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -3747,47 +3846,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1877999552}
   m_CullTransparentMesh: 1
---- !u!21 &1914466292
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: UI/RoundedCorners/IndependentRoundedCorners
-  m_Shader: {fileID: 4800000, guid: d3beb88e61f88ca4393acdefb005fa70, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _ColorMask: 15
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    - _UseUIAlphaClip: 0
-    m_Colors:
-    - _halfSize: {r: 109.0761, g: 18.1581, b: 0, a: 0}
-    - _r: {r: 10, g: 10, b: 10, a: 10}
-    - _rect2props: {r: 0.000015258789, g: 0.0000076293945, b: 82.8971, a: 82.8971}
-  m_BuildTextureStacks: []
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
