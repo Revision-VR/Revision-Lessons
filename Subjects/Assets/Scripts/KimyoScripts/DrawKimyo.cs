@@ -2,24 +2,25 @@ using UnityEngine;
 
 public class DrawKimyo : MonoBehaviour
 {
-    public GameObject modda;
+    public DrawWithMouse drawWithMouse;
+
     public GameObject draw;
+
     public bool firstClick = true;
 
     private CameraControl _cameraControlScript;
-    private MouseMoveObject mouseMove;
 
     private void Start()
     {
         _cameraControlScript = Camera.main.gameObject.GetComponent<CameraControl>();
-        mouseMove = modda.GetComponent<MouseMoveObject>();
     }
 
     public void OnClick()
     {
+        drawWithMouse.EraseLine();
 
         if (firstClick)
-        { 
+        {
             draw.SetActive(true);
         }
         else
@@ -28,12 +29,10 @@ public class DrawKimyo : MonoBehaviour
         }
 
         _cameraControlScript.enabled = !draw.activeSelf;
-        if (mouseMove != null)
-        {
-            mouseMove.enabled = !draw.activeSelf;
-        }
+
+        // Toggle mouseMove script based on drawing state (if needed)
+        // mouseMove.enabled = !draw.activeSelf;
 
         firstClick = !firstClick;
     }
-
 }
