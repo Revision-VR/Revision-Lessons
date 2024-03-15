@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -123,47 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!21 &195651068
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: UI/RoundedCorners/IndependentRoundedCorners
-  m_Shader: {fileID: 4800000, guid: d3beb88e61f88ca4393acdefb005fa70, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _ColorMask: 15
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    - _UseUIAlphaClip: 0
-    m_Colors:
-    - _halfSize: {r: 109.0761, g: 18.1581, b: 0, a: 0}
-    - _r: {r: 10, g: 10, b: 10, a: 10}
-    - _rect2props: {r: 0.000015258789, g: 0.0000076293945, b: 82.8971, a: 82.8971}
-  m_BuildTextureStacks: []
 --- !u!1 &251044422
 GameObject:
   m_ObjectHideFlags: 0
@@ -339,48 +298,6 @@ MonoBehaviour:
   references:
     version: 2
     RefIds: []
---- !u!21 &478718380
---- !u!21 &593535029
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: UI/RoundedCorners/IndependentRoundedCorners
-  m_Shader: {fileID: 4800000, guid: d3beb88e61f88ca4393acdefb005fa70, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _ColorMask: 15
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    - _UseUIAlphaClip: 0
-    m_Colors:
-    - _halfSize: {r: 185.11465, g: 85.80825, b: 0, a: 0}
-    - _r: {r: 10, g: 10, b: 10, a: 10}
-    - _rect2props: {r: 0.000030517578, g: 0, b: 184.50037, a: 184.50037}
-  m_BuildTextureStacks: []
 --- !u!1 &597433560
 GameObject:
   m_ObjectHideFlags: 0
@@ -463,8 +380,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 478718380}
-  m_Material: {fileID: 593535029}
+  m_Material: {fileID: 1903761508}
   m_Color: {r: 1, g: 1, b: 1, a: 0.392}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -719,47 +635,6 @@ Camera:
     type: 3}
   m_PrefabInstance: {fileID: 699038490}
   m_PrefabAsset: {fileID: 0}
---- !u!21 &738580234
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: UI/RoundedCorners/IndependentRoundedCorners
-  m_Shader: {fileID: 4800000, guid: d3beb88e61f88ca4393acdefb005fa70, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _ColorMask: 15
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    - _UseUIAlphaClip: 0
-    m_Colors:
-    - _halfSize: {r: 200, g: 221.21014, b: 0, a: 0}
-    - _r: {r: 40, g: 40, b: 40, a: 40}
-    - _rect2props: {r: 0.000015258789, g: -0.000061035156, b: 269.5563, a: 269.5563}
-  m_BuildTextureStacks: []
 --- !u!1 &759856064
 GameObject:
   m_ObjectHideFlags: 0
@@ -1009,7 +884,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!21 &803322774
+--- !u!21 &785295096
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -1046,9 +921,9 @@ Material:
     - _StencilWriteMask: 255
     - _UseUIAlphaClip: 0
     m_Colors:
-    - _halfSize: {r: 200, g: 221.21014, b: 0, a: 0}
-    - _r: {r: 40, g: 40, b: 40, a: 40}
-    - _rect2props: {r: 0.000015258789, g: -0.000061035156, b: 269.5563, a: 269.5563}
+    - _halfSize: {r: 109.0761, g: 18.1581, b: 0, a: 0}
+    - _r: {r: 10, g: 10, b: 10, a: 10}
+    - _rect2props: {r: 0.000015258789, g: 0.0000076293945, b: 82.8971, a: 82.8971}
   m_BuildTextureStacks: []
 --- !u!1 &837867900
 GameObject:
@@ -1489,47 +1364,6 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 897500043}
   m_PrefabAsset: {fileID: 0}
---- !u!21 &991764957
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: UI/RoundedCorners/IndependentRoundedCorners
-  m_Shader: {fileID: 4800000, guid: d3beb88e61f88ca4393acdefb005fa70, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _ColorMask: 15
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    - _UseUIAlphaClip: 0
-    m_Colors:
-    - _halfSize: {r: 109.0761, g: 18.1581, b: 0, a: 0}
-    - _r: {r: 10, g: 10, b: 10, a: 10}
-    - _rect2props: {r: 0.000015258789, g: 0.0000076293945, b: 82.8971, a: 82.8971}
-  m_BuildTextureStacks: []
 --- !u!1 &1017635012 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -5998301319071483956, guid: e3ea1d7163003ac4db691381f151aba1,
@@ -1614,6 +1448,9 @@ MonoBehaviour:
     called convection. The convection process takes place at a very high speed, and
     the heated plasma gases are in irregular, turbulent motion. Above that, the solar
     atmosphere begins. '
+  _clipUz: {fileID: 0}
+  _clipRu: {fileID: 8300000, guid: fcc6337d24ca9504e9e92719c2b42d67, type: 3}
+  _clipEn: {fileID: 8300000, guid: e1eb581f08888614cbace953a0ef3947, type: 3}
   newLayerName: Outlined
 --- !u!1 &1048335751
 GameObject:
@@ -1910,6 +1747,9 @@ MonoBehaviour:
     reactions take place in this zone. The density of the solar core is 150,000 grams
     per cubic meter. That means 6.6 times more than osmium, the densest metal on
     earth. The core temperature is estimated to be 14 million Kelvin. '
+  _clipUz: {fileID: 0}
+  _clipRu: {fileID: 8300000, guid: 54d99285bcf7bbd4ab07475176d54aa9, type: 3}
+  _clipEn: {fileID: 8300000, guid: 83a3eea85108d1644833d4b105060873, type: 3}
   newLayerName: Outlined
 --- !u!64 &1121552728
 MeshCollider:
@@ -1968,6 +1808,9 @@ MonoBehaviour:
   _infoEn: Radiation zone. Behind the core is a thin layer called the radiation zone,
     where heat is transferred to the surface by photons from fusion reactions. Its
     thickness is equal to 0.5-0.7% of the solar radius.
+  _clipUz: {fileID: 0}
+  _clipRu: {fileID: 8300000, guid: 21498bb21203d8a4cbb63fe7e77709bd, type: 3}
+  _clipEn: {fileID: 8300000, guid: 6c59d755744ce534a81e06286e718128, type: 3}
   newLayerName: Outlined
 --- !u!64 &1121552731
 MeshCollider:
@@ -2352,6 +2195,47 @@ MonoBehaviour:
   references:
     version: 2
     RefIds: []
+--- !u!21 &1283981163
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: UI/RoundedCorners/IndependentRoundedCorners
+  m_Shader: {fileID: 4800000, guid: d3beb88e61f88ca4393acdefb005fa70, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _ColorMask: 15
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _UseUIAlphaClip: 0
+    m_Colors:
+    - _halfSize: {r: 200, g: 221.21014, b: 0, a: 0}
+    - _r: {r: 40, g: 40, b: 40, a: 40}
+    - _rect2props: {r: 0.000015258789, g: -0.000061035156, b: 269.5563, a: 269.5563}
+  m_BuildTextureStacks: []
 --- !u!1 &1450018267 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3215555783603854218, guid: e3ea1d7163003ac4db691381f151aba1,
@@ -2384,6 +2268,9 @@ MonoBehaviour:
   _infoEn: 'Photosphere. In the photosphere, which is 100-400 kilometers thick, the
     process of radiation that we see in the sun takes place. The average temperature
     of the photosphere is 5770 Kelvin. '
+  _clipUz: {fileID: 0}
+  _clipRu: {fileID: 8300000, guid: 1966960f2a4968e4c87537d792ec396e, type: 3}
+  _clipEn: {fileID: 8300000, guid: 4baa14e86e5837748a34b5ba6e08227a, type: 3}
   newLayerName: Outlined
 --- !u!64 &1450018269
 MeshCollider:
@@ -7491,8 +7378,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 803322774}
-  m_Material: {fileID: 738580234}
+  m_Material: {fileID: 1283981163}
   m_Color: {r: 1, g: 1, b: 1, a: 0.392}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -8776,6 +8662,47 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!21 &1903761508
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: UI/RoundedCorners/IndependentRoundedCorners
+  m_Shader: {fileID: 4800000, guid: d3beb88e61f88ca4393acdefb005fa70, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _ColorMask: 15
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _UseUIAlphaClip: 0
+    m_Colors:
+    - _halfSize: {r: 185.11465, g: 85.80825, b: 0, a: 0}
+    - _r: {r: 10, g: 10, b: 10, a: 10}
+    - _rect2props: {r: 0.000030517578, g: 0, b: 184.50037, a: 184.50037}
+  m_BuildTextureStacks: []
 --- !u!1 &1954502658 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: e3ea1d7163003ac4db691381f151aba1,
@@ -8874,20 +8801,172 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f480cf694bf0a44eaf7c46484587166, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _info: "Qalingligi 100-400 kilometr oralig\u2018ida bo\u2018ladigan fotosferada
-    quyoshdagi biz ko\u2018radigan nurlanish jarayoni ro\u20181 beradi. Fotosfera
-    harorati o\u2018rtacha 5770 Kelvinni tashqil qiladi."
-  _infoRu: "\u0424\u043E\u0442\u043E\u0441\u0444\u0435\u0440\u0430. \u0412 \u0444\u043E\u0442\u043E\u0441\u0444\u0435\u0440\u0435
-    \u0442\u043E\u043B\u0449\u0438\u043D\u043E\u0439 100-400 \u043A\u0438\u043B\u043E\u043C\u0435\u0442\u0440\u043E\u0432
-    \u043F\u0440\u043E\u0438\u0441\u0445\u043E\u0434\u0438\u0442 \u043F\u0440\u043E\u0446\u0435\u0441\u0441
-    \u0438\u0437\u043B\u0443\u0447\u0435\u043D\u0438\u044F, \u043A\u043E\u0442\u043E\u0440\u044B\u0439
-    \u043C\u044B \u0432\u0438\u0434\u0438\u043C \u043D\u0430 \u0421\u043E\u043B\u043D\u0446\u0435.
-    \u0421\u0440\u0435\u0434\u043D\u044F\u044F \u0442\u0435\u043C\u043F\u0435\u0440\u0430\u0442\u0443\u0440\u0430
-    \u0444\u043E\u0442\u043E\u0441\u0444\u0435\u0440\u044B \u0441\u043E\u0441\u0442\u0430\u0432\u043B\u044F\u0435\u0442
-    5770 \u041A\u0435\u043B\u044C\u0432\u0438\u043D\u043E\u0432. "
-  _infoEn: 'Photosphere. In the photosphere, which is 100-400 kilometers thick, the
-    process of radiation that we see in the sun takes place. The average temperature
-    of the photosphere is 5770 Kelvin. '
+  _info: "Quyosh - Quyosh tizimining markaziy jismi bo\u2018lib, qizigan plazma shari
+    ko\u2018rinishida, vodorod va geliydan tashkil topgan. Quyosh Yerga eng yaqin
+    G2 sinfiga mansub sariq mitti yulduz hisoblanadi.  Quyosh massasi 1,99 \xD71030
+    (1 butun yuzdan 99 ko\u2018paytirilgan 10 darajasi 30) kilogram bo\u2018lib,
+    Mazkur yulduzning massasi Yernikidan 332 958 marta ko\u2018p. Quyosh tizimi massasining
+    99,8 foizi shu yulduzning ulushiga to\u2018g\u2018ri kelib, qolgan 0,2 foiz massa
+    ulushi 8 ta sayyora, ularning 639 ta yo\u2018ldoshi, meteorit va asteroidlardan
+    tashkil topgan Koyper belbog\u2018iga to\u2018g\u2018ri keladi. Yerdan Quyoshgacha
+    masofa taxminan 150 million kilometr bo\u2018lib, bu masofa shartli ravishda
+    \u201C1 astronomik birlik\u201D deb qabul qilingan. Yerning quyosh atrofidagi
+    orbitasi o\u2018zgaruvchan e\u0340llips shaklida bo\u2018lib, iyul' oyida maksimal
+    uzoq masofa 152 million kilometrgacha yetsa, yanvar' oyida yer quyoshga yaqinlashib,
+    oradagi masofa 147 million kilometrni tashkil qiladi.  Quyosh diametri 1 mln.
+    392 ming 700 kilometrdan ziyod bo\u2018lib, bu Yer ekvatori diametridan 109 marta
+    kattadir.  Quyosh sirtidagi harorat Selsiy shkalasi bo\u2018yicha 5499 gradusga
+    teng bo\u2018lib, koinot masshtablarida bu harorat o\u2018ta yuqori hisoblanmaydi
+    va Selsiy bo\u2018yicha 6000 daraja haroratga laboratoriya sharoitlarida erishish
+    mumkin. Sanoatda esa vol'fram pechlarida harorat 3400 darajaga yetadi. Biroq
+    Quyosh tojining harorati 10 million Selsiyga yetishi mumkin.  \u201CQuyosh toji\u201D
+    deb Quyosh yuzasidan 10 ming kilometr masofada boshlanadigan plazma va ionlar
+    qatlammga aytilib, bu qatlam Quyosh tizimidagi eng issiq joy hisoblanadi.  Bir
+    choy qoshiq hajmdagi quyosh plazmasi atmosferaga olib kirilsa, plazma o\u2018rta
+    hisobdagi shahar mavzesini yoqib yuborishi mumkin. Quyoshdan atrofga doimiy tarqalib
+    turadigan al'fa, beta va gamma nurlanish, plazma bulutlari Quyosh shamolini hosil
+    qilib, uning halokatli ta'siridan bizni yerning magnit maydoni himoya qilib turadi.
+    Quyosh shamoli faollashgan payt Yerning qutiblarida shimov va janub yog\u2018dusi
+    kuzatiladi. Biroq \u201Cquyosh shamoli\u201D va magnit maydnoi o\u2018z navbatida
+    tahminan 110 astronomik birlik masofada geliosferani hosil qilib, bu qobiq Quyosh
+    sistemasidagi barcha sayyoralarni yulduzlararo plazma bulutlari va yuqori nurlanishdan
+    himoya qilib turadi."
+  _infoRu: "\u0421\u043E\u043B\u043D\u0446\u0435 \u2014 \u0446\u0435\u043D\u0442\u0440\u0430\u043B\u044C\u043D\u043E\u0435
+    \u0442\u0435\u043B\u043E \u0421\u043E\u043B\u043D\u0435\u0447\u043D\u043E\u0439
+    \u0441\u0438\u0441\u0442\u0435\u043C\u044B, \u0438\u043C\u0435\u044E\u0449\u0435\u0435
+    \u0444\u043E\u0440\u043C\u0443 \u043D\u0430\u0433\u0440\u0435\u0442\u043E\u0433\u043E
+    \u0448\u0430\u0440\u0430 \u043F\u043B\u0430\u0437\u043C\u044B, \u0441\u043E\u0441\u0442\u043E\u044F\u0449\u0435\u0439
+    \u0438\u0437 \u0432\u043E\u0434\u043E\u0440\u043E\u0434\u0430 \u0438 \u0433\u0435\u043B\u0438\u044F.
+    \u0421\u043E\u043B\u043D\u0446\u0435 \u2014 \u0431\u043B\u0438\u0436\u0430\u0439\u0448\u0438\u0439
+    \u043A \u0417\u0435\u043C\u043B\u0435 \u0436\u0435\u043B\u0442\u044B\u0439 \u043A\u0430\u0440\u043B\u0438\u043A
+    \u043A\u043B\u0430\u0441\u0441\u0430 G2. \u041C\u0430\u0441\u0441\u0430 \u0421\u043E\u043B\u043D\u0446\u0430
+    \u0441\u043E\u0441\u0442\u0430\u0432\u043B\u044F\u0435\u0442 1,99\xD71030 (1
+    \u0446\u0435\u043B\u0443\u044E \u0441\u043E\u0442\u043D\u044E, \u0443\u043C\u043D\u043E\u0436\u0435\u043D\u043D\u0443\u044E
+    \u043D\u0430 99, \u0443\u043C\u043D\u043E\u0436\u0435\u043D\u043D\u0443\u044E
+    \u043D\u0430 10 \u0432 30-\u0439 \u0441\u0442\u0435\u043F\u0435\u043D\u0438)
+    \u043A\u0438\u043B\u043E\u0433\u0440\u0430\u043C\u043C\u0430, \u0447\u0442\u043E
+    \u0432 332 958 \u0440\u0430\u0437 \u0431\u043E\u043B\u044C\u0448\u0435 \u043C\u0430\u0441\u0441\u044B
+    \u0417\u0435\u043C\u043B\u0438. \u041D\u0430 \u0434\u043E\u043B\u044E \u044D\u0442\u043E\u0439
+    \u0437\u0432\u0435\u0437\u0434\u044B \u043F\u0440\u0438\u0445\u043E\u0434\u0438\u0442\u0441\u044F
+    99,8 \u043F\u0440\u043E\u0446\u0435\u043D\u0442\u0430 \u043C\u0430\u0441\u0441\u044B
+    \u0421\u043E\u043B\u043D\u0435\u0447\u043D\u043E\u0439 \u0441\u0438\u0441\u0442\u0435\u043C\u044B,
+    \u0430 \u043E\u0441\u0442\u0430\u043B\u044C\u043D\u044B\u0435 0,2 \u043F\u0440\u043E\u0446\u0435\u043D\u0442\u0430
+    \u043C\u0430\u0441\u0441\u044B \u0441\u043E\u043E\u0442\u0432\u0435\u0442\u0441\u0442\u0432\u0443\u044E\u0442
+    \u043F\u043E\u044F\u0441\u0443 \u041A\u043E\u0439\u043F\u0435\u0440\u0430, \u0441\u043E\u0441\u0442\u043E\u044F\u0449\u0435\u043C\u0443
+    \u0438\u0437 8 \u043F\u043B\u0430\u043D\u0435\u0442, \u0438\u0445 639 \u0441\u043F\u0443\u0442\u043D\u0438\u043A\u043E\u0432,
+    \u043C\u0435\u0442\u0435\u043E\u0440\u0438\u0442\u043E\u0432 \u0438 \u0430\u0441\u0442\u0435\u0440\u043E\u0438\u0434\u043E\u0432.
+    \u0420\u0430\u0441\u0441\u0442\u043E\u044F\u043D\u0438\u0435 \u043E\u0442 \u0417\u0435\u043C\u043B\u0438
+    \u0434\u043E \u0421\u043E\u043B\u043D\u0446\u0430 \u0441\u043E\u0441\u0442\u0430\u0432\u043B\u044F\u0435\u0442
+    \u043F\u0440\u0438\u043C\u0435\u0440\u043D\u043E 150 \u043C\u0438\u043B\u043B\u0438\u043E\u043D\u043E\u0432
+    \u043A\u0438\u043B\u043E\u043C\u0435\u0442\u0440\u043E\u0432, \u0438 \u044D\u0442\u043E
+    \u0440\u0430\u0441\u0441\u0442\u043E\u044F\u043D\u0438\u0435 \u0443\u0441\u043B\u043E\u0432\u043D\u043E
+    \u043F\u0440\u0438\u043D\u044F\u0442\u043E \u0437\u0430 \xAB1 \u0430\u0441\u0442\u0440\u043E\u043D\u043E\u043C\u0438\u0447\u0435\u0441\u043A\u0443\u044E
+    \u0435\u0434\u0438\u043D\u0438\u0446\u0443\xBB. \u041E\u0440\u0431\u0438\u0442\u0430
+    \u0417\u0435\u043C\u043B\u0438 \u0432\u043E\u043A\u0440\u0443\u0433 \u0421\u043E\u043B\u043D\u0446\u0430
+    \u0438\u043C\u0435\u0435\u0442 \u0444\u043E\u0440\u043C\u0443 \u0438\u0437\u043C\u0435\u043D\u044F\u044E\u0449\u0435\u0433\u043E\u0441\u044F
+    \u044D\u043B\u043B\u0438\u043F\u0441\u0430, \u043F\u0440\u0438\u0447\u0435\u043C
+    \u0432 \u0438\u044E\u043B\u0435 \u043C\u0430\u043A\u0441\u0438\u043C\u0430\u043B\u044C\u043D\u043E\u0435
+    \u0440\u0430\u0441\u0441\u0442\u043E\u044F\u043D\u0438\u0435 \u0441\u043E\u0441\u0442\u0430\u0432\u043B\u044F\u0435\u0442
+    152 \u043C\u0438\u043B\u043B\u0438\u043E\u043D\u0430 \u043A\u0438\u043B\u043E\u043C\u0435\u0442\u0440\u043E\u0432,
+    \u0430 \u0432 \u044F\u043D\u0432\u0430\u0440\u0435 \u0417\u0435\u043C\u043B\u044F
+    \u043F\u0440\u0438\u0431\u043B\u0438\u0436\u0430\u0435\u0442\u0441\u044F \u043A
+    \u0421\u043E\u043B\u043D\u0446\u0443, \u0438 \u0440\u0430\u0441\u0441\u0442\u043E\u044F\u043D\u0438\u0435
+    \u043C\u0435\u0436\u0434\u0443 \u043D\u0438\u043C\u0438 \u0441\u043E\u0441\u0442\u0430\u0432\u043B\u044F\u0435\u0442
+    147 \u043C\u0438\u043B\u043B\u0438\u043E\u043D\u043E\u0432 \u043A\u0438\u043B\u043E\u043C\u0435\u0442\u0440\u043E\u0432.
+    \u0414\u0438\u0430\u043C\u0435\u0442\u0440 \u0421\u043E\u043B\u043D\u0446\u0430
+    \u0441\u043E\u0441\u0442\u0430\u0432\u043B\u044F\u0435\u0442 1 \u043C\u0438\u043B\u043B\u0438\u043E\u043D.
+    \u0411\u043E\u043B\u0435\u0435 392 \u0442\u044B\u0441\u044F\u0447 700 \u043A\u0438\u043B\u043E\u043C\u0435\u0442\u0440\u043E\u0432,
+    \u0447\u0442\u043E \u0432 109 \u0440\u0430\u0437 \u043F\u0440\u0435\u0432\u044B\u0448\u0430\u0435\u0442
+    \u0434\u0438\u0430\u043C\u0435\u0442\u0440 \u044D\u043A\u0432\u0430\u0442\u043E\u0440\u0430
+    \u0417\u0435\u043C\u043B\u0438. \u0422\u0435\u043C\u043F\u0435\u0440\u0430\u0442\u0443\u0440\u0430
+    \u043D\u0430 \u043F\u043E\u0432\u0435\u0440\u0445\u043D\u043E\u0441\u0442\u0438
+    \u0421\u043E\u043B\u043D\u0446\u0430 \u0441\u043E\u0441\u0442\u0430\u0432\u043B\u044F\u0435\u0442
+    5499 \u0433\u0440\u0430\u0434\u0443\u0441\u043E\u0432 \u0426\u0435\u043B\u044C\u0441\u0438\u044F,
+    \u0447\u0442\u043E \u043D\u0435 \u043E\u0447\u0435\u043D\u044C \u0432\u044B\u0441\u043E\u043A\u043E
+    \u0432 \u043C\u0430\u0441\u0448\u0442\u0430\u0431\u0430\u0445 \u0412\u0441\u0435\u043B\u0435\u043D\u043D\u043E\u0439,
+    \u0430 \u0432 \u043B\u0430\u0431\u043E\u0440\u0430\u0442\u043E\u0440\u043D\u044B\u0445
+    \u0443\u0441\u043B\u043E\u0432\u0438\u044F\u0445 \u043C\u043E\u0436\u043D\u043E
+    \u0434\u043E\u0441\u0442\u0438\u0447\u044C \u0442\u0435\u043C\u043F\u0435\u0440\u0430\u0442\u0443\u0440\u044B
+    6000 \u0433\u0440\u0430\u0434\u0443\u0441\u043E\u0432 \u0426\u0435\u043B\u044C\u0441\u0438\u044F.
+    \u0412 \u043F\u0440\u043E\u043C\u044B\u0448\u043B\u0435\u043D\u043D\u043E\u0441\u0442\u0438
+    \u0442\u0435\u043C\u043F\u0435\u0440\u0430\u0442\u0443\u0440\u0430 \u0432 \u0432\u043E\u043B\u044C\u0444\u0440\u0430\u043C\u043E\u0432\u044B\u0445
+    \u043F\u0435\u0447\u0430\u0445 \u0434\u043E\u0441\u0442\u0438\u0433\u0430\u0435\u0442
+    3400 \u0433\u0440\u0430\u0434\u0443\u0441\u043E\u0432. \u041E\u0434\u043D\u0430\u043A\u043E
+    \u0442\u0435\u043C\u043F\u0435\u0440\u0430\u0442\u0443\u0440\u0430 \u0441\u043E\u043B\u043D\u0435\u0447\u043D\u043E\u0439
+    \u043A\u043E\u0440\u043E\u043D\u044B \u043C\u043E\u0436\u0435\u0442 \u0434\u043E\u0441\u0442\u0438\u0433\u0430\u0442\u044C
+    10 \u043C\u0438\u043B\u043B\u0438\u043E\u043D\u043E\u0432 \u0426\u0435\u043B\u044C\u0441\u0438\u044F.
+    \xAB\u0421\u043E\u043B\u043D\u0435\u0447\u043D\u0430\u044F \u043A\u043E\u0440\u043E\u043D\u0430\xBB
+    \u043E\u0442\u043D\u043E\u0441\u0438\u0442\u0441\u044F \u043A \u0441\u043B\u043E\u044E
+    \u043F\u043B\u0430\u0437\u043C\u044B \u0438 \u0438\u043E\u043D\u043E\u0432, \u043A\u043E\u0442\u043E\u0440\u044B\u0439
+    \u043D\u0430\u0447\u0438\u043D\u0430\u0435\u0442\u0441\u044F \u043D\u0430 \u0440\u0430\u0441\u0441\u0442\u043E\u044F\u043D\u0438\u0438
+    10 \u0442\u044B\u0441\u044F\u0447 \u043A\u0438\u043B\u043E\u043C\u0435\u0442\u0440\u043E\u0432
+    \u043E\u0442 \u043F\u043E\u0432\u0435\u0440\u0445\u043D\u043E\u0441\u0442\u0438
+    \u0421\u043E\u043B\u043D\u0446\u0430, \u0438 \u044D\u0442\u043E\u0442 \u0441\u043B\u043E\u0439
+    \u044F\u0432\u043B\u044F\u0435\u0442\u0441\u044F \u0441\u0430\u043C\u044B\u043C
+    \u0433\u043E\u0440\u044F\u0447\u0438\u043C \u043C\u0435\u0441\u0442\u043E\u043C
+    \u0432 \u0421\u043E\u043B\u043D\u0435\u0447\u043D\u043E\u0439 \u0441\u0438\u0441\u0442\u0435\u043C\u0435.
+    \u0412 \u0430\u0442\u043C\u043E\u0441\u0444\u0435\u0440\u0443 \u0431\u0443\u0434\u0435\u0442
+    \u0432\u044B\u0431\u0440\u043E\u0448\u0435\u043D\u043E \u043A\u043E\u043B\u0438\u0447\u0435\u0441\u0442\u0432\u043E
+    \u0441\u043E\u043B\u043D\u0435\u0447\u043D\u043E\u0439 \u043F\u043B\u0430\u0437\u043C\u044B
+    \u0440\u0430\u0437\u043C\u0435\u0440\u043E\u043C \u0432 \u0447\u0430\u0439\u043D\u0443\u044E
+    \u043B\u043E\u0436\u043A\u0443, \u0438 \u043F\u043B\u0430\u0437\u043C\u0430 \u043C\u043E\u0436\u0435\u0442
+    \u043F\u043E\u0434\u0436\u0435\u0447\u044C \u0433\u043E\u0440\u043E\u0434 \u0441\u0440\u0435\u0434\u043D\u0435\u0433\u043E
+    \u0440\u0430\u0437\u043C\u0435\u0440\u0430. \u0410\u043B\u044C\u0444\u0430-,
+    \u0431\u0435\u0442\u0430- \u0438 \u0433\u0430\u043C\u043C\u0430-\u0438\u0437\u043B\u0443\u0447\u0435\u043D\u0438\u0435,
+    \u043F\u043B\u0430\u0437\u043C\u0435\u043D\u043D\u044B\u0435 \u043E\u0431\u043B\u0430\u043A\u0430,
+    \u043F\u043E\u0441\u0442\u043E\u044F\u043D\u043D\u043E \u0440\u0430\u0441\u043F\u0440\u043E\u0441\u0442\u0440\u0430\u043D\u044F\u044E\u0449\u0438\u0435\u0441\u044F
+    \u043E\u0442 \u0421\u043E\u043B\u043D\u0446\u0430, \u043E\u0431\u0440\u0430\u0437\u0443\u044E\u0442
+    \u0441\u043E\u043B\u043D\u0435\u0447\u043D\u044B\u0439 \u0432\u0435\u0442\u0435\u0440,
+    \u0430 \u043C\u0430\u0433\u043D\u0438\u0442\u043D\u043E\u0435 \u043F\u043E\u043B\u0435
+    \u0417\u0435\u043C\u043B\u0438 \u0437\u0430\u0449\u0438\u0449\u0430\u0435\u0442
+    \u043D\u0430\u0441 \u043E\u0442 \u0435\u0433\u043E \u0440\u0430\u0437\u0440\u0443\u0448\u0438\u0442\u0435\u043B\u044C\u043D\u043E\u0433\u043E
+    \u0432\u043E\u0437\u0434\u0435\u0439\u0441\u0442\u0432\u0438\u044F. \u041A\u043E\u0433\u0434\u0430
+    \u0441\u043E\u043B\u043D\u0435\u0447\u043D\u044B\u0439 \u0432\u0435\u0442\u0435\u0440
+    \u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u0441\u044F \u0430\u043A\u0442\u0438\u0432\u043D\u044B\u043C,
+    \u043D\u0430 \u043F\u043E\u043B\u044E\u0441\u0430\u0445 \u0417\u0435\u043C\u043B\u0438
+    \u043D\u0430\u0431\u043B\u044E\u0434\u0430\u044E\u0442\u0441\u044F \u0441\u0435\u0432\u0435\u0440\u043D\u044B\u0435
+    \u0438 \u044E\u0436\u043D\u044B\u0435 \u043E\u0441\u0430\u0434\u043A\u0438. \u041E\u0434\u043D\u0430\u043A\u043E
+    \xAB\u0441\u043E\u043B\u043D\u0435\u0447\u043D\u044B\u0439 \u0432\u0435\u0442\u0435\u0440\xBB
+    \u0438 \u043C\u0430\u0433\u043D\u0438\u0442\u043D\u043E\u0435 \u043F\u043E\u043B\u0435,
+    \u0432 \u0441\u0432\u043E\u044E \u043E\u0447\u0435\u0440\u0435\u0434\u044C, \u043E\u0431\u0440\u0430\u0437\u0443\u044E\u0442
+    \u0433\u0435\u043B\u0438\u043E\u0441\u0444\u0435\u0440\u0443 \u043D\u0430 \u0440\u0430\u0441\u0441\u0442\u043E\u044F\u043D\u0438\u0438
+    \u043F\u0440\u0438\u043C\u0435\u0440\u043D\u043E 110 \u0430.\u0435., \u0437\u0430\u0449\u0438\u0449\u0430\u044E\u0449\u0443\u044E
+    \u0432\u0441\u0435 \u043F\u043B\u0430\u043D\u0435\u0442\u044B \u0421\u043E\u043B\u043D\u0435\u0447\u043D\u043E\u0439
+    \u0441\u0438\u0441\u0442\u0435\u043C\u044B \u043E\u0442 \u043C\u0435\u0436\u0437\u0432\u0435\u0437\u0434\u043D\u044B\u0445
+    \u043F\u043B\u0430\u0437\u043C\u0435\u043D\u043D\u044B\u0445 \u043E\u0431\u043B\u0430\u043A\u043E\u0432
+    \u0438 \u0432\u044B\u0441\u043E\u043A\u043E\u0439 \u0440\u0430\u0434\u0438\u0430\u0446\u0438\u0438. "
+  _infoEn: "The Sun is the central body of the Solar System, in the form of a heated
+    ball of plasma, composed of hydrogen and helium. The Sun is the closest G2 yellow
+    dwarf star to Earth. The mass of the Sun is 1.99 \xD7 1030 (1 whole hundred times
+    99 times 10 to the power of 30) kilograms, which is 332,958 times the mass of
+    the Earth. 99.8 percent of the mass of the solar system corresponds to the share
+    of this star, and the remaining 0.2 percent of the mass corresponds to the Kuiper
+    belt, which consists of 8 planets, their 639 moons, meteorites and asteroids.
+    The distance from the Earth to the Sun is approximately 150 million kilometers,
+    and this distance is conventionally accepted as \"1 astronomical unit\". The
+    Earth's orbit around the Sun is in the form of a changing ellipse, and in July,
+    the maximum distance is 152 million kilometers, and in January, the Earth approaches
+    the Sun, and the distance between them is 147 million kilometers. The diameter
+    of the sun is 1 million. More than 392 thousand 700 kilometers, which is 109
+    times larger than the diameter of the Earth's equator. The temperature on the
+    surface of the Sun is 5499 degrees Celsius, which is not very high on the scale
+    of the universe, and temperatures of 6000 degrees Celsius can be reached in laboratory
+    conditions. In industry, the temperature in tungsten furnaces reaches 3400 degrees.
+    However, the temperature of the Sun's corona can reach 10 million Celsius. \"Solar
+    corona\" refers to the layer of plasma and ions that begins at a distance of
+    10 thousand kilometers from the surface of the Sun, and this layer is the hottest
+    place in the Solar System. A teaspoon's worth of solar plasma would be released
+    into the atmosphere, and the plasma could set a medium-sized city on fire. The
+    alpha, beta and gamma radiation, plasma clouds, constantly spreading from the
+    sun, form the solar wind, and the earth's magnetic field protects us from its
+    destructive effects. When the solar wind becomes active, north and south precipitation
+    is observed at the Earth's poles. However, the \"solar wind\" and the magnetic
+    field, in turn, form the heliosphere at a distance of approximately 110 AU, which
+    protects all planets in the Solar System from interstellar plasma clouds and
+    high radiation. "
+  _clipUz: {fileID: 0}
+  _clipRu: {fileID: 8300000, guid: f2ef564713a5a1842b715b7d988e810c, type: 3}
+  _clipEn: {fileID: 8300000, guid: 012a62380824deb4e94625d73d709a88, type: 3}
   newLayerName: Outlined
 --- !u!64 &1994097634
 MeshCollider:
