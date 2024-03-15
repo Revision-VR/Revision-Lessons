@@ -28,4 +28,11 @@ public class ChangeCameraPosition : MonoBehaviour
         markazCamera.SetActive(false);
         asosiyCamera.SetActive(false);
     }
+    public void ChangeForBaseCamera()
+    {
+        asosiyCamera.SetActive(true);
+        tepaCamera.SetActive(false);
+        yonCamera.SetActive(false);
+        markazCamera.SetActive(false);      
+    }
 }
