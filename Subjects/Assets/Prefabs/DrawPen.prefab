@@ -74,8 +74,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -146,6 +146,7 @@ GameObject:
   - component: {fileID: 6814459636610203992}
   - component: {fileID: 5249118811686052970}
   - component: {fileID: 6487603920656247356}
+  - component: {fileID: 2532094738295680257}
   m_Layer: 5
   m_Name: GreenButton
   m_TagString: Untagged
@@ -194,15 +195,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 1, b: 0, a: 1}
+  m_Color: {r: 0, g: 0.8415094, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 382357d27658d784988670e466f02725, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -267,6 +268,21 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &2532094738295680257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1753503975196783705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 109c41f08973846429af681aea0a30c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  r: {x: 10, y: 10, z: 10, w: 10}
+  rect2props: {x: 0.0000076293945, y: 0, z: 60.10408, w: 60.10408}
+  image: {fileID: 5249118811686052970}
 --- !u!1 &2096045298252484544
 GameObject:
   m_ObjectHideFlags: 0
@@ -343,8 +359,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -602,6 +618,7 @@ GameObject:
   - component: {fileID: 3862452365016859273}
   - component: {fileID: 5950266643849276760}
   - component: {fileID: 9078276214664525794}
+  - component: {fileID: 5697185372184828411}
   m_Layer: 5
   m_Name: RedButton
   m_TagString: Untagged
@@ -657,8 +674,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 382357d27658d784988670e466f02725, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -723,6 +740,21 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &5697185372184828411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3477225183109029072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 109c41f08973846429af681aea0a30c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  r: {x: 10, y: 10, z: 10, w: 10}
+  rect2props: {x: 0.0000076293945, y: 0, z: 60.10408, w: 60.10408}
+  image: {fileID: 5950266643849276760}
 --- !u!1 &3559109198249554216
 GameObject:
   m_ObjectHideFlags: 0
@@ -884,6 +916,7 @@ GameObject:
   - component: {fileID: 6964663605914978516}
   - component: {fileID: 3546776085989130177}
   - component: {fileID: 2657729354096388964}
+  - component: {fileID: 4039373721689023102}
   m_Layer: 5
   m_Name: BlueButton
   m_TagString: Untagged
@@ -939,8 +972,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 382357d27658d784988670e466f02725, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1005,6 +1038,21 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &4039373721689023102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5040638549368918676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 109c41f08973846429af681aea0a30c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  r: {x: 10, y: 10, z: 10, w: 10}
+  rect2props: {x: 0.0000076293945, y: 0, z: 60.10408, w: 60.10408}
+  image: {fileID: 3546776085989130177}
 --- !u!1 &5231034273008264377
 GameObject:
   m_ObjectHideFlags: 0
@@ -1098,6 +1146,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: fd207ea9a440acd4391e8cca5b5d8ac7, type: 2}
   - {fileID: 2100000, guid: 5d1d5c759d7e6f044b7ce38b512f8118, type: 2}
   - {fileID: 2100000, guid: cf3fc8c8e45088f4a8223e7a05f91d02, type: 2}
+  isKimyo: 0
 --- !u!1 &6356751938923921797
 GameObject:
   m_ObjectHideFlags: 0
@@ -1172,8 +1221,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
