@@ -8,55 +8,66 @@ public class ResetOrgans : MonoBehaviour
     [SerializeField]
     private GameObject _pos;
 
+    //[SerializeField]
+    //private GameObject _pos2;
+
     [SerializeField]
-    private GameObject _pos2;
+    private Material _material1;
+    [SerializeField]
+    private Material _material2;
+
+    private MeshRenderer _renderer;
 
 
     private bool inSide = false;
     private bool isDragging = false;
 
+    private bool firstIgnor = false;
 
-    private bool firstTriggerEnter = true;
-    private bool firstTriggerStay = true;
+
+    private void Start()
+    {
+        _renderer = _pos.GetComponent<MeshRenderer>();
+    }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("test"))
+        if (firstIgnor)
         {
-            if (!firstTriggerEnter)
-            {
-                _pos.SetActive(true);
-                _pos2.SetActive(false);
-            }
-            else
-            {
-                firstTriggerEnter = false;
-            }
+            //_pos.SetActive(true);
+            _renderer.enabled = true;
+            _renderer.material = _material1;
+            //_pos2.SetActive(false);
             inSide = true;
         }
+        firstIgnor = true;
+
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("test"))
-        {
-            _pos.SetActive(false);
-            inSide = false;
-            _pos2.SetActive(isDragging);
-        }
+        _renderer.material = _material2;
+        //_pos.SetActive(false);
+        inSide = false;
+        //_pos2.SetActive(isDragging);
     }
+
 
 
     private void OnMouseDown()
     {
         isDragging = true;
-        _pos2.SetActive(true);
+        //_pos2.SetActive(true);
+        _renderer.material = _material2;
+        _renderer.enabled = true;
     }
+
 
     private void OnMouseUp()
     {
         isDragging = false;
-        _pos2.SetActive(false);
+        //_pos2.SetActive(false);
+        _renderer.enabled = false;
     }
 
     private void Update()
@@ -64,7 +75,8 @@ public class ResetOrgans : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.Mouse0) && inSide)
         {
             transform.localPosition = resetPos;
-            _pos.SetActive(false);
+            //_pos.SetActive(false);
+            _renderer.enabled = false;
         }
     }
 }

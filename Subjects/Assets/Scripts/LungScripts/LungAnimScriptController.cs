@@ -6,7 +6,6 @@ public class LungAnimScriptController : MonoBehaviour
 
     [SerializeField]
     private Animator LungAnimator;
-    Material material;
 
     private void LungAnimExit()
     {
@@ -22,6 +21,8 @@ public class LungAnimScriptController : MonoBehaviour
 
     public void onClick()
     {
+        LungAnimator.enabled = true;
+        
         if (Count % 2 == 0)
         {
             LungAnimEnter();
