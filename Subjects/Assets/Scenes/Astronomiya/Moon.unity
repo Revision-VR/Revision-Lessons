@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -466,6 +466,47 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!21 &159028211
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: UI/RoundedCorners/IndependentRoundedCorners
+  m_Shader: {fileID: 4800000, guid: d3beb88e61f88ca4393acdefb005fa70, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _ColorMask: 15
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _UseUIAlphaClip: 0
+    m_Colors:
+    - _halfSize: {r: 200, g: 221.21014, b: 0, a: 0}
+    - _r: {r: 40, g: 40, b: 40, a: 40}
+    - _rect2props: {r: 0.000015258789, g: -0.000061035156, b: 269.5563, a: 269.5563}
+  m_BuildTextureStacks: []
 --- !u!1 &206049178
 GameObject:
   m_ObjectHideFlags: 0
@@ -528,6 +569,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Material: {fileID: 159028211}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -775,48 +818,10 @@ MonoBehaviour:
   _info: 
   _infoRu: 
   _infoEn: 
+  _clipUz: {fileID: 0}
+  _clipRu: {fileID: 0}
+  _clipEn: {fileID: 0}
   newLayerName: Outlined
---- !u!21 &701737100
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: UI/RoundedCorners/IndependentRoundedCorners
-  m_Shader: {fileID: 4800000, guid: d3beb88e61f88ca4393acdefb005fa70, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _ColorMask: 15
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    - _UseUIAlphaClip: 0
-    m_Colors:
-    - _halfSize: {r: 185.11465, g: 85.80825, b: 0, a: 0}
-    - _r: {r: 10, g: 10, b: 10, a: 10}
-    - _rect2props: {r: 0.000030517578, g: 0, b: 184.50037, a: 184.50037}
-  m_BuildTextureStacks: []
 --- !u!1 &714828119
 GameObject:
   m_ObjectHideFlags: 0
@@ -1074,8 +1079,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 701737100}
-  m_Material: {fileID: 1556437426}
+  m_Material: {fileID: 1299241747}
   m_Color: {r: 1, g: 1, b: 1, a: 0.392}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -2178,7 +2182,51 @@ MonoBehaviour:
   _infoEn: 'Surrounding the core is a partially molten layer 480-500 kilometers thick,
     covered by a mantle consisting of silicates. The core is small compared to its
     size, and the thickness of the mantle is around 650-700 kilometers. '
+  _clipUz: {fileID: 0}
+  _clipRu: {fileID: 8300000, guid: 1ed37d141bff8f24d8887569b204b006, type: 3}
+  _clipEn: {fileID: 8300000, guid: 7b207f7f7ec19a64ba08af1bb921622f, type: 3}
   newLayerName: Outlined
+--- !u!21 &1299241747
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: UI/RoundedCorners/IndependentRoundedCorners
+  m_Shader: {fileID: 4800000, guid: d3beb88e61f88ca4393acdefb005fa70, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _ColorMask: 15
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _UseUIAlphaClip: 0
+    m_Colors:
+    - _halfSize: {r: 185.11465, g: 85.80825, b: 0, a: 0}
+    - _r: {r: 10, g: 10, b: 10, a: 10}
+    - _rect2props: {r: 0.000030517578, g: 0, b: 184.50037, a: 184.50037}
+  m_BuildTextureStacks: []
 --- !u!1 &1327479203 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1652707896063940080, guid: cd1f6279f6d193148ba63ffdfbb6fc15,
@@ -2197,28 +2245,127 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f480cf694bf0a44eaf7c46484587166, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _info: "Oyning sirtqi tosh qatlami 50 kilometr atrofida bo\u2018lib, usti qum,
-    chang va tog\u2018 jinslari strukturasiga o\u2018xshash regolit va kraterlari
-    qisman magma bilan qoplangan. Oy tuprog\u2018i tarkibida karbonatli qotishmalar,
-    oltingugurt va kal'sid birikmalar mavjud."
-  _infoRu: "\u041F\u043E\u0432\u0435\u0440\u0445\u043D\u043E\u0441\u0442\u043D\u044B\u0439
-    \u043A\u0430\u043C\u0435\u043D\u043D\u044B\u0439 \u0441\u043B\u043E\u0439 \u041B\u0443\u043D\u044B
-    \u0438\u043C\u0435\u0435\u0442 \u0434\u043B\u0438\u043D\u0443 \u043E\u043A\u043E\u043B\u043E
-    50 \u043A\u0438\u043B\u043E\u043C\u0435\u0442\u0440\u043E\u0432, \u0430 \u0435\u0433\u043E
-    \u043F\u043E\u0432\u0435\u0440\u0445\u043D\u043E\u0441\u0442\u044C \u043F\u043E\u043A\u0440\u044B\u0442\u0430
-    \u0440\u0435\u0433\u043E\u043B\u0438\u0442\u043E\u043C, \u043F\u043E\u0445\u043E\u0436\u0438\u043C
-    \u043F\u043E \u0441\u0442\u0440\u0443\u043A\u0442\u0443\u0440\u0435 \u043D\u0430
-    \u043F\u0435\u0441\u043E\u043A, \u043F\u044B\u043B\u044C \u0438 \u043A\u0430\u043C\u043D\u0438,
-    \u0430 \u043A\u0440\u0430\u0442\u0435\u0440\u044B \u0447\u0430\u0441\u0442\u0438\u0447\u043D\u043E
-    \u043F\u043E\u043A\u0440\u044B\u0442\u044B \u043C\u0430\u0433\u043C\u043E\u0439.
-    \u041B\u0443\u043D\u043D\u044B\u0439 \u0433\u0440\u0443\u043D\u0442 \u0441\u043E\u0434\u0435\u0440\u0436\u0438\u0442
-    \u043A\u0430\u0440\u0431\u043E\u043D\u0430\u0442\u043D\u044B\u0435 \u0441\u043F\u043B\u0430\u0432\u044B,
-    \u0441\u043E\u0435\u0434\u0438\u043D\u0435\u043D\u0438\u044F \u0441\u0435\u0440\u044B
-    \u0438 \u043A\u0430\u043B\u044C\u0446\u0438\u0442\u0430. "
-  _infoEn: 'The outer rock formations of the game are around 50 kilometers long,
-    and the surface is covered with sand, dust, and rock-like regolith and craters
-    partially filled with magma. Forest soil contains carbonate compounds, sulphur,
-    and calcid compounds. '
+  _info: "\_Oy - Yerning\_yagona\_tabiiy yo\u2018ldoshi. Yerdan o\u2018rtacha 384\_400
+    km masofada joylashgan bo\u2018lib o\u2018rtacha radiusi\_1738km. Oy o\u2018rtacha
+    27,3 sutkada yer atrofida bir marta aylanib,  o\u2018zining barcha fazalaridan
+    o\u2018tib chiqadi. Oy sirti kulrang silikat qumlari, qalsid changlardan iborat
+    bo\u2018lib, grunt tarkibida temir, alyuminiy va titan kabi metallar uchraydi.
+    uning al'be\u0341dosi, ya'ni nur qaytarish darajasi Quyosh nurining faqat 7,3%
+    ini qaytaradi.  To\u2018lin Oy Quyoshga qaraganda 465 000 marta xira.   Yer tortish
+    kuchi Oyning o\u2018z o\u2018qi atrofida aylanishini sekinlashtiradi. Oyning
+    o\u2018z o\u2018qi atrofida bir marta to\u2018la aylanish davri sino\u0340dik
+    oy deyilib, u 30  sutkani tashkil etadi shu sababli odamlar Oyning faqat bir
+    tomonini ko\u2018radilar.  Yerning tabiiy yo\u2018ldoshini birinchi marta 1610
+    yilda Galiley teleskopdan kuzatgan. 1647 yilda esa Oyning birinchi xaritasi tuzilgan. 
+    Oy rel'efi umumiy satxdan pastroq tekisliqlar, botiqlar, jarliklar, tog\u2018lar
+    va meteoritlar zarbasidan qolgan kraterlardan iborat. Oyni tadqiq qilishning
+    yangi bosqichi Oyga sayyoralararo avtomatik stansiyalar uchirishdan boshlanadi.
+    \"Lu\u0341nar O\u0340rbiter\", \"Se\u0341rveer\u201C, \"Apollo\u0340n\" va Lunoxod\_
+    kabi apparatlar yordamida oy grunti haqida ko\u2018plab ma'lumotlar olingan.
+    1969 - yil Apollon 11 missiyasi a'zolari oyga tushib, yerning tabiiy yo\u2018ldoshidan
+    muvaffaqiyatli qaytib kelishga musharraf bo\u2018ladilar. 1972-yilgacha Oyga
+    yana beshta ekspedisiya uyuushtirilib, jami 12 ta astronavt Oy yuzasida bo\u2018lib
+    qaytadi.   Har 29 kun 12 soat 44 daqiqada To\u2018lin Oy sodir bo\u2018lib, ushbu
+    sikl qamariy oy nomi bilan yuritilib, buning asosida Qamariy taqvim vujudga kelgan."
+  _infoRu: "\u041B\u0443\u043D\u0430 \u2013 \u0435\u0434\u0438\u043D\u0441\u0442\u0432\u0435\u043D\u043D\u044B\u0439
+    \u0435\u0441\u0442\u0435\u0441\u0442\u0432\u0435\u043D\u043D\u044B\u0439 \u0441\u043F\u0443\u0442\u043D\u0438\u043A
+    \u0417\u0435\u043C\u043B\u0438. \u041E\u043D\u043E \u0440\u0430\u0441\u043F\u043E\u043B\u043E\u0436\u0435\u043D\u043E
+    \u043D\u0430 \u0441\u0440\u0435\u0434\u043D\u0435\u043C \u0440\u0430\u0441\u0441\u0442\u043E\u044F\u043D\u0438\u0438
+    384 400 \u043A\u043C \u043E\u0442 \u0417\u0435\u043C\u043B\u0438 \u0438 \u0438\u043C\u0435\u0435\u0442
+    \u0441\u0440\u0435\u0434\u043D\u0438\u0439 \u0440\u0430\u0434\u0438\u0443\u0441
+    1738 \u043A\u043C. \u0412 \u0441\u0440\u0435\u0434\u043D\u0435\u043C \u041B\u0443\u043D\u0430
+    \u043E\u0431\u0440\u0430\u0449\u0430\u0435\u0442\u0441\u044F \u0432\u043E\u043A\u0440\u0443\u0433
+    \u0417\u0435\u043C\u043B\u0438 \u043E\u0434\u0438\u043D \u0440\u0430\u0437 \u0437\u0430
+    27,3 \u0434\u043D\u044F, \u043F\u0440\u043E\u0445\u043E\u0434\u044F \u0432\u0441\u0435
+    \u0435\u0435 \u0444\u0430\u0437\u044B. \u041F\u043E\u0432\u0435\u0440\u0445\u043D\u043E\u0441\u0442\u044C
+    \u041B\u0443\u043D\u044B \u0441\u043E\u0441\u0442\u043E\u0438\u0442 \u0438\u0437
+    \u0441\u0435\u0440\u044B\u0445 \u0441\u0438\u043B\u0438\u043A\u0430\u0442\u043D\u044B\u0445
+    \u043F\u0435\u0441\u043A\u043E\u0432, \u043A\u0430\u043B\u044C\u0446\u0438\u0442\u043E\u0432\u043E\u0439
+    \u043F\u044B\u043B\u0438, \u0430 \u0432 \u043F\u043E\u0447\u0432\u0435 \u043E\u0431\u043D\u0430\u0440\u0443\u0436\u0435\u043D\u044B
+    \u0442\u0430\u043A\u0438\u0435 \u043C\u0435\u0442\u0430\u043B\u043B\u044B, \u043A\u0430\u043A
+    \u0436\u0435\u043B\u0435\u0437\u043E, \u0430\u043B\u044E\u043C\u0438\u043D\u0438\u0439
+    \u0438 \u0442\u0438\u0442\u0430\u043D. \u0435\u0433\u043E \u0430\u043B\u044C\u0431\u0435\u0434\u043E,
+    \u0438\u043B\u0438 \u043E\u0442\u0440\u0430\u0436\u0430\u0442\u0435\u043B\u044C\u043D\u0430\u044F
+    \u0441\u043F\u043E\u0441\u043E\u0431\u043D\u043E\u0441\u0442\u044C, \u043E\u0442\u0440\u0430\u0436\u0430\u0435\u0442
+    \u0442\u043E\u043B\u044C\u043A\u043E 7,3% \u0441\u043E\u043B\u043D\u0435\u0447\u043D\u043E\u0433\u043E
+    \u0441\u0432\u0435\u0442\u0430. \u041F\u043E\u043B\u043D\u0430\u044F \u041B\u0443\u043D\u0430
+    \u0432 465 000 \u0440\u0430\u0437 \u0442\u0443\u0441\u043A\u043B\u0435\u0435
+    \u0421\u043E\u043B\u043D\u0446\u0430. \u0413\u0440\u0430\u0432\u0438\u0442\u0430\u0446\u0438\u044F
+    \u0417\u0435\u043C\u043B\u0438 \u0437\u0430\u043C\u0435\u0434\u043B\u044F\u0435\u0442
+    \u0432\u0440\u0430\u0449\u0435\u043D\u0438\u0435 \u041B\u0443\u043D\u044B \u0432\u043E\u043A\u0440\u0443\u0433
+    \u0441\u0432\u043E\u0435\u0439 \u043E\u0441\u0438. \u041E\u0434\u0438\u043D \u043F\u043E\u043B\u043D\u044B\u0439
+    \u043E\u0431\u043E\u0440\u043E\u0442 \u041B\u0443\u043D\u044B \u0432\u043E\u043A\u0440\u0443\u0433
+    \u0441\u0432\u043E\u0435\u0439 \u043E\u0441\u0438 \u043D\u0430\u0437\u044B\u0432\u0430\u0435\u0442\u0441\u044F
+    \u0441\u0438\u043D\u043E\u0434\u0438\u0447\u0435\u0441\u043A\u0438\u043C \u043C\u0435\u0441\u044F\u0446\u0435\u043C,
+    \u043A\u043E\u0442\u043E\u0440\u044B\u0439 \u0441\u043E\u0441\u0442\u0430\u0432\u043B\u044F\u0435\u0442
+    30 \u0434\u043D\u0435\u0439, \u043F\u043E\u044D\u0442\u043E\u043C\u0443 \u043B\u044E\u0434\u0438
+    \u0432\u0438\u0434\u044F\u0442 \u0442\u043E\u043B\u044C\u043A\u043E \u043E\u0434\u043D\u0443
+    \u0441\u0442\u043E\u0440\u043E\u043D\u0443 \u041B\u0443\u043D\u044B. \u041F\u0435\u0440\u0432\u044B\u0439
+    \u0435\u0441\u0442\u0435\u0441\u0442\u0432\u0435\u043D\u043D\u044B\u0439 \u0441\u043F\u0443\u0442\u043D\u0438\u043A
+    \u0417\u0435\u043C\u043B\u0438 \u043D\u0430\u0431\u043B\u044E\u0434\u0430\u043B
+    \u0413\u0430\u043B\u0438\u043B\u0435\u0439 \u0432 1610 \u0433\u043E\u0434\u0443
+    \u0432 \u0442\u0435\u043B\u0435\u0441\u043A\u043E\u043F. \u0412 1647 \u0433\u043E\u0434\u0443
+    \u0431\u044B\u043B\u0430 \u0441\u043E\u0441\u0442\u0430\u0432\u043B\u0435\u043D\u0430
+    \u200B\u200B\u043F\u0435\u0440\u0432\u0430\u044F \u043A\u0430\u0440\u0442\u0430
+    \u041B\u0443\u043D\u044B. \u041B\u0443\u043D\u043D\u044B\u0439 \u0440\u0435\u043B\u044C\u0435\u0444
+    \u0441\u043E\u0441\u0442\u043E\u0438\u0442 \u0438\u0437 \u043D\u0438\u0437\u043C\u0435\u043D\u043D\u044B\u0445
+    \u0440\u0430\u0432\u043D\u0438\u043D, \u0432\u043F\u0430\u0434\u0438\u043D, \u043E\u0432\u0440\u0430\u0433\u043E\u0432,
+    \u0433\u043E\u0440 \u0438 \u043A\u0440\u0430\u0442\u0435\u0440\u043E\u0432 \u043E\u0442
+    \u0443\u0434\u0430\u0440\u043E\u0432 \u043C\u0435\u0442\u0435\u043E\u0440\u0438\u0442\u043E\u0432.
+    \u041D\u043E\u0432\u044B\u0439 \u044D\u0442\u0430\u043F \u043E\u0441\u0432\u043E\u0435\u043D\u0438\u044F
+    \u041B\u0443\u043D\u044B \u043D\u0430\u0447\u0438\u043D\u0430\u0435\u0442\u0441\u044F
+    \u0441 \u0437\u0430\u043F\u0443\u0441\u043A\u0430 \u043D\u0430 \u041B\u0443\u043D\u0443
+    \u0430\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0447\u0435\u0441\u043A\u0438\u0445
+    \u043C\u0435\u0436\u043F\u043B\u0430\u043D\u0435\u0442\u043D\u044B\u0445 \u0441\u0442\u0430\u043D\u0446\u0438\u0439.
+    \u041C\u043D\u043E\u0433\u043E \u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u0438
+    \u043E \u043B\u0443\u043D\u043D\u043E\u0439 \u043F\u043E\u0432\u0435\u0440\u0445\u043D\u043E\u0441\u0442\u0438
+    \u0431\u044B\u043B\u043E \u043F\u043E\u043B\u0443\u0447\u0435\u043D\u043E \u0441
+    \u043F\u043E\u043C\u043E\u0449\u044C\u044E \u0442\u0430\u043A\u0438\u0445 \u0430\u043F\u043F\u0430\u0440\u0430\u0442\u043E\u0432,
+    \u043A\u0430\u043A \xAB\u041B\u0443\u043D\u043D\u044B\u0439 \u043E\u0440\u0431\u0438\u0442\u0430\u043B\u044C\u043D\u044B\u0439
+    \u0430\u043F\u043F\u0430\u0440\u0430\u0442\xBB, \xAB\u0421\u0435\u0440\u0432\u0435\u0440\xBB,
+    \xAB\u0410\u043F\u043E\u043B\u043B\u043E\u043D\xBB \u0438 \xAB\u041B\u0443\u043D\u043E\u0445\u043E\u0434\xBB.
+    1969 \u2014 \u0427\u043B\u0435\u043D\u044B \u043C\u0438\u0441\u0441\u0438\u0438
+    \xAB\u0410\u043F\u043E\u043B\u043B\u043E\u043D-11\xBB \u0432\u044B\u0441\u0430\u0436\u0438\u0432\u0430\u044E\u0442\u0441\u044F
+    \u043D\u0430 \u041B\u0443\u043D\u0443 \u0438 \u0443\u0441\u043F\u0435\u0448\u043D\u043E
+    \u0432\u043E\u0437\u0432\u0440\u0430\u0449\u0430\u044E\u0442\u0441\u044F \u0441
+    \u0435\u0441\u0442\u0435\u0441\u0442\u0432\u0435\u043D\u043D\u043E\u0433\u043E
+    \u0441\u043F\u0443\u0442\u043D\u0438\u043A\u0430 \u0417\u0435\u043C\u043B\u0438.
+    \u0414\u043E 1972 \u0433\u043E\u0434\u0430 \u0431\u044B\u043B\u043E \u043E\u0440\u0433\u0430\u043D\u0438\u0437\u043E\u0432\u0430\u043D\u043E
+    \u0435\u0449\u0435 \u043F\u044F\u0442\u044C \u044D\u043A\u0441\u043F\u0435\u0434\u0438\u0446\u0438\u0439
+    \u043D\u0430 \u041B\u0443\u043D\u0443, \u0432\u0441\u0435\u0433\u043E \u043D\u0430
+    \u043F\u043E\u0432\u0435\u0440\u0445\u043D\u043E\u0441\u0442\u044C \u041B\u0443\u043D\u044B
+    \u0432\u0435\u0440\u043D\u0443\u043B\u0438\u0441\u044C 12 \u0430\u0441\u0442\u0440\u043E\u043D\u0430\u0432\u0442\u043E\u0432.
+    \u041A\u0430\u0436\u0434\u044B\u0435 29 \u0434\u043D\u0435\u0439 12 \u0447\u0430\u0441\u043E\u0432
+    44 \u043C\u0438\u043D\u0443\u0442\u044B \u043F\u0440\u043E\u0438\u0441\u0445\u043E\u0434\u0438\u0442
+    \u041F\u043E\u043B\u043D\u043E\u043B\u0443\u043D\u0438\u0435, \u0438 \u044D\u0442\u043E\u0442
+    \u0446\u0438\u043A\u043B \u043D\u0430\u0437\u044B\u0432\u0430\u0435\u0442\u0441\u044F
+    \u043B\u0443\u043D\u043D\u044B\u043C \u043C\u0435\u0441\u044F\u0446\u0435\u043C,
+    \u0438 \u043D\u0430 \u043E\u0441\u043D\u043E\u0432\u0435 \u044D\u0442\u043E\u0433\u043E
+    \u0431\u044B\u043B \u0441\u043E\u0437\u0434\u0430\u043D \u041B\u0443\u043D\u043D\u044B\u0439
+    \u043A\u0430\u043B\u0435\u043D\u0434\u0430\u0440\u044C. "
+  _infoEn: Moon located at an average distance of 384,400 km from the Earth and has
+    an average radius of 1,738 km. On average, the sun goes around the earth once
+    every 27.3 days, passing through all its phases. The surface of the forest consists
+    of gray silicate sands, calcid dust, and metals such as iron, aluminum and titanium
+    are found in the soil composition. its albedo, i.e. reflectivity, reflects only
+    7.3% of sunlight. Tulin Moon is 465,000 times fainter than the Sun. Earth's gravity
+    slows down the game's rotation around its axis. The period of one full rotation
+    of the Moon around its axis is called the synodic Moon, and it is 30 days, so
+    people see only one side of the Moon. The natural satellite of the Earth was
+    observed for the first time in 1610 by Galileo through a telescope. In 1647,
+    the first map of Moon was created. The topography consists of plains below the
+    general level, buttes, ravines, craters left by the impact of mountains and meteorites.
+    A new stage of exploration of the game begins with the meeting of interplanetary
+    automatic stations in the game. A lot of information about the moon was obtained
+    with the help of such devices as "Lunar Orbiter", "Surveyor", "Apollo" and Lunokhod.
+    In 1969, the members of the Apollo 11 mission were able to successfully return
+    from Earth's natural satellite. Until 1972, five more expeditions to Moon were
+    organized, and a total of 12 astronauts returned to the surface of Moon. Every
+    29 days, 12 hours and 44 minutes, the Full Moon occurs, and this cycle is called
+    the Lunar Moon, and the Lunar Calendar was created based on this.
+  _clipUz: {fileID: 0}
+  _clipRu: {fileID: 8300000, guid: 2851e7ed600e3a543bff2a83584685dc, type: 3}
+  _clipEn: {fileID: 8300000, guid: 142a62953366ae945be728be855b9300, type: 3}
   newLayerName: Outlined
 --- !u!64 &1327479209
 MeshCollider:
@@ -2751,47 +2898,6 @@ MonoBehaviour:
   GameObject: {fileID: 0}
   GameObjectsFalse:
   - {fileID: 723607997}
---- !u!21 &1489731245
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: UI/RoundedCorners/IndependentRoundedCorners
-  m_Shader: {fileID: 4800000, guid: d3beb88e61f88ca4393acdefb005fa70, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _ColorMask: 15
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    - _UseUIAlphaClip: 0
-    m_Colors:
-    - _halfSize: {r: 200, g: 221.21014, b: 0, a: 0}
-    - _r: {r: 40, g: 40, b: 40, a: 40}
-    - _rect2props: {r: 0.000015258789, g: -0.000061035156, b: 269.5563, a: 269.5563}
-  m_BuildTextureStacks: []
 --- !u!1 &1515525349
 GameObject:
   m_ObjectHideFlags: 0
@@ -2999,47 +3105,6 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 1017680336}
   m_PrefabAsset: {fileID: 0}
---- !u!21 &1556437426
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: UI/RoundedCorners/IndependentRoundedCorners
-  m_Shader: {fileID: 4800000, guid: d3beb88e61f88ca4393acdefb005fa70, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _ColorMask: 15
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    - _UseUIAlphaClip: 0
-    m_Colors:
-    - _halfSize: {r: 185.11465, g: 85.80825, b: 0, a: 0}
-    - _r: {r: 10, g: 10, b: 10, a: 10}
-    - _rect2props: {r: 0.000030517578, g: 0, b: 184.50037, a: 184.50037}
-  m_BuildTextureStacks: []
 --- !u!1 &1581768247 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -1232811478440378290, guid: cd1f6279f6d193148ba63ffdfbb6fc15,
@@ -3080,6 +3145,9 @@ MonoBehaviour:
     character. The inner 240 km radius of the game is not a liquid, but a solid body
     consisting of iron and other metallic compounds, surrounded by a liquid outer
     core. '
+  _clipUz: {fileID: 0}
+  _clipRu: {fileID: 8300000, guid: 06ef3c28dc3e78840a2f833afea452cc, type: 3}
+  _clipEn: {fileID: 8300000, guid: f7d77eb54501c614d85313343577aa30, type: 3}
   newLayerName: Outlined
 --- !u!64 &1581768252
 MeshCollider:
@@ -3103,47 +3171,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 3200607258712695481, guid: cd1f6279f6d193148ba63ffdfbb6fc15, type: 3}
---- !u!21 &1635961657
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: UI/RoundedCorners/IndependentRoundedCorners
-  m_Shader: {fileID: 4800000, guid: d3beb88e61f88ca4393acdefb005fa70, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _ColorMask: 15
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    - _UseUIAlphaClip: 0
-    m_Colors:
-    - _halfSize: {r: 200, g: 221.21014, b: 0, a: 0}
-    - _r: {r: 40, g: 40, b: 40, a: 40}
-    - _rect2props: {r: 0.000015258789, g: -0.000061035156, b: 269.5563, a: 269.5563}
-  m_BuildTextureStacks: []
 --- !u!1001 &1709034453
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3225,27 +3252,27 @@ PrefabInstance:
     - target: {fileID: -1433915531131661400, guid: cd1f6279f6d193148ba63ffdfbb6fc15,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -51.14217
+      value: -46.73928
       objectReference: {fileID: 0}
     - target: {fileID: -1433915531131661400, guid: cd1f6279f6d193148ba63ffdfbb6fc15,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -99.49513
+      value: -93.91585
       objectReference: {fileID: 0}
     - target: {fileID: -1433915531131661400, guid: cd1f6279f6d193148ba63ffdfbb6fc15,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 99.49513
+      value: 93.91585
       objectReference: {fileID: 0}
     - target: {fileID: -583438178909834576, guid: cd1f6279f6d193148ba63ffdfbb6fc15,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -51.048218
+      value: -46.69474
       objectReference: {fileID: 0}
     - target: {fileID: -583438178909834576, guid: cd1f6279f6d193148ba63ffdfbb6fc15,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -90.000015
+      value: -90.00001
       objectReference: {fileID: 0}
     - target: {fileID: -583438178909834576, guid: cd1f6279f6d193148ba63ffdfbb6fc15,
         type: 3}
@@ -3260,42 +3287,42 @@ PrefabInstance:
     - target: {fileID: 5739120113167429636, guid: cd1f6279f6d193148ba63ffdfbb6fc15,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -51.14217
+      value: -46.73928
       objectReference: {fileID: 0}
     - target: {fileID: 5739120113167429636, guid: cd1f6279f6d193148ba63ffdfbb6fc15,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -99.49513
+      value: -93.91585
       objectReference: {fileID: 0}
     - target: {fileID: 5739120113167429636, guid: cd1f6279f6d193148ba63ffdfbb6fc15,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 99.49513
+      value: 93.91585
       objectReference: {fileID: 0}
     - target: {fileID: 6562452207782183233, guid: cd1f6279f6d193148ba63ffdfbb6fc15,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -51.14217
+      value: -46.73928
       objectReference: {fileID: 0}
     - target: {fileID: 6562452207782183233, guid: cd1f6279f6d193148ba63ffdfbb6fc15,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -99.49513
+      value: -93.91585
       objectReference: {fileID: 0}
     - target: {fileID: 6562452207782183233, guid: cd1f6279f6d193148ba63ffdfbb6fc15,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 99.49513
+      value: 93.91585
       objectReference: {fileID: 0}
     - target: {fileID: 7690689644405999863, guid: cd1f6279f6d193148ba63ffdfbb6fc15,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -51.048218
+      value: -46.69474
       objectReference: {fileID: 0}
     - target: {fileID: 7690689644405999863, guid: cd1f6279f6d193148ba63ffdfbb6fc15,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -90.000015
+      value: -90.00001
       objectReference: {fileID: 0}
     - target: {fileID: 7690689644405999863, guid: cd1f6279f6d193148ba63ffdfbb6fc15,
         type: 3}
@@ -3395,47 +3422,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LungAnimator: {fileID: 1709034455}
---- !u!21 &1746911769
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: UI/RoundedCorners/IndependentRoundedCorners
-  m_Shader: {fileID: 4800000, guid: d3beb88e61f88ca4393acdefb005fa70, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _ColorMask: 15
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    - _UseUIAlphaClip: 0
-    m_Colors:
-    - _halfSize: {r: 109.0761, g: 18.1581, b: 0, a: 0}
-    - _r: {r: 10, g: 10, b: 10, a: 10}
-    - _rect2props: {r: 0.000015258789, g: 0.0000076293945, b: 82.8971, a: 82.8971}
-  m_BuildTextureStacks: []
 --- !u!1 &1834054775 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -2513343288620829846, guid: cd1f6279f6d193148ba63ffdfbb6fc15,
@@ -3476,6 +3462,9 @@ MonoBehaviour:
     and the surface is covered with sand, dust, and rock-like regolith and craters
     partially filled with magma. Forest soil contains carbonate compounds, sulphur,
     and calcid compounds. '
+  _clipUz: {fileID: 0}
+  _clipRu: {fileID: 8300000, guid: a33c11bfcfe1f494e880e44f0b98f0c8, type: 3}
+  _clipEn: {fileID: 8300000, guid: 6f732998879909746843e1baf451c175, type: 3}
   newLayerName: Outlined
 --- !u!64 &1834054780
 MeshCollider:
@@ -3696,47 +3685,6 @@ MonoBehaviour:
   references:
     version: 2
     RefIds: []
---- !u!21 &2012151521
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: UI/RoundedCorners/IndependentRoundedCorners
-  m_Shader: {fileID: 4800000, guid: d3beb88e61f88ca4393acdefb005fa70, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _ColorMask: 15
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    - _UseUIAlphaClip: 0
-    m_Colors:
-    - _halfSize: {r: 109.0761, g: 18.1581, b: 0, a: 0}
-    - _r: {r: 10, g: 10, b: 10, a: 10}
-    - _rect2props: {r: 0.000015258789, g: 0.0000076293945, b: 82.8971, a: 82.8971}
-  m_BuildTextureStacks: []
 --- !u!1 &2050031412
 GameObject:
   m_ObjectHideFlags: 0
@@ -3855,6 +3803,47 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
+--- !u!21 &2070782537
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: UI/RoundedCorners/IndependentRoundedCorners
+  m_Shader: {fileID: 4800000, guid: d3beb88e61f88ca4393acdefb005fa70, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _ColorMask: 15
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _UseUIAlphaClip: 0
+    m_Colors:
+    - _halfSize: {r: 109.0761, g: 18.1581, b: 0, a: 0}
+    - _r: {r: 10, g: 10, b: 10, a: 10}
+    - _rect2props: {r: 0.000015258789, g: 0.0000076293945, b: 82.8971, a: 82.8971}
+  m_BuildTextureStacks: []
 --- !u!1 &2107531899
 GameObject:
   m_ObjectHideFlags: 0

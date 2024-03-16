@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -699,8 +699,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 681045816}
-  m_Material: {fileID: 1791950181}
+  m_Material: {fileID: 1244959531}
   m_Color: {r: 1, g: 1, b: 1, a: 0.392}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -923,47 +922,6 @@ MonoBehaviour:
   GameObjectsFalse:
   - {fileID: 304645512}
   - {fileID: 958904698}
---- !u!21 &391637550
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: UI/RoundedCorners/IndependentRoundedCorners
-  m_Shader: {fileID: 4800000, guid: d3beb88e61f88ca4393acdefb005fa70, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _ColorMask: 15
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    - _UseUIAlphaClip: 0
-    m_Colors:
-    - _halfSize: {r: 200, g: 221.21014, b: 0, a: 0}
-    - _r: {r: 40, g: 40, b: 40, a: 40}
-    - _rect2props: {r: 0.000015258789, g: -0.000061035156, b: 269.5563, a: 269.5563}
-  m_BuildTextureStacks: []
 --- !u!1001 &445791768
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1545,7 +1503,7 @@ MonoBehaviour:
   references:
     version: 2
     RefIds: []
---- !u!21 &681045816
+--- !u!21 &940980027
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -1582,9 +1540,9 @@ Material:
     - _StencilWriteMask: 255
     - _UseUIAlphaClip: 0
     m_Colors:
-    - _halfSize: {r: 185.11465, g: 85.80825, b: 0, a: 0}
-    - _r: {r: 10, g: 10, b: 10, a: 10}
-    - _rect2props: {r: 0.000030517578, g: 0, b: 184.50037, a: 184.50037}
+    - _halfSize: {r: 200, g: 221.21014, b: 0, a: 0}
+    - _r: {r: 40, g: 40, b: 40, a: 40}
+    - _rect2props: {r: 0.000015258789, g: -0.000061035156, b: 269.5563, a: 269.5563}
   m_BuildTextureStacks: []
 --- !u!1 &958904698 stripped
 GameObject:
@@ -1722,8 +1680,11 @@ MonoBehaviour:
     \u0434\u043B\u0438\u043D\u0443 600 \u043A\u0438\u043B\u043E\u043C\u0435\u0442\u0440\u043E\u0432
     \u0438 \u0441\u043E\u0441\u0442\u043E\u0438\u0442 \u0438\u0437 \u0441\u0438\u043B\u0438\u043A\u0430\u0442\u043D\u044B\u0445
     \u0441\u043F\u043B\u0430\u0432\u043E\u0432. "
-  _infoEn: '. Mantle. Mercury''s mantle is 600 kilometers long and consists of silicate
+  _infoEn: ' Mantle. Mercury''s mantle is 600 kilometers long and consists of silicate
     alloys. '
+  _clipUz: {fileID: 0}
+  _clipRu: {fileID: 8300000, guid: 19b5b3120655dac438de855f38b32c94, type: 3}
+  _clipEn: {fileID: 8300000, guid: a60df4bedc9754040b4cfe6df74ad43b, type: 3}
   newLayerName: Outlined
 --- !u!1 &1237841690
 GameObject:
@@ -1812,6 +1773,47 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1237841690}
   m_CullTransparentMesh: 1
+--- !u!21 &1244959531
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: UI/RoundedCorners/IndependentRoundedCorners
+  m_Shader: {fileID: 4800000, guid: d3beb88e61f88ca4393acdefb005fa70, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _ColorMask: 15
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _UseUIAlphaClip: 0
+    m_Colors:
+    - _halfSize: {r: 185.11465, g: 85.80825, b: 0, a: 0}
+    - _r: {r: 10, g: 10, b: 10, a: 10}
+    - _rect2props: {r: 0.000030517578, g: 0, b: 184.50037, a: 184.50037}
+  m_BuildTextureStacks: []
 --- !u!1001 &1264410252
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2461,47 +2463,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1434344721}
   m_CullTransparentMesh: 1
---- !u!21 &1461079189
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: UI/RoundedCorners/IndependentRoundedCorners
-  m_Shader: {fileID: 4800000, guid: d3beb88e61f88ca4393acdefb005fa70, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _ColorMask: 15
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    - _UseUIAlphaClip: 0
-    m_Colors:
-    - _halfSize: {r: 109.0761, g: 18.1581, b: 0, a: 0}
-    - _r: {r: 10, g: 10, b: 10, a: 10}
-    - _rect2props: {r: 0.000015258789, g: 0.0000076293945, b: 82.8971, a: 82.8971}
-  m_BuildTextureStacks: []
 --- !u!1 &1509426543
 GameObject:
   m_ObjectHideFlags: 0
@@ -2745,6 +2706,47 @@ MonoBehaviour:
   references:
     version: 2
     RefIds: []
+--- !u!21 &1587152801
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: UI/RoundedCorners/IndependentRoundedCorners
+  m_Shader: {fileID: 4800000, guid: d3beb88e61f88ca4393acdefb005fa70, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _ColorMask: 15
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _UseUIAlphaClip: 0
+    m_Colors:
+    - _halfSize: {r: 109.0761, g: 18.1581, b: 0, a: 0}
+    - _r: {r: 10, g: 10, b: 10, a: 10}
+    - _rect2props: {r: 0.000015258789, g: 0.0000076293945, b: 82.8971, a: 82.8971}
+  m_BuildTextureStacks: []
 --- !u!1001 &1666396488
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2992,7 +2994,7 @@ MonoBehaviour:
     hajmi uchun noproporsional darajada katta bo\u2018lib, diametri 3600 kilometr
     bo\u2018lib, deyarli Oyga teng keladi. Yadro sayyora massasining 60-70 foizini
     tashkil qilib suyuq nikel' va boshqa og\u2018ir metallardan iobrat."
-  _infoRu: "\u042F\u0434\u0440\u043E. \u042F\u0434\u0440\u043E \u041C\u0435\u0440\u043A\u0443\u0440\u0438\u044F
+  _infoRu: " \u042F\u0434\u0440\u043E \u041C\u0435\u0440\u043A\u0443\u0440\u0438\u044F
     \u043D\u0435\u043F\u0440\u043E\u043F\u043E\u0440\u0446\u0438\u043E\u043D\u0430\u043B\u044C\u043D\u043E
     \u0432\u0435\u043B\u0438\u043A\u043E \u0434\u043B\u044F \u043F\u043B\u0430\u043D\u0435\u0442\u044B
     \u0434\u0438\u0430\u043C\u0435\u0442\u0440\u043E\u043C \u0432\u0441\u0435\u0433\u043E
@@ -3006,10 +3008,13 @@ MonoBehaviour:
     \u0441\u043E\u0441\u0442\u0430\u0432\u043B\u044F\u044E\u0449\u0438\u0445 60-70
     \u043F\u0440\u043E\u0446\u0435\u043D\u0442\u043E\u0432 \u043C\u0430\u0441\u0441\u044B
     \u043F\u043B\u0430\u043D\u0435\u0442\u044B. "
-  _infoEn: 'Core. Mercury''s core is disproportionately large for a planet with a
-    diameter of only 4,879 kilometers, and is 3,600 kilometers in diameter, almost
-    as large as the Moon. The core is composed of liquid nickel and other heavy metals,
-    making up 60-70 percent of the planet''s mass. '
+  _infoEn: ' Mercury''s core is disproportionately large for a planet with a diameter
+    of only 4,879 kilometers, and is 3,600 kilometers in diameter, almost as large
+    as the Moon. The core is composed of liquid nickel and other heavy metals, making
+    up 60-70 percent of the planet''s mass. '
+  _clipUz: {fileID: 0}
+  _clipRu: {fileID: 8300000, guid: 4b3f54421b0c63f4ea72ae37de24dd35, type: 3}
+  _clipEn: {fileID: 8300000, guid: 144eace483d91fe4ca3dc6bfa25f9048, type: 3}
   newLayerName: Outlined
 --- !u!114 &1666396496
 MonoBehaviour:
@@ -3037,9 +3042,12 @@ MonoBehaviour:
     26 \u043A\u0438\u043B\u043E\u043C\u0435\u0442\u0440\u043E\u0432 \u0438 \u0441\u043E\u0441\u0442\u043E\u0438\u0442
     \u0438\u0437 \u0433\u043E\u0440, \u043E\u0432\u0440\u0430\u0433\u043E\u0432 \u0438
     \u043A\u0440\u0430\u0442\u0435\u0440\u043E\u0432. "
-  _infoEn: 'Surface layer. Consisting mainly of basalt and rock, similar in structure
-    to the surface of the moon, Mercury''s surface is an average of 26 kilometers
-    thick and consists of mountains, ravines and craters. '
+  _infoEn: ' Consisting mainly of basalt and rock, similar in structure to the surface
+    of the moon, Mercury''s surface is an average of 26 kilometers thick and consists
+    of mountains, ravines and craters. '
+  _clipUz: {fileID: 0}
+  _clipRu: {fileID: 8300000, guid: 282bddacb20c2ac48a99134bf5849e51, type: 3}
+  _clipEn: {fileID: 8300000, guid: e562408587f561348b616a91fa7155fa, type: 3}
   newLayerName: Outlined
 --- !u!1 &1705861870
 GameObject:
@@ -3278,65 +3286,138 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f480cf694bf0a44eaf7c46484587166, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _info: "Asosan bazal't va tog\u2018 jinslaridan iborat, struktura jihatidan oyning
-    yuzasiga o\u2018xshash bo\u2018lgan, Merkuriy yuzasining qalinligi o\u2018rtacha
-    26 kilometr bo\u2018lib, tog\u2018lar, jarliklar va kraterlardan iborat"
-  _infoRu: "\u041F\u043E\u0432\u0435\u0440\u0445\u043D\u043E\u0441\u0442\u043D\u044B\u0439
-    \u0441\u043B\u043E\u0439. \u0421\u043E\u0441\u0442\u043E\u044F\u0449\u0430\u044F
-    \u0432 \u043E\u0441\u043D\u043E\u0432\u043D\u043E\u043C \u0438\u0437 \u0431\u0430\u0437\u0430\u043B\u044C\u0442\u0430
-    \u0438 \u0433\u043E\u0440\u043D\u044B\u0445 \u043F\u043E\u0440\u043E\u0434, \u0430\u043D\u0430\u043B\u043E\u0433\u0438\u0447\u043D\u044B\u0445
-    \u043F\u043E \u0441\u0442\u0440\u0443\u043A\u0442\u0443\u0440\u0435 \u043F\u043E\u0432\u0435\u0440\u0445\u043D\u043E\u0441\u0442\u0438
-    \u041B\u0443\u043D\u044B, \u043F\u043E\u0432\u0435\u0440\u0445\u043D\u043E\u0441\u0442\u044C
-    \u041C\u0435\u0440\u043A\u0443\u0440\u0438\u044F \u0438\u043C\u0435\u0435\u0442
-    \u0442\u043E\u043B\u0449\u0438\u043D\u0443 \u0432 \u0441\u0440\u0435\u0434\u043D\u0435\u043C
-    26 \u043A\u0438\u043B\u043E\u043C\u0435\u0442\u0440\u043E\u0432 \u0438 \u0441\u043E\u0441\u0442\u043E\u0438\u0442
-    \u0438\u0437 \u0433\u043E\u0440, \u043E\u0432\u0440\u0430\u0433\u043E\u0432 \u0438
-    \u043A\u0440\u0430\u0442\u0435\u0440\u043E\u0432. "
-  _infoEn: 'Surface layer. Consisting mainly of basalt and rock, similar in structure
-    to the surface of the moon, Mercury''s surface is an average of 26 kilometers
-    thick and consists of mountains, ravines and craters. '
+  _info: "Ajdodlarimiz Atorud nomi bilan atagan Merkuriy sayyorasi Quyosh sistemasidagi
+    eng kichik va Quyoshga eng yaqin \u2013 birinchi sayyora bo\u2018lib, og\u2018ir
+    metal va silikatlardan tashkil topgan. Tabiiy yo\u2018ldoshlari yo\u2018q. Quyosh
+    bo\u2018roni va plazmalar ta'sirida Merkuriyda to\u2018laqonlik atmosfera shakllanishiga
+    imkon yo\u2018q. Mazkur sayyora yuzasi meteoritlar ta'sirida xuddi oy kabi ko\u2018plab
+    kraterlar bilan qoplangan. Sayyora yuzasidagi harorat kunduzi Selsiy shkalasi
+    bo\u2018yicha 427 daraja ko\u2018tarilib, kechasi  minus 173 gradusgacha tushadi.
+    Merkuriyning Quyoshdan o\u2018rtacha masofasi 58 million kilometrdan kamroq.
+    Bu Merkuriy Quyoshga bizning sayyoramizga qaraganda 3 baravar yaqinroq degani.
+    Merkuriy Quyosh atrofida 88 Yer kunida to\u2018liq aylanib, orbital tezligi soniyasiga
+    o\u2018rtacha 48 kilometrni tashkil qiladi va Quyosh sistemasidagi eng katta
+    orbital tezlikka ega sayyoradir. Biroq Merkuriyning o\u2018z o\u2018qi atrofida
+    aylanishi yernikiga qaraganda ancha sekin bo\u2018lib, sayyoradagi 1 sutkaning
+    davomiyligi deyarli 59 Yer kuniga teng. Merkuriy sayyorasining diametri 4880
+    kmga teng bo\u2018lib, oyning diametridan atigi 1414 kilometrga kattaroq. Sayyora
+    aylanasi ya'ni ekvator uzunligi 15\_329 kilometrga teng.   Hozircha Merkuriyni
+    NASAning faqat ikkita kosmi\u0340k apparati tekshirgan. Amerikaning avtomatik
+    sayyoralararo stansiyasi Ma\u0301riner-10 1974-1975 yillarda Merkuriy yonidan
+    uch marta uchib o\u2018tgan birinchi kosmik apparat bo\u2018lib, shu bilan sayyora
+    2011 yildan 2015 yilgacha Amerikaning Messenjer avtomatik sayyoralararo stansiyasi
+    tomonidan o\u2018rganilgan. Sayyora tortish kuchi yernikiga nisbatan ancha pastligi
+    sabab bizdagi 100 kilogram og\u2018irlikdagi ob'ekt Merkuriyda 37.7 kilogramni
+    tashkil qiladi."
+  _infoRu: "\u041F\u043B\u0430\u043D\u0435\u0442\u0430 \u041C\u0435\u0440\u043A\u0443\u0440\u0438\u0439,
+    \u043A\u043E\u0442\u043E\u0440\u0443\u044E \u043D\u0430\u0448\u0438 \u043F\u0440\u0435\u0434\u043A\u0438
+    \u043D\u0430\u0437\u044B\u0432\u0430\u043B\u0438 \u0410\u0442\u043E\u0440\u0443\u0434,
+    \u2014 \u0441\u0430\u043C\u0430\u044F \u043C\u0430\u043B\u0435\u043D\u044C\u043A\u0430\u044F
+    \u043F\u043B\u0430\u043D\u0435\u0442\u0430 \u0421\u043E\u043B\u043D\u0435\u0447\u043D\u043E\u0439
+    \u0441\u0438\u0441\u0442\u0435\u043C\u044B \u0438 \u0441\u0430\u043C\u0430\u044F
+    \u0431\u043B\u0438\u0437\u043A\u0430\u044F \u043A \u0421\u043E\u043B\u043D\u0446\u0443
+    \u2014 \u043F\u0435\u0440\u0432\u0430\u044F \u043F\u043B\u0430\u043D\u0435\u0442\u0430,
+    \u0441\u043E\u0441\u0442\u043E\u044F\u0449\u0430\u044F \u0438\u0437 \u0442\u044F\u0436\u0435\u043B\u044B\u0445
+    \u043C\u0435\u0442\u0430\u043B\u043B\u043E\u0432 \u0438 \u0441\u0438\u043B\u0438\u043A\u0430\u0442\u043E\u0432.
+    \u0423 \u043D\u0435\u0433\u043E \u043D\u0435\u0442 \u0435\u0441\u0442\u0435\u0441\u0442\u0432\u0435\u043D\u043D\u044B\u0445
+    \u0441\u043F\u0443\u0442\u043D\u0438\u043A\u043E\u0432. \u0418\u0437-\u0437\u0430
+    \u0432\u043B\u0438\u044F\u043D\u0438\u044F \u0441\u043E\u043B\u043D\u0435\u0447\u043D\u044B\u0445
+    \u0431\u0443\u0440\u044C \u0438 \u043F\u043B\u0430\u0437\u043C\u044B \u043D\u0430
+    \u041C\u0435\u0440\u043A\u0443\u0440\u0438\u0438 \u043D\u0435 \u0443\u0434\u0430\u0435\u0442\u0441\u044F
+    \u0441\u0444\u043E\u0440\u043C\u0438\u0440\u043E\u0432\u0430\u0442\u044C \u043F\u043E\u043B\u043D\u043E\u0446\u0435\u043D\u043D\u0443\u044E
+    \u0430\u0442\u043C\u043E\u0441\u0444\u0435\u0440\u0443. \u041F\u043E\u0432\u0435\u0440\u0445\u043D\u043E\u0441\u0442\u044C
+    \u044D\u0442\u043E\u0439 \u043F\u043B\u0430\u043D\u0435\u0442\u044B \u043F\u043E\u043A\u0440\u044B\u0442\u0430
+    \u043C\u043D\u043E\u0436\u0435\u0441\u0442\u0432\u043E\u043C \u043A\u0440\u0430\u0442\u0435\u0440\u043E\u0432,
+    \u043A\u0430\u043A \u0438 \u041B\u0443\u043D\u0430, \u0438\u0437-\u0437\u0430
+    \u0432\u043E\u0437\u0434\u0435\u0439\u0441\u0442\u0432\u0438\u044F \u043C\u0435\u0442\u0435\u043E\u0440\u0438\u0442\u043E\u0432.
+    \u0422\u0435\u043C\u043F\u0435\u0440\u0430\u0442\u0443\u0440\u0430 \u043D\u0430
+    \u043F\u043E\u0432\u0435\u0440\u0445\u043D\u043E\u0441\u0442\u0438 \u043F\u043B\u0430\u043D\u0435\u0442\u044B
+    \u0434\u043D\u0435\u043C \u200B\u200B\u043F\u043E\u0434\u043D\u0438\u043C\u0430\u0435\u0442\u0441\u044F
+    \u0434\u043E 427 \u0433\u0440\u0430\u0434\u0443\u0441\u043E\u0432 \u0426\u0435\u043B\u044C\u0441\u0438\u044F,
+    \u0430 \u043D\u043E\u0447\u044C\u044E \u043E\u043F\u0443\u0441\u043A\u0430\u0435\u0442\u0441\u044F
+    \u0434\u043E \u043C\u0438\u043D\u0443\u0441 173 \u0433\u0440\u0430\u0434\u0443\u0441\u043E\u0432.
+    \u0421\u0440\u0435\u0434\u043D\u0435\u0435 \u0440\u0430\u0441\u0441\u0442\u043E\u044F\u043D\u0438\u0435
+    \u041C\u0435\u0440\u043A\u0443\u0440\u0438\u044F \u043E\u0442 \u0421\u043E\u043B\u043D\u0446\u0430
+    \u0441\u043E\u0441\u0442\u0430\u0432\u043B\u044F\u0435\u0442 \u043C\u0435\u043D\u0435\u0435
+    58 \u043C\u0438\u043B\u043B\u0438\u043E\u043D\u043E\u0432 \u043A\u0438\u043B\u043E\u043C\u0435\u0442\u0440\u043E\u0432.
+    \u042D\u0442\u043E \u0437\u043D\u0430\u0447\u0438\u0442, \u0447\u0442\u043E \u041C\u0435\u0440\u043A\u0443\u0440\u0438\u0439
+    \u0432 3 \u0440\u0430\u0437\u0430 \u0431\u043B\u0438\u0436\u0435 \u043A \u0421\u043E\u043B\u043D\u0446\u0443,
+    \u0447\u0435\u043C \u043D\u0430\u0448\u0430 \u043F\u043B\u0430\u043D\u0435\u0442\u0430.
+    \u041C\u0435\u0440\u043A\u0443\u0440\u0438\u0439 \u043E\u0431\u0440\u0430\u0449\u0430\u0435\u0442\u0441\u044F
+    \u0432\u043E\u043A\u0440\u0443\u0433 \u0421\u043E\u043B\u043D\u0446\u0430 \u0437\u0430
+    88 \u0437\u0435\u043C\u043D\u044B\u0445 \u0434\u043D\u0435\u0439 \u0441\u043E
+    \u0441\u0440\u0435\u0434\u043D\u0435\u0439 \u043E\u0440\u0431\u0438\u0442\u0430\u043B\u044C\u043D\u043E\u0439
+    \u0441\u043A\u043E\u0440\u043E\u0441\u0442\u044C\u044E 48 \u043A\u0438\u043B\u043E\u043C\u0435\u0442\u0440\u043E\u0432
+    \u0432 \u0441\u0435\u043A\u0443\u043D\u0434\u0443, \u0447\u0442\u043E \u0434\u0435\u043B\u0430\u0435\u0442
+    \u0435\u0433\u043E \u043F\u043B\u0430\u043D\u0435\u0442\u043E\u0439 \u0441 \u0441\u0430\u043C\u043E\u0439
+    \u0432\u044B\u0441\u043E\u043A\u043E\u0439 \u043E\u0440\u0431\u0438\u0442\u0430\u043B\u044C\u043D\u043E\u0439
+    \u0441\u043A\u043E\u0440\u043E\u0441\u0442\u044C\u044E \u0432 \u0421\u043E\u043B\u043D\u0435\u0447\u043D\u043E\u0439
+    \u0441\u0438\u0441\u0442\u0435\u043C\u0435. \u041E\u0434\u043D\u0430\u043A\u043E
+    \u0432\u0440\u0430\u0449\u0435\u043D\u0438\u0435 \u041C\u0435\u0440\u043A\u0443\u0440\u0438\u044F
+    \u0432\u043E\u043A\u0440\u0443\u0433 \u0441\u0432\u043E\u0435\u0439 \u043E\u0441\u0438
+    \u0433\u043E\u0440\u0430\u0437\u0434\u043E \u043C\u0435\u0434\u043B\u0435\u043D\u043D\u0435\u0435,
+    \u0447\u0435\u043C \u0443 \u0417\u0435\u043C\u043B\u0438, \u0430 \u043F\u0440\u043E\u0434\u043E\u043B\u0436\u0438\u0442\u0435\u043B\u044C\u043D\u043E\u0441\u0442\u044C
+    1 \u0434\u043D\u044F \u043D\u0430 \u043F\u043B\u0430\u043D\u0435\u0442\u0435
+    \u043F\u043E\u0447\u0442\u0438 \u0440\u0430\u0432\u043D\u0430 59 \u0437\u0435\u043C\u043D\u044B\u043C
+    \u0441\u0443\u0442\u043A\u0430\u043C. \u0414\u0438\u0430\u043C\u0435\u0442\u0440
+    \u043F\u043B\u0430\u043D\u0435\u0442\u044B \u041C\u0435\u0440\u043A\u0443\u0440\u0438\u0439
+    \u0441\u043E\u0441\u0442\u0430\u0432\u043B\u044F\u0435\u0442 4880 \u043A\u043C,
+    \u0447\u0442\u043E \u0432\u0441\u0435\u0433\u043E \u043D\u0430 1414 \u043A\u043C
+    \u0431\u043E\u043B\u044C\u0448\u0435 \u0434\u0438\u0430\u043C\u0435\u0442\u0440\u0430
+    \u041B\u0443\u043D\u044B. \u041E\u043A\u0440\u0443\u0436\u043D\u043E\u0441\u0442\u044C
+    \u043F\u043B\u0430\u043D\u0435\u0442\u044B, \u0442\u043E \u0435\u0441\u0442\u044C
+    \u0434\u043B\u0438\u043D\u0430 \u044D\u043A\u0432\u0430\u0442\u043E\u0440\u0430,
+    \u0441\u043E\u0441\u0442\u0430\u0432\u043B\u044F\u0435\u0442 15 329 \u043A\u0438\u043B\u043E\u043C\u0435\u0442\u0440\u043E\u0432. 
+    \u041F\u043E\u043A\u0430 \u0447\u0442\u043E \u041C\u0435\u0440\u043A\u0443\u0440\u0438\u0439
+    \u0438\u0441\u0441\u043B\u0435\u0434\u043E\u0432\u0430\u043B\u0438 \u0442\u043E\u043B\u044C\u043A\u043E
+    \u0434\u0432\u0430 \u043A\u043E\u0441\u043C\u0438\u0447\u0435\u0441\u043A\u0438\u0445
+    \u043A\u043E\u0440\u0430\u0431\u043B\u044F \u041D\u0410\u0421\u0410.  \u0410\u043C\u0435\u0440\u0438\u043A\u0430\u043D\u0441\u043A\u0430\u044F
+    \u0430\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0447\u0435\u0441\u043A\u0430\u044F
+    \u043C\u0435\u0436\u043F\u043B\u0430\u043D\u0435\u0442\u043D\u0430\u044F \u0441\u0442\u0430\u043D\u0446\u0438\u044F
+    \xAB\u041C\u0430\u0440\u0438\u043D\u0435\u0440-10\xBB \u0441\u0442\u0430\u043B\u0430
+    \u043F\u0435\u0440\u0432\u044B\u043C \u043A\u043E\u0441\u043C\u0438\u0447\u0435\u0441\u043A\u0438\u043C
+    \u043A\u043E\u0440\u0430\u0431\u043B\u0435\u043C, \u0442\u0440\u0438\u0436\u0434\u044B
+    \u043F\u0440\u043E\u043B\u0435\u0442\u0435\u0432\u0448\u0438\u043C \u043C\u0438\u043C\u043E
+    \u041C\u0435\u0440\u043A\u0443\u0440\u0438\u044F \u0432 1974\u20131975 \u0433\u043E\u0434\u0430\u0445,
+    \u0430 \u0441 2011 \u043F\u043E 2015 \u0433\u043E\u0434 \u043F\u043B\u0430\u043D\u0435\u0442\u0430
+    \u0438\u0437\u0443\u0447\u0430\u043B\u0430\u0441\u044C \u0430\u043C\u0435\u0440\u0438\u043A\u0430\u043D\u0441\u043A\u043E\u0439
+    \u0430\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0447\u0435\u0441\u043A\u043E\u0439
+    \u043C\u0435\u0436\u043F\u043B\u0430\u043D\u0435\u0442\u043D\u043E\u0439 \u0441\u0442\u0430\u043D\u0446\u0438\u0435\u0439
+    \xAB\u041C\u0435\u0441\u0441\u0435\u043D\u0434\u0436\u0435\u0440\xBB. \u0412
+    \u0441\u0432\u044F\u0437\u0438 \u0441 \u0442\u0435\u043C, \u0447\u0442\u043E
+    \u0441\u0438\u043B\u0430 \u0433\u0440\u0430\u0432\u0438\u0442\u0430\u0446\u0438\u0438
+    \u043F\u043B\u0430\u043D\u0435\u0442\u044B \u0433\u043E\u0440\u0430\u0437\u0434\u043E
+    \u043D\u0438\u0436\u0435, \u0447\u0435\u043C \u0443 \u0417\u0435\u043C\u043B\u0438,
+    \u043E\u0431\u044A\u0435\u043A\u0442 \u043C\u0430\u0441\u0441\u043E\u0439 100
+    \u043A\u0438\u043B\u043E\u0433\u0440\u0430\u043C\u043C\u043E\u0432 \u043D\u0430
+    \u043D\u0430\u0441 \u0432\u0435\u0441\u0438\u0442 37,7 \u043A\u0438\u043B\u043E\u0433\u0440\u0430\u043C\u043C\u0430
+    \u043D\u0430 \u041C\u0435\u0440\u043A\u0443\u0440\u0438\u0438. "
+  _infoEn: 'The planet Mercury, which our ancestors called Atorud, is the smallest
+    planet in the Solar System and the closest to the Sun - the first planet, made
+    of heavy metals and silicates. It has no natural companions. Due to the influence
+    of solar storms and plasmas, it is not possible to form a full atmosphere on
+    Mercury. The surface of this planet is covered with many craters, like the moon,
+    due to the impact of meteorites. The temperature on the surface of the planet
+    rises to 427 degrees Celsius during the day and drops to minus 173 degrees at
+    night. Mercury''s average distance from the Sun is less than 58 million kilometers.
+    This means that Mercury is 3 times closer to the Sun than our planet. Mercury
+    orbits the Sun in 88 Earth days at an average orbital speed of 48 kilometers
+    per second, making it the planet with the fastest orbital speed in the Solar
+    System. However, the rotation of Mercury around its axis is much slower than
+    that of the Earth, and the duration of 1 day on the planet is almost equal to
+    59 Earth days. The diameter of the planet Mercury is 4880 km, which is only 1414
+    km larger than the diameter of the moon. The circumference of the planet, that
+    is, the length of the equator, is 15,329 kilometers.  So far, only two NASA spacecraft
+    have examined Mercury.  America''s automatic interplanetary station Mariner-10
+    was the first spacecraft to fly by Mercury three times in 1974-1975, and the
+    planet was studied by America''s automatic interplanetary station Messenger from
+    2011 to 2015. Due to the fact that the gravitational force of the planet is much
+    lower than that of the Earth, an object weighing 100 kilograms on us weighs 37.7
+    kilograms on Mercury. '
+  _clipUz: {fileID: 0}
+  _clipRu: {fileID: 8300000, guid: c7bb40c175e112649b67d0a66e10cb0c, type: 3}
+  _clipEn: {fileID: 8300000, guid: e3e46208315fce745a1443ecfb960d4b, type: 3}
   newLayerName: Outlined
---- !u!21 &1747103648
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: UI/RoundedCorners/IndependentRoundedCorners
-  m_Shader: {fileID: 4800000, guid: d3beb88e61f88ca4393acdefb005fa70, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _ColorMask: 15
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    - _UseUIAlphaClip: 0
-    m_Colors:
-    - _halfSize: {r: 200, g: 221.21014, b: 0, a: 0}
-    - _r: {r: 40, g: 40, b: 40, a: 40}
-    - _rect2props: {r: 0.000015258789, g: -0.000061035156, b: 269.5563, a: 269.5563}
-  m_BuildTextureStacks: []
 --- !u!1 &1766056502
 GameObject:
   m_ObjectHideFlags: 0
@@ -3455,47 +3536,6 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
---- !u!21 &1791950181
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: UI/RoundedCorners/IndependentRoundedCorners
-  m_Shader: {fileID: 4800000, guid: d3beb88e61f88ca4393acdefb005fa70, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _ColorMask: 15
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    - _UseUIAlphaClip: 0
-    m_Colors:
-    - _halfSize: {r: 185.11465, g: 85.80825, b: 0, a: 0}
-    - _r: {r: 10, g: 10, b: 10, a: 10}
-    - _rect2props: {r: 0.000030517578, g: 0, b: 184.50037, a: 184.50037}
-  m_BuildTextureStacks: []
 --- !u!1 &1802969604 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f2c9664e38ddc16439b186798bd19bd0,
@@ -3733,8 +3773,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 391637550}
-  m_Material: {fileID: 1747103648}
+  m_Material: {fileID: 940980027}
   m_Color: {r: 1, g: 1, b: 1, a: 0.392}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -3795,47 +3834,6 @@ MonoBehaviour:
   r: {x: 40, y: 40, z: 40, w: 40}
   rect2props: {x: 0.000015258789, y: -0.000061035156, z: 269.5563, w: 269.5563}
   image: {fileID: 2065579558}
---- !u!21 &2069598218
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: UI/RoundedCorners/IndependentRoundedCorners
-  m_Shader: {fileID: 4800000, guid: d3beb88e61f88ca4393acdefb005fa70, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _ColorMask: 15
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    - _UseUIAlphaClip: 0
-    m_Colors:
-    - _halfSize: {r: 109.0761, g: 18.1581, b: 0, a: 0}
-    - _r: {r: 10, g: 10, b: 10, a: 10}
-    - _rect2props: {r: 0.000015258789, g: 0.0000076293945, b: 82.8971, a: 82.8971}
-  m_BuildTextureStacks: []
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
