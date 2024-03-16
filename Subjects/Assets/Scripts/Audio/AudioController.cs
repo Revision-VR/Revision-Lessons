@@ -21,28 +21,27 @@ public class AudioController : MonoBehaviour
             _language = "en";
             PlayerPrefs.SetString("Language", _language);
         }
-
     }
 
     public void AudioStart()
     {
-        switch (_language)
-        {
-            case "uz":
-                AudioSource.clip = _clipUz;
-                AudioSource.Play();
-                break;
+        //switch (_language)
+        //{
+        //    case "uz":
+        //        AudioSource.clip = _clipUz;
+        //        AudioSource.Play();
+        //        break;
 
-            case "ru":
-                AudioSource.clip = _clipRu;
-                AudioSource.Play();
-                break;
+        //    case "ru":
+        //        AudioSource.clip = _clipRu;
+        //        AudioSource.Play();
+        //        break;
 
-            case "en":
-                AudioSource.clip = _clipEn;
-                AudioSource.Play();
-                break;
-        }
+        //    case "en":
+        //        AudioSource.clip = _clipEn;
+        //        AudioSource.Play();
+        //        break;
+        //}
     }
 
 }
