@@ -8,8 +8,10 @@ public class DrawWithMouse : MonoBehaviour
 
 
     [SerializeField]
-    private Material[] _colors; 
+    private Material[] _colors;
 
+    [SerializeField]
+    private bool isKimyo;
 
     private LineRenderer currentLine;
     private Vector3 mousePosition;
@@ -65,7 +67,12 @@ public class DrawWithMouse : MonoBehaviour
     Vector3 GetMouseWorldPosition()
     {
         mousePosition = Input.mousePosition;
-        mousePosition.z = Camera.main.transform.position.x + 1.5f; // Adjust the z-coordinate to be above the camera
+
+        if (isKimyo)
+            mousePosition.z = Camera.main.transform.position.z + 1.5f; // Adjust the z-coordinate to be above the camera
+        else
+            mousePosition.z = Camera.main.transform.position.x + 1.5f; // Adjust the z-coordinate to be above the camera
+
         return Camera.main.ScreenToWorldPoint(mousePosition);
     }
 
