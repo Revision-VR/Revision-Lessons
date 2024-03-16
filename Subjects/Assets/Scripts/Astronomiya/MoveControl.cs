@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class MoveControl : MonoBehaviour
@@ -5,20 +6,14 @@ public class MoveControl : MonoBehaviour
     public Animator animator;
     public GameObject gameObject;
     private int a = 3;
-    private MouseMoveObject move;
 
+    private MouseMoveObject move;
 
     private void Start()
     {
         move = animator.gameObject.GetComponent<MouseMoveObject>();
         move.enabled = false;
         
-    }
-
-
-    private void Update()
-    {
-       
     }
 
     public void AnimaotorFalseAndTrue()
@@ -35,5 +30,4 @@ public class MoveControl : MonoBehaviour
             gameObject.SetActive(false);
         }
     }
-
 }

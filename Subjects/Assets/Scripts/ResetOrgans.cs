@@ -24,6 +24,7 @@ public class ResetOrgans : MonoBehaviour
 
     private bool firstIgnor = false;
 
+
     private void Start()
     {
         _renderer = _pos.GetComponent<MeshRenderer>();
@@ -51,21 +52,22 @@ public class ResetOrgans : MonoBehaviour
         //_pos2.SetActive(isDragging);
     }
 
+
+
     private void OnMouseDown()
     {
         isDragging = true;
         //_pos2.SetActive(true);
         _renderer.material = _material2;
         _renderer.enabled = true;
-
-
     }
+
 
     private void OnMouseUp()
     {
         isDragging = false;
         //_pos2.SetActive(false);
-        _renderer.enabled=false;
+        _renderer.enabled = false;
     }
 
     private void Update()
