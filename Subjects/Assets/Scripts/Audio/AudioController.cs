@@ -26,20 +26,23 @@ public class AudioController : MonoBehaviour
 
     public void AudioStart()
     {
-        //switch (_language)
-        //{
-        //    case "uz":
-        //        _clipUz.
-        //        break;
+        switch (_language)
+        {
+            case "uz":
+                AudioSource.clip = _clipUz;
+                AudioSource.Play();
+                break;
 
-        //    case "ru":
-        //        AudioSourceRu.enabled = true;
-        //        break;
+            case "ru":
+                AudioSource.clip = _clipRu;
+                AudioSource.Play();
+                break;
 
-        //    case "en":
-        //        AudioSourceEn.enabled = true;
-        //        break;
-        //}
+            case "en":
+                AudioSource.clip = _clipEn;
+                AudioSource.Play();
+                break;
+        }
     }
 
 }
