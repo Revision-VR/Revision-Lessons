@@ -43,7 +43,6 @@ public class OpenCard : MonoBehaviour
         _enterButton.onClick.AddListener(() => PressEnterButton(obj));
         _lessonButton.onClick.AddListener(() => PressLessonButton(obj));
         _presentationButton.onClick.AddListener(() => PressPresentationButton());
-
     }
 
 

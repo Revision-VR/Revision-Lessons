@@ -499,15 +499,7 @@ MonoBehaviour:
   RotationSpeed: 5
   _cameraParent: {fileID: 0}
   repeatSpeed: 1
-  zoomSpeed: 10
-  minDistance: 5
-  maxDistance: 50
---- !u!1 &641786418 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4575459509747329933, guid: 56177e65d305e5149a0e0159957d437f,
-    type: 3}
-  m_PrefabInstance: {fileID: 1528437239}
-  m_PrefabAsset: {fileID: 0}
+  speed: 5
 --- !u!4 &641786419 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5326610875319507801, guid: 56177e65d305e5149a0e0159957d437f,
@@ -823,11 +815,6 @@ PrefabInstance:
       propertyPath: parentObject
       value: 
       objectReference: {fileID: 641786419}
-    - target: {fileID: 2570577830342846349, guid: 56177e65d305e5149a0e0159957d437f,
-        type: 3}
-      propertyPath: _cameraParent
-      value: 
-      objectReference: {fileID: 641786418}
     - target: {fileID: 4575459509747329933, guid: 56177e65d305e5149a0e0159957d437f,
         type: 3}
       propertyPath: m_Name

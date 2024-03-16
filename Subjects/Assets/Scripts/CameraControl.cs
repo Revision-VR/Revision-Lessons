@@ -17,7 +17,7 @@ public class CameraControl : MonoBehaviour
     public float repeatSpeed = 1f; // Speed of repeated movement
     private Vector3 lastMousePosition; // Last recorded mouse position
 
-
+    public float speed = 5.0f;
 
     private void Start()
     {
@@ -38,7 +38,6 @@ public class CameraControl : MonoBehaviour
 
 
 
-
         if (Input.GetMouseButtonDown(1) || Input.GetMouseButtonDown(2))
         {
             lastMousePosition = Input.mousePosition;
@@ -50,6 +49,10 @@ public class CameraControl : MonoBehaviour
 
             _cameraParent.transform.Translate(-movement);
             lastMousePosition = Input.mousePosition;
+        }
+        else
+        {
+            transform.position += transform.forward * speed * Input.mouseScrollDelta.y;
         }
     }
 }

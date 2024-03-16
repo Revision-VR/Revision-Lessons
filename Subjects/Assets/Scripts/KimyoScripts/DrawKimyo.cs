@@ -29,10 +29,6 @@ public class DrawKimyo : MonoBehaviour
         }
 
         _cameraControlScript.enabled = !draw.activeSelf;
-
-        // Toggle mouseMove script based on drawing state (if needed)
-        // mouseMove.enabled = !draw.activeSelf;
-
         firstClick = !firstClick;
     }
 }
