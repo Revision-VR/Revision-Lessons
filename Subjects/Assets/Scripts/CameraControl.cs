@@ -39,8 +39,6 @@ public class CameraControl : MonoBehaviour
 
 
 
-
-
         if (Input.GetMouseButtonDown(1) || Input.GetMouseButtonDown(2))
         {
             lastMousePosition = Input.mousePosition;
@@ -50,10 +48,8 @@ public class CameraControl : MonoBehaviour
         {
             Vector3 movement = (Input.mousePosition - lastMousePosition) * repeatSpeed * Time.deltaTime;
 
-            transform.Translate(-movement);
+            _cameraParent.transform.Translate(-movement);
             lastMousePosition = Input.mousePosition;
         }
-
-
     }
 }

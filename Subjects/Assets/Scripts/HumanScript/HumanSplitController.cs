@@ -1,8 +1,9 @@
 using UnityEngine;
 
-public class HumanSplitController : DotweenTest
+public class HumanSplitController : MonoBehaviour
 {
     public Animator humanAnim;
+
     public GameObject draw;
     public GameObject animButton;
 
@@ -10,24 +11,9 @@ public class HumanSplitController : DotweenTest
 
     public bool firstClick = true;
 
-    private void StartAnim()
-    {
-        humanAnim.SetInteger("Check", 1);
-        ChangeCameraPositionAndRotation();
-        IncrementCount();
-    }
 
-    private void ExitAnim()
-    {
-        humanAnim.SetInteger("Check", 2);
-        ResetCameraPositionAndRotation();
-        IncrementCount();
-    }
+    public CameraWhenScattered _cameraWhenScattered;
 
-    private void IncrementCount()
-    {
-        count++;
-    }
 
     public void OnClick()
     {
@@ -43,6 +29,7 @@ public class HumanSplitController : DotweenTest
         ToggleCameraControl(true);
     }
 
+
     public void OnClickDraw()
     {
         if (firstClick)
@@ -56,6 +43,27 @@ public class HumanSplitController : DotweenTest
         }
         firstClick = !firstClick;
     }
+
+
+    private void StartAnim()
+    {
+        humanAnim.SetInteger("Check", 1);
+        _cameraWhenScattered.WhenScattered();
+        IncrementCount();
+    }
+
+    private void ExitAnim()
+    {
+        humanAnim.SetInteger("Check", 2);
+        _cameraWhenScattered.WheAssembled();
+        IncrementCount();
+    }
+
+    private void IncrementCount()
+    {
+        count++;
+    }
+
 
     private void ToggleCameraControl(bool enable)
     {

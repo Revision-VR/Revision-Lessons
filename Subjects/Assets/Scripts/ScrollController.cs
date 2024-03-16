@@ -12,7 +12,7 @@ public class ScrollController : MonoBehaviour
     {
         foreach (GameObject obj in GameObjectsFalse)
         {
-                obj.SetActive(false);
+            obj.SetActive(false);
         }
     }
 
