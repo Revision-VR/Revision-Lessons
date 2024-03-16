@@ -40,6 +40,7 @@ public class DrawWithMouse : MonoBehaviour
     void StartDrawing()
     {
         GameObject lineObject = new GameObject("Line");
+        lineObject.layer = 9;
         currentLine = lineObject.AddComponent<LineRenderer>();
         currentLine.material = lineMaterial;
         currentLine.startWidth = currentLine.endWidth = thicknessSlider.value * 0.05f; // Adjust the thickness by multiplying with a factor
