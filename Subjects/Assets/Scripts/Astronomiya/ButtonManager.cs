@@ -30,6 +30,8 @@ public class ButtonManager : MonoBehaviour
 
     public void ForButton()
     {
+        _language = PlayerPrefs.GetString("Language");
+
         if (selectedObject != null && selectedObject != gameObject)
         {
             ResetLayer(selectedObject);
