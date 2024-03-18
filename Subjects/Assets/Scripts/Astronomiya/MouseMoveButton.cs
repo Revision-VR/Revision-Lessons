@@ -61,6 +61,7 @@ public class MouseMoveButton : MonoBehaviour
     {
         _bgSelectedObject.SetActive(false);
         _mouseMoveObject.enabled = false;
+        TurnOff();
     }
 
     public void ResetAllObject()
