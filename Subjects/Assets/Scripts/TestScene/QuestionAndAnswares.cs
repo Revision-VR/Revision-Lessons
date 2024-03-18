@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class QuestionAndAnswares : MonoBehaviour
 {
-
-
     public string[] questions = {
         "What is the capital of Japan?",
         "Who painted the Mona Lisa?",
@@ -32,6 +30,4 @@ public class QuestionAndAnswares : MonoBehaviour
         answers[2] = ThirdAnswers;
 
     }
-
-
 }
