@@ -58,9 +58,7 @@ public class ButtonManager : MonoBehaviour
         int newLayer = LayerMask.NameToLayer(newLayerName);
         gameObject.layer = newLayer;
 
-        //TextManager.Instance.ChangableInfo.text = _info;
-        //int newLayer = LayerMask.NameToLayer(newLayerName);
-        //gameObject.layer = newLayer;
+
     }
 
     private void OnMouseDown()

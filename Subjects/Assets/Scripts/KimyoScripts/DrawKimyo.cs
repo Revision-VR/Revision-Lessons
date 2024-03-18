@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DrawKimyo : MonoBehaviour
 {
@@ -13,10 +14,14 @@ public class DrawKimyo : MonoBehaviour
     private void Start()
     {
         _cameraControlScript = Camera.main.gameObject.GetComponent<CameraControl>();
+
     }
 
     public void OnClick()
     {
+        _cameraControlScript = Camera.main.gameObject.GetComponent<CameraControl>();
+
+
         drawWithMouse.EraseLine();
 
         if (firstClick)
@@ -31,4 +36,10 @@ public class DrawKimyo : MonoBehaviour
         _cameraControlScript.enabled = !draw.activeSelf;
         firstClick = !firstClick;
     }
+
+    public void PressExitButton()
+    {
+        SceneManager.LoadScene("Menu");
+    }
+
 }

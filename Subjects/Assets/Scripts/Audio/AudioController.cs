@@ -10,6 +10,8 @@ public class AudioController : MonoBehaviour
     [SerializeField] private AudioClip _clipRu;
     [SerializeField] private AudioClip _clipEn;
 
+    [SerializeField] private bool _playOnStart = false;
+
     private string _language;
 
     private void Start()
@@ -21,6 +23,12 @@ public class AudioController : MonoBehaviour
             _language = "en";
             PlayerPrefs.SetString("Language", _language);
         }
+
+        if (_playOnStart)
+        {
+            AudioStart();
+        }
+
     }
         
     public void AudioStart()
