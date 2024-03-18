@@ -1,84 +1,92 @@
-using System;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TestController : MonoBehaviour
 {
-    public TMP_Text questionText;
-    public TMP_Text[] answerButtons;
+    public TextMeshProUGUI questionText;
+    public Button[] answerButtons; 
+    public TextMeshProUGUI resultText; 
+    public Button restartButton; 
 
-    private List<Tuple<string, string[]>> questionAnswerPairs = new List<Tuple<string, string[]>>();
+    private string[] questions = {
+        "What is the capital of Japan?",
+        "Who painted the Mona Lisa?",
+        "What is the chemical symbol for water?"
+    };
+
+    private string[][] answers = {
+        new string[]{"Tokyo", "Seoul", "Beijing"}, 
+        new string[]{"Leonardo da Vinci", "Vincent van Gogh", "Pablo Picasso"}, 
+        new string[]{"H2O", "CO2", "NaCl"}
+    };
+
+    private int[] correctAnswersIndex = { 0, 0, 0 };
     private int currentQuestionIndex = 0;
     private int correctAnswersCount = 0;
 
     void Start()
     {
-        InitializeQuestions();
-        SetQuestion(currentQuestionIndex);
+        LoadQuestion(currentQuestionIndex);
     }
 
-    void InitializeQuestions()
+    void LoadQuestion(int questionIndex)
     {
-        // Populate the list with questions and their answers
-        questionAnswerPairs.Add(new Tuple<string, string[]>("What is the capital of France?", new string[] { "Paris", "Berlin", "London" }));
-        questionAnswerPairs.Add(new Tuple<string, string[]>("Who painted the Mona Lisa?", new string[] { "Leonardo da Vinci", "Pablo Picasso", "Vincent van Gogh" }));
-        questionAnswerPairs.Add(new Tuple<string, string[]>("What is the tallest mountain in the world?", new string[] { "Mount Everest", "K2", "Kangchenjunga" }));
-
-        // Shuffle the list of questions and answers
-        ShuffleQuestions();
-    }
-
-    void ShuffleQuestions()
-    {
-        System.Random rng = new System.Random();
-        int n = questionAnswerPairs.Count;
-        while (n > 1)
+        questionText.text = questions[questionIndex];
+        for (int i = 0; i < answerButtons.Length; i++)
         {
-            n--;
-            int k = rng.Next(n + 1);
-            var value = questionAnswerPairs[k];
-            questionAnswerPairs[k] = questionAnswerPairs[n];
-            questionAnswerPairs[n] = value;
+            answerButtons[i].GetComponentInChildren<TextMeshProUGUI>().text = answers[questionIndex][i];
+            int answerIndex = i; 
+            answerButtons[i].onClick.RemoveAllListeners(); 
+            answerButtons[i].onClick.AddListener(() => CheckAnswer(answerIndex));
         }
     }
 
-    void SetQuestion(int index)
+    void CheckAnswer(int selectedAnswerIndex)
     {
-        if (index < questionAnswerPairs.Count)
+        if (selectedAnswerIndex == correctAnswersIndex[currentQuestionIndex])
         {
-            questionText.text = questionAnswerPairs[index].Item1;
-
-            for (int i = 0; i < answerButtons.Length; i++)
-            {
-                answerButtons[i].text = questionAnswerPairs[index].Item2[i];
-            }
-        }
-        else
-        {
-            Debug.Log("Quiz finished! Correct Answers: " + correctAnswersCount);
-        }
-    }
-
-    public void CheckAnswer(string selectedAnswer)
-    {
-        string correctAnswer = questionAnswerPairs[currentQuestionIndex].Item2[0]; 
-
-        if (selectedAnswer == correctAnswer)
-        {
-            Debug.Log("Correct!");
+            Debug.Log("Correct answer!");
             correctAnswersCount++;
         }
         else
         {
-            Debug.Log("Incorrect!");
+            Debug.Log("Incorrect answer!");
         }
 
-        // Move to the next question
         currentQuestionIndex++;
-        if (currentQuestionIndex < questionAnswerPairs.Count)
+        if (currentQuestionIndex < questions.Length)
         {
-            SetQuestion(currentQuestionIndex);
+            LoadQuestion(currentQuestionIndex);
         }
+        else
+        {
+            ShowResult();
+        }
+    }
+
+    void ShowResult()
+    {
+        resultText.text = "You answered " + correctAnswersCount + " out of " + questions.Length + " questions correctly.";
+        questionText.gameObject.SetActive(false);
+        foreach (Button button in answerButtons)
+        {
+            button.gameObject.SetActive(false);
+        }
+        restartButton.gameObject.SetActive(true);
+    }
+
+    public void RestartQuiz()
+    {
+        currentQuestionIndex = 0;
+        correctAnswersCount = 0;
+        questionText.gameObject.SetActive(true);
+        foreach (Button button in answerButtons)
+        {
+            button.gameObject.SetActive(true);
+        }
+        resultText.text = "";
+        restartButton.gameObject.SetActive(false);
+        LoadQuestion(currentQuestionIndex);
     }
 }
