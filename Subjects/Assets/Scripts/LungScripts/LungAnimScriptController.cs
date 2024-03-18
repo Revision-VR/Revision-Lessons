@@ -7,6 +7,8 @@ public class LungAnimScriptController : MonoBehaviour
     [SerializeField]
     private Animator LungAnimator;
 
+    public bool canMove = true;
+
     private void LungAnimExit()
     {
         LungAnimator.SetInteger("Lung", 1);
@@ -26,10 +28,12 @@ public class LungAnimScriptController : MonoBehaviour
         if (Count % 2 == 0)
         {
             LungAnimEnter();
+            canMove = false;
         }
         else if (Count % 2 != 0)
         {
             LungAnimExit();
+            canMove = true;
         }
     }
 

@@ -30,6 +30,9 @@ public class CameraControl : MonoBehaviour
     {
         if (Input.GetMouseButton(0))
         {
+            _inputRotateX = _cameraParent.transform.localEulerAngles.y;
+            _inputRotateY = -(_cameraParent.transform.localEulerAngles.x);
+
             _inputRotateX += Input.GetAxis("Mouse X") * RotationSpeed;
             _inputRotateY += Input.GetAxis("Mouse Y") * RotationSpeed;
 

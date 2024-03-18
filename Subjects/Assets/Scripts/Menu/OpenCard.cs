@@ -17,6 +17,7 @@ public class OpenCard : MonoBehaviour
     private VideoPlayer _scrollViewPlayer;
 
     private TMP_Text _infoText;
+    private TMP_Text _nameText;
 
     private string langugae;
 
@@ -25,6 +26,7 @@ public class OpenCard : MonoBehaviour
         _player = gameObject.transform.GetChild(0).gameObject.GetComponent<VideoPlayer>();
 
         _infoText = gameObject.transform.GetChild(3).gameObject.GetComponent<TMP_Text>();
+        _nameText = gameObject.transform.GetChild(2).gameObject.GetComponent<TMP_Text>();
 
         _lessonButton = gameObject.transform.GetChild(1).gameObject.GetComponent<Button>();
         _presentationButton = gameObject.transform.GetChild(5).gameObject.GetComponent<Button>();
@@ -35,6 +37,7 @@ public class OpenCard : MonoBehaviour
     public void WhenEnabled(GameObject obj)
     {
         _infoText.text = obj.transform.GetChild(4).GetComponent<TMP_Text>().text;
+        _nameText.text = obj.transform.GetChild(1).GetComponent<TMP_Text>().text;
 
         _scrollViewPlayer = obj.transform.GetChild(3).GetComponent<VideoPlayer>();
         _player.clip = _scrollViewPlayer.clip;

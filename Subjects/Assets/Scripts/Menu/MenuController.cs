@@ -59,6 +59,7 @@ public class MenuController : MonoBehaviour
 
     public void PressMainButtons(int index)
     {
+        _language = PlayerPrefs.GetString("Language");
         DisableLeftBarTexts();
 
 
@@ -156,6 +157,7 @@ public class MenuController : MonoBehaviour
 
     public void SelectLessons(int _index)
     {
+        _language = PlayerPrefs.GetString("Language");
         _rightVideoPlayer.gameObject.SetActive(true);
 
 
